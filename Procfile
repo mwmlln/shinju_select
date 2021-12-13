@@ -1,0 +1,1 @@
+web: gunicorn shinju_select.wsgi
