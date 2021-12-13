@@ -35,10 +35,12 @@ DEBUG = False
 # Setting to switch to the development environment
 development = os.environ.get('DEVELOPMENT', False)
 
-if development:
-    ALLOWED_HOSTS = ['localhost']
-else:
-    ALLOWED_HOSTS = ['shinjuselect.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'shinjuselect.herokuapp.com']
+
+# if development:
+#     ALLOWED_HOSTS = ['localhost']
+# else:
+#     ALLOWED_HOSTS = ['shinjuselect.herokuapp.com']
 
 
 # Application definition
