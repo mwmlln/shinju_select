@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+  }
+
+main {
+  flex: 1;
+}
+
+/* from Bulma */
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.carousel-item {
+  max-height: 90vh;
+  object-fit: contain ;
+}
+
+
+.category-wrapper {
+  overflow-x: hidden;
+}
+
+.category-item {
+  height: 150px;
+  margin: 0;
+  padding:0;
+}
+
+.category-necklace {
+  background: url('/media/necklace-image.jpg') no-repeat center center;
+}
+
+.category-earrings {
+  background: url('/media/category-earrings-img.jpg') no-repeat center center;
+}
+
+.categoty-rings {
+  background: url('/media/category-ring-image.jpg') no-repeat center center;
+}
+
+.categoty-sets {
+  background: url('/media/ategory-ring-image.webpg') no-repeat center center;
+}
+
+.cagtegory-inner {
+  border: solid 3px ;
+  height: 90%;
+  background-color: transparent !important;
+}
+
+.view-all-btn {
+  margin: 0 auto;
+}
+
+
+/* For product detail images taken from  */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.image-container {
+  margin: 50px auto 0;
+  max-width: 300px;
+}
+.main-img {
+  max-height: 100%;
+  width: 100%;
+}
+.main-img img {
+  height: auto;
+  width: 100%;
+}
+.sub-img {
+  display: flex;
+}
+.sub-img li {
+  margin-right: 2%;
+  width: calc(96% / 3);
+}
+.sub-img li:nth-child(3n) {
+  margin-right: 0;
+}
+.sub-img {
+  height: 107px;
+}
+.sub-img img {
+  height: 107px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .main-img {
+    height: 68.8vw;
+  }
+  .sub-img img {
+    height: 21.4vw;
+  }
+}
