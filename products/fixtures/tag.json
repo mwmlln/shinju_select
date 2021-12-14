@@ -1,0 +1,1 @@
+[{"model": "products.tag", "pk": "limited", "fields": {"name": "limited"}}, {"model": "products.tag", "pk": "new", "fields": {"name": "new"}}]
