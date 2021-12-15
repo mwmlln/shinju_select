@@ -1,0 +1,65 @@
+{% extends 'base.html' %} {% load static %} {% block extra_js %}
+<script
+  type="text/javascript"
+  src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+></script>
+{% endblock %} {% block content %}
+
+<h1 class="text-center mt-5">{{object.name}}</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-6 mb-5">
+      <div class="image-container">
+        <div class="main-img js-main-img mb-2">
+          <img src="{{ object.productimages_set.first.image.url }}" />
+        </div>
+        <ul class="sub-img js-sub-img">
+          {% for image in object.productimages_set.all %}
+          <li>
+            <img src="{{ image.image.url }}" />
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="col-12 col-md-6 mt-5">
+      
+      <p>Category: {{ object.category.name | title }}</p>
+      <div>
+        {% if object.tags %}
+            {% for tag in object.tags.all %}
+            <span class="badge badge-info">{{ tag.name | title }}</span>
+            {% endfor %}
+            {% endif %}
+      </div>
+      <p>Price : &#128;{{object.price}}</p>
+      <p>Available stock : {{object.stock}}</p>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-10 offset-1">
+      <p>{{ object.description }}</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %} {% block postloadjs %}
+<script type="text/javascript">
+  $(function () {
+    $(".js-sub-img img").on("click", function () {
+      img = $(this).attr("src");
+      $(".js-main-img img").fadeOut(500, function () {
+        $(".js-main-img img")
+          .attr("src", img)
+          .on("load", function () {
+            $(this).fadeIn(500);
+          });
+      });
+    });
+  });
+</script>
+{% endblock %}

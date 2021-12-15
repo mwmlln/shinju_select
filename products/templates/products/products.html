@@ -1,5 +1,5 @@
-{% extends 'base.html' %} 
-{% load static %} 
+{% extends 'base.html' %}
+{% load static %}
 {% block content %}
 
 <h1 class="text-center mt-5">View the products</h1>
@@ -12,43 +12,42 @@
 
       <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
-          <img
-            class="bd-placeholder-img card-img-top"
-            width="100%"
-            height="225"
-            src="{{ object.productimages_set.first.image.url }}"
-            alt="Product image"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          />
-            <title></title>
-            <rect width="100%" height="100%" fill="#55595c"></rect>
-            <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+          <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+            src="{{ object.productimages_set.first.image.url }}" alt="Product image"
+            preserveAspectRatio="xMidYMid slice" focusable="false" />
+          <title></title>
+          <rect width="100%" height="100%" fill="#55595c"></rect>
+          <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
           </svg>
 
           <div class="card-body">
             <h5>{{object.name}}</h5>
+            {% if object.tags %}
+            {% for tag in object.tags.all %}
+            <span class="badge badge-info">{{ tag.name | title }}</span>
+            {% endfor %}
+            {% endif %}
             <p class="card-text">
               &#128;{{object.price}}
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <a href="/products/{{object.pk}}/">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">
-                  View
-                </button>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    View
+                  </button>
               </a>
-                <button type="button" class="btn btn-sm btn-outline-secondary">
-                  Edit
-                </button>
-              </div>
-              <small class="text-muted">9 mins</small>
+              <button type="button" class="btn btn-sm btn-outline-secondary">
+                Edit
+              </button>
             </div>
+            <small class="text-muted">9 mins</small>
           </div>
         </div>
       </div>
-      {% endfor %} 
     </div>
+    {% endfor %}
   </div>
+</div>
 </div>
 {% endblock %}
