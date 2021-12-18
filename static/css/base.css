@@ -60,6 +60,16 @@ main {
 }
 
 
+.mt-product-table .img-holder {
+  width: 50px;
+  overflow: hidden;
+  padding: 25px 0 22px;
+}
+
+.img-holder img {
+  width: 100%;
+}
+
 /* For product detail images taken from  */
 
 ul {

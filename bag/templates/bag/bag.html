@@ -1,42 +1,80 @@
-{% extends "base.html" %}
+{% extends "base.html" %} 
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %} 
 
 {% block content %}
 
-    <div class="container mb-2">
-        <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4">Shopping Bag</h2>
-                <hr>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col col-md-6">
-                {% if bag_items %}
-                <div class="table-responsive rounded">
-                    {{ bag_items }}
-                </div>
-                {% else %}
-                <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'products:products' %}" class="btn btn-secondary rounded-0 btn-lg">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text-uppercase">Keep Shopping</span>
-                    </a>
-                {% endif %}
-            </div>
-        </div>
-
+<div class="container mb-2">
+  <div class="row">
+    <div class="col">
+      <hr />
+      <h2 class="logo-font mb-4">Shopping Bag</h2>
+      <hr />
     </div>
+  </div>
+
+  <div class="mt-product-table">
+    {% if bag_items %}
+    <div class="container">
+      <div class="row border">
+        <div class="col-xs-12 col-sm-6">
+          <strong class="title">PRODUCT</strong>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+          <strong class="title">PRICE</strong>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+          <strong class="title">QUANTITY</strong>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+          <strong class="title">SUBTOTAL</strong>
+        </div>
+      </div>
+      {% for item in bag_items %}
+      <div class="row border">
+        
+        <div class="col-xs-12 col-sm-2">
+          <div class="img-holder">
+            <img src="{{ item.product.productimages_set.first.image.url }}" alt="product image" />
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <strong class="product-name">{{ item.product.name}}</strong>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+          <strong class="price"><i class="fa fa-eur"></i> {{ item.product.price }}</strong>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+            <strong class="quantity">{{ item.quantity }}</strong>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+          <strong class="price"><i class="fa fa-eur"> {{ bag.total }}</i></strong></strong>
+          <a href="#"><i class="fa fa-close"></i></a>
+        </div>
+      </div>
+      {% endfor %}
+      
+    </div>
+    {% else %}
+      <p class="lead mb-5">Your bag is empty.</p>
+      <a
+        href="{% url 'products:products' %}"
+        class="btn btn-secondary rounded-0 btn-lg"
+      >
+        <span class="icon">
+          <i class="fas fa-chevron-left"></i>
+        </span>
+        <span class="text-uppercase">Keep Shopping</span>
+      </a>
+      {% endif %}
+  </div>
+
+</div>
 {% endblock %}
