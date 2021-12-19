@@ -42,7 +42,7 @@
   <div class="row category-wrapper">
     {% for object in object_list %}
     <div class="col-6 col-md-3 category-item category-{{ object.name  }}">
-      <a href="#">
+      <a href="{% url 'products:category_list' object.pk %}">
       <div class="m-2 cagtegory-inner border-dark text-center text-black">
         {{ object.name | upper }}
       </div>

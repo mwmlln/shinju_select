@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.views.generic import ListView
 from django.db.models import Q
 from django.views.generic.detail import DetailView
-from .models import Product
+from .models import Product, Category
 
 
 class ProductListView(ListView):
@@ -21,6 +21,15 @@ class ProductListView(ListView):
         else:
             object_list = Product.objects.all()
         return object_list
+
+
+class CategoryListView(ListView):
+    model = Product
+    template_name = 'products/products.html'
+ 
+    def get_queryset(self):
+        self.category = Category.objects.get(pk=self.kwargs['pk'])
+        return Product.objects.filter(category=self.category)
 
 
 class ProductDetaiView(DetailView):

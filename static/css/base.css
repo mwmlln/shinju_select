@@ -9,6 +9,7 @@ main {
 }
 
 .text-black {
+  color: black;
 
 }
 
@@ -19,6 +20,11 @@ main {
   justify-content: center;
   height: 1.5rem;
   width: 1.5rem;
+}
+
+img {
+position: 50% 50%;
+object-fit: contain;
 }
 
 .carousel-item {
@@ -58,7 +64,7 @@ main {
 .category-sets {
   background: url('/media/pearl-set1-image1.jpg') no-repeat center center;
   background-position:50% 50%;
-  background-size:cover; 
+  background-size: contain; 
 }
 
 .cagtegory-inner {
