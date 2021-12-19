@@ -80,22 +80,24 @@
       <a href="#}" class="btn btn-secondary rounded-0 mt-2">
         <span class="text-uppercase">Secure Checkout</span>
         <span class="icon">
-            <i class="fas fa-lock"></i>
+          <i class="fas fa-lock"></i>
         </span>
-    </a>
+      </a>
     </div>
   </div>
 </div>
 {% else %}
-<p class="lead mb-5">Your bag is empty.</p>
-<a href="{% url 'products:products' %}" class="btn btn-secondary rounded-0 btn-lg">
-  <span class="icon">
-    <i class="fas fa-chevron-left"></i>
-  </span>
-  <span class="text-uppercase">Keep Shopping</span>
-</a>
-{% endif %}
+<div class="container">
+  <p class="lead mb-5">Your bag is empty.</p>
+  <a href="{% url 'products:products' %}" class="btn btn-secondary rounded-0 btn-lg">
+    <span class="icon">
+      <i class="fas fa-chevron-left"></i>
+    </span>
+    <span class="text-uppercase">Keep Shopping</span>
+  </a>
 </div>
+{% endif %}
+
 
 </div>
 {% endblock %}

@@ -70,6 +70,24 @@ main {
   width: 100%;
 }
 
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+  position: fixed;
+  top: 72px;
+  right: 15px;
+  z-index: 99999999999;
+}
+
+.custom-toast {
+  overflow: visible;
+}
+
+.toast-capper {
+  height: 2px;
+}
+
+
 /* For product detail images taken from  */
 
 ul {
@@ -114,3 +132,5 @@ ul {
     height: 21.4vw;
   }
 }
+
+
