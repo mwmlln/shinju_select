@@ -11,24 +11,21 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/media/pearl-necklace.jpg" class="d-block w-100" alt="...">
+      <img src="/media/pearl-necklace.jpg" class="d-block w-100" alt="pearl necklace image">
       <div class="carousel-caption d-none d-md-block">
         <h5>Finest Akoya Pearl Jewellery</h5>
-        <button>Shop NOW</button>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="/media/ring-and-broach.jpg" class="d-block w-100" alt="...">
+      <img src="/media/ring-and-broach.jpg" class="d-block w-100" alt="product image.">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Directory sourced from Japan</h5>
-        <button>Shop NOW</button>
+        <h5 class="text-dark">Selected collection from Japan</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="/media/ocean.jpg" class="d-block w-100" alt="...">
+      <img src="/media/ocean.jpg" class="d-block w-100" alt="image of the sea">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Where Pearl production is No.1 in Japan</h5>
-        <button>Shop NOW</button>
+        <h5>From the area of largest producer of cultured pearls in Japan </h5>
       </div>
     </div>
   </div>
@@ -43,27 +40,17 @@
 </div>
 <div class="container-fluid">
   <div class="row category-wrapper">
-    <div class="col-6 col-md-3 category-item category-necklace">
-      <div class="m-2 cagtegory-inner border-dark text-center">
-        Necklace
+    {% for object in object_list %}
+    <div class="col-6 col-md-3 category-item category-{{ object.name  }}">
+      <a href="#">
+      <div class="m-2 cagtegory-inner border-dark text-center text-black">
+        {{ object.name | upper }}
       </div>
+    </a>
     </div>
-    <div class="col-6 col-md-3 category-item category-earrings">
-      <div class="m-2 cagtegory-inner border-dark text-center">
-        Earrings
-      </div>
-    </div>
-    <div class="col-6 col-md-3 category-item category-ring">
-      <div class="m-2 cagtegory-inner border-dark text-center">
-        Rings
-      </div>
-    </div>
-    <div class="col-6 col-md-3 category-item category-sets">
-      <div class="m-2 cagtegory-inner border-dark text-center">
-        Sets
-      </div>
-    </div>
+    {% endfor %}
   </div>
+  
 </div>
 <div class="alert bg-dark d-flex justify-content-center rounded-0" role="alert">
   <div class="text-center"></a>
