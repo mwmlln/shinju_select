@@ -38,8 +38,6 @@
       <div>
         <form class="form" action="{% url 'bag:add_to_bag' object.id %}" method="POST">
           {% csrf_token %}
-
-
           <div class="input-group flex-nowrap">
             <div class="input-group-prepend">
               <span class="input-group-text" id="addon-wrapping">Quantity:</span>
