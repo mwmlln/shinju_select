@@ -1,9 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block extra_js %}
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-{% endblock %} {% block content %}
+ {% block content %}
 
 <h1 class="text-center mt-5">{{object.name}}</h1>
 
@@ -72,6 +70,8 @@
 {% endblock %}
 
 {% block postloadjs %}
+{{ block.super }}
+
 <script type="text/javascript">
   $(function () {
     $(".js-sub-img img").on("click", function () {
@@ -86,4 +86,5 @@
     });
   });
 </script>
+
 {% endblock %}

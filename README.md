@@ -281,14 +281,19 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 
 ### Errors encountered during development
 
-* Product List pages filtered by category: As I have decide to use class based view for product list page rather than Code Institute's walkthrough approach of function based view, I was unable to display using link by ?category=ring etc. As a workaround solution, I created CategoryListView and index page was replaced to ListView with category model linked. 
+* Product List pages filtered by category: 
+  As I have decide to use class based view for product list page rather than Code Institute's walkthrough approach of function based view, I was unable to display using link by ?category=ring etc. As a workaround solution, I created CategoryListView and index page was replaced to ListView with category model linked. 
 
-* 
-
-
+* Toast message not displaying when product is added to the shopping bag.
+  When toast is created to display feedback messages to site user, messages were successfully displayed when an item was removed from the shopping bag hoever no messages displayed when imem is added to the bag.
+  After contacting Code Institute’s tutor support, Fatima pointed out that I had a JS line in the head of the product detail page in order for the larger images to switch over on click. This script as overriding the toast script. By relocating this script line from the product detail page into the head of base.html, it successfully resolved the issue. 
 
 
 ### Known error present:
+
+* Items in the bag can exceed the stock amount if the product is added separately.
+  When a shopper adds an item with quantity within the stock amount and goes back to the same product page and add more of the same item, bag item quantity can exceed the available stock.
+  If I had a enough time, a function to examine the quantity in the shopping bag should be implemented.
 
   
 ###  Validating code 

@@ -1,6 +1,6 @@
 from django.shortcuts import (
-                            render, redirect, reverse, get_object_or_404
-                            )
+                            render, redirect, reverse, get_object_or_404,
+                            HttpResponse)
 from django.views.generic.edit import DeleteView
 from django.contrib import messages
 from products.models import Product
@@ -22,14 +22,13 @@ def add_to_bag(request, item_id):
 
     if item_id in list(bag.keys()):
         bag[item_id] += quantity
-        messages.success(request,
-                            (f'Updated {product.name} '
-                            f'quantity to {bag[item_id]}'))
+        messages.success(request, (
+                        f'Updated {product.name} '
+                        f'quantity to {bag[item_id]}'))
     else:
         bag[item_id] = quantity
         messages.success(request, f'Added {product.name} to your bag')
 
-    messages.success(request, f'Added {product.name} to your bag')
     request.session['bag'] = bag
     return redirect(redirect_url)
 
@@ -72,6 +71,4 @@ def remove_from_bag(request, item_id):
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
-
-
 
