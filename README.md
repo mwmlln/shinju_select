@@ -287,7 +287,10 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 * Toast message not displaying when product is added to the shopping bag.
   When toast is created to display feedback messages to site user, messages were successfully displayed when an item was removed from the shopping bag hoever no messages displayed when imem is added to the bag.
   After contacting Code Institute’s tutor support, Fatima pointed out that I had a JS line in the head of the product detail page in order for the larger images to switch over on click. This script as overriding the toast script. By relocating this script line from the product detail page into the head of base.html, it successfully resolved the issue. 
+  
+* Images not displaying in toast
 
+* Adjust Quantity in bag page
 
 ### Known error present:
 
