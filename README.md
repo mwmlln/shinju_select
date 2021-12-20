@@ -149,6 +149,13 @@ Throughout development process of this site, agile development approach was take
   * 
   * 
 
+
+#### Custom Model
+
+Custom models created for this project is as follows:
+* Tag
+* ProductImages
+
 ### Structure
   1.	The site visitor will first be presented with the landing page where they can read the purpose of this site.
   2.	In the Product list page, ---------
@@ -246,7 +253,7 @@ Throughout development process of this site, agile development approach was take
   * Register page
 
 
- * Login page
+  * Login page
 
 
   * Logout page
@@ -274,7 +281,7 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 
 ### Errors encountered during development
 
-* 
+* Product List pages filtered by category: As I have decide to use class based view for product list page rather than Code Institute's walkthrough approach of function based view, I was unable to display using link by ?category=ring etc. As a workaround solution, I created CategoryListView and index page was replaced to ListView with category model linked. 
 
 * 
 
