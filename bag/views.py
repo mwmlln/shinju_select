@@ -1,6 +1,7 @@
 from django.shortcuts import (
                             render, redirect, reverse, get_object_or_404,
-                            HttpResponse)
+                            HttpResponse
+                            )
 from django.views.generic.edit import DeleteView
 from django.contrib import messages
 from products.models import Product

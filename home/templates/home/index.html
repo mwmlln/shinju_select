@@ -43,7 +43,7 @@
     {% for object in object_list %}
     <div class="col-6 col-md-3 category-item category-{{ object.name  }}">
       <a href="{% url 'products:category_list' object.pk %}">
-      <div class="m-2 cagtegory-inner border-dark text-center text-black">
+      <div class="m-2 cagtegory-inner border-dark text-center text-black h3">
         {{ object.name | upper }}
       </div>
     </a>

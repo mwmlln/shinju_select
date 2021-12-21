@@ -289,8 +289,13 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
   After contacting Code Institute’s tutor support, Fatima pointed out that I had a JS line in the head of the product detail page in order for the larger images to switch over on click. This script as overriding the toast script. By relocating this script line from the product detail page into the head of base.html, it successfully resolved the issue. 
   
 * Images not displaying in toast
+  This was do to wrong condition set for if the images are present for the item. Simply changed the line as following the images for the products showed properly.
+  {% if item.product.productimages_set.all %}
 
 * Adjust Quantity in bag page
+
+* Delivery and grand total not displaying in checkout page
+  I was missing these two lines in cotext.py in bag app and tutor support Fatima, pointed out this error and helped me resolve the issue.
 
 ### Known error present:
 
