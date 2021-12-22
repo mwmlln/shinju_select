@@ -156,13 +156,25 @@ Custom models created for this project is as follows:
 * Tag
 * ProductImages
 
+
 ### Structure
-  1.	The site visitor will first be presented with the landing page where they can read the purpose of this site.
-  2.	In the Product list page, ---------
-  3. 
-  4.  
-  5.	
-  4.	
+
+  1.	The site visitor will first be presented with the landing page where they can read the purpose of this site. In the navigation menu they are presented with a choice to register or sign in if already registered. There is a search bar and shop link that opens up the page with products list.
+  Below the sliding hero images, there are large links to open the product page with 4 different categories or view all product button will open the all products list.
+
+  2.	In the Product list page, all of the products are displayed and there is button with each item to open the product detail page
+
+  3. In the product detail page, site users can learn about the products details and add this item in the bag to purchase. There are buttons to go back to the product list page or pressing the toast popup message to view the items in their shopping bag.
+
+  4.  In Shopping bag page, shoppers can adjust the item quantity or remove items from their shopping bag.
+  When they are happy with their products choices, they can proceed to the checkout page for Secure Payment.
+
+  5.	On the checkout page, user can enter their delivery and payment information.
+  The entry of the data is validated in order for the payment is requested to stripe page.
+  Shoppers can then press the payment button to make payment for the items chosen.
+  
+  4.	On successful payment, shoppers are redirected to the page with thank you message and order detail.
+
   5.	(SuperUsers) 
   6.	(SuperUsers) Manage users
 
