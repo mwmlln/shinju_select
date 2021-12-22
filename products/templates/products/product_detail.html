@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
- {% block content %}
+{% block content %}
 
 <h1 class="text-center mt-5">{{object.name}}</h1>
 
@@ -24,11 +24,17 @@
 
     <div class="row">
       <div class="col-12 col-md-6 mt-5">
-        <p>Category: <a href="#">{{ object.category.name | title }}</a></p>
+        <p>Category: <a href="{% url 'products:category_list' object.category.id %}"
+            class="btn btn-outline-secondary">{{ object.category.name | title }}</a></p>
         <div>
-          {% if object.tags %} {% for tag in object.tags.all %}
-          <p>Tag : {{ tag.name | title }}</p>
-          {% endfor %} {% endif %}
+          {% if object.tags %}
+          <p>Tag :
+            {% for tag in object.tags.all %}
+            <span>
+              <a href="{% url 'products:tag_list' tag.slug %}" class="btn btn-info">{{ tag.name | title }}</a>
+          </span>
+          {% endfor %} </p>
+          {% endif %}
         </div>
         <p>Price : <i class="fa fa-eur"></i>{{object.price}}</p>
         <p>Available stock : {{object.stock}}</p>
@@ -62,7 +68,7 @@
   <div class="row mt-5">
     <div class="col-10 offset-1">
       <p>Product Description</p>
-      <p>{{ object.description }}</p>
+      <p>{{ object.description | linebreaks }}</p>
     </div>
   </div>
 </div>
