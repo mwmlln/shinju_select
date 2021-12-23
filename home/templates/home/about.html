@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<h1 class="text-center mt-3 mb-3">About Us</h1>
+<hr>
+
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-12 col-md-4">
+            <img class="w-100" src="{{ MEDIA_URL }}pendant.jpg" alt="pearl pendant">
+        </div>
+        <div class="col-12 col-md-8">
+            <h3>Quality you can trust</h3>
+            <p>
+                We have partnered with a pearl design company, <a href="https://www.tenseipearl.com/en/">Tensei
+                    Pearl</a> who are located in the area where cultured pearl production is largest in Japan.
+                Our partnership company has a close relationship with the pearl producers and source the best quality
+                produce directory from them. Taisei Pearl and their pearl producers both have great reputation in
+                decades in Japan.
+                Our products are carefully selected pearl Jewellery for European market by qualified pearl specialists.
+
+            </p>
+        </div>
+    </div>
+    <div class="row mt-5 mb-5">
+        <h3>Easy and secure shopping experience</h3>
+        <div class="col-12 col-md-8">
+            Our office and warehouse are located in Limerick, Ireland and we operate as a online business.
+            All our products come with certificates issued by official pearl inspectors in Japan.
+            Payment and delivery is easy, safe and secure.
+        </div>
+
+        <div class="col-12 col-md-4">
+            <img class="w-100" src="{{ MEDIA_URL }}pearl-necklaces.jpg" alt="pearl pendant">
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
