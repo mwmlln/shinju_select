@@ -5,27 +5,34 @@
 <h1 class="mt-3">Delivery information</h1>
 <hr>
 
-<div class="container">
+<div class="container mb-5">
   <div class="row">
-      <ul>
-        <li>
-          As our products are very valuable, we use DHL for delivery with
+      <div class="d-none d-md-block col-md-3">
+        <img class="w-100" src="{{ MEDIA_URL }}broach.jpg" alt="pearl pendant">
+      </div>
+      <div class="col-12 col-md-9">
+      <ul class="list-group">
+          <strong> Delivery Cost:</strong>
+        <li class="list-group-item">
+          As our products are very valuable, we use DHL for all deliveries  with
           tracking. To cover the cost of secure delivery we charge
           <i class="fa fa-eur"></i>10 for each order.
         </li>
       </ul>
-      <ul>
-        Delivery time:
-        <li>
+      <ul class="list-group">
+          <strong>Delivery time:</strong>
+        
+        <li class="list-group-item">
           We aim to dispatch the order within three business days upon order and
           payment comfirmation.
         </li>
-        <li>
+        <li class="list-group-item">
           We will notify you when your order is dispatched with the tracking
           informaion.
         </li>
       </ul>
     </div>
+</div>
 </div>
 
 {% endblock %}
