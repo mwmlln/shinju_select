@@ -1,3 +1,17 @@
+
+:root {
+  --title-font: 'Love Light', sans-serif;
+  --text-font-family: 'Lato', sans-serif;
+  --deep-dark: #002535;
+  --font-white: #f0f8ff;
+  --light-blue: #3b89ac;
+  --mid-blue: #22646e;
+  --main-blue: #003851;
+  --pale-blue:#bfd2d9;
+  --red-color:#e5323b;
+}
+
+
 body {
     display: flex;
     flex-flow: column;
@@ -10,7 +24,27 @@ main {
 
 .text-black {
   color: black;
+}
 
+.logo-text {
+  font-family: var(--title-font);
+  font-size : 2.5rem;
+}
+
+.main-dark-bg {
+  background-color: var(--main-blue);
+}
+
+.light-blue-bg {
+  background-color: var(--light-blue);
+}
+
+.text-pale {
+  color: var(--pale-blue);
+}
+
+.deep-dark-bg {
+  background-color: var(--deep-dark);
 }
 
 /* from Bulma */
