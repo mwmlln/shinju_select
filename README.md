@@ -456,9 +456,12 @@ color pallete [colorpalettes.net](https://colorpalettes.net/color-palette-2171/)
 * Coding
 
  * Code Institute’s Boutique Ado walkthrough
+
  * Udemy [Building E-commerce site with Django by Takuma Fujimoto](https://www.udemy.com/course/django-ecweb-vegeket/)
+
  * Udemy [Python and Django course by startcode](https://www.udemy.com/course/python-django-web/learn/lecture/23845550)
- * 
+
+ * For multipul images setting in product detail page from [This Blog]https://junpei-sugiyama.com/thumbnail-switching-image/)
 
   
 
