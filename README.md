@@ -1,7 +1,7 @@
 # Shinju Select 
 
 
-Shinju Select is a online shop specialised in Akoya Pearl Jewellery directly from Japan
+Shinju Select is a online shop specialised in Akoya Pearl Jewellery sourced directly from Japan
 
 [View the live project here.](#)
 
@@ -27,7 +27,7 @@ This online store is targeted to hight end jewellery market for users who seek h
 
  * Find out the purpose of the site and how to use it
  * Find out what products the site is specialized in
- * Find out why our products stand out
+ * Find out why the products on this site stand out
  * See what products are available
  * See the preview of the service before they decide to purchase goods
  * See if they provide the service in my area (i.e. Delivery available)
@@ -43,7 +43,7 @@ This online store is targeted to hight end jewellery market for users who seek h
 
 ### Site Owners Goals
 
-  In addition to user goal's, following considerations were taken in to account as a site owner to provide a good service
+  In addition to user goals, following considerations were taken into account as a site owner to provide a good service
 
  * Non-registered site visitors have restricted access to the appropriate pages
  * All the site elements reflect the user's login status
@@ -93,11 +93,11 @@ Issue No. | Title | User story | Acceptance criteria | Implemented
 
 * Focus:
 
-  The focus of this project is to provide high qualty online store experience for site visitors when they shop or browse their special jewellery online.
+  The focus of this project is to provide high qualty online store experience for site visitors when they shop or browse jewellery for their spacial occations online.
 
 * Definition:
   
-  This site is a online store to sell high quality Akoya pearl jewellery online
+  This site is an online store to sell high quality Akoya pearl jewellery online. It also hopes to promete Akoya pearl products from Japan.
 
 * Value:
 
@@ -108,14 +108,16 @@ Issue No. | Title | User story | Acceptance criteria | Implemented
 Throughout development process of this site, agile development approach was taken using GitHub functions which are issues, milestones, iterations and Kanaban board. 
 
 ### SEO
-----------
+
+* Keywords - Keywords are carefully selected to inclrease the visibility of the site on organic search.
+* Description - Description was placedin the html head element to provide the clear information abou the site
 
 
 ### SCOPE
 
 **Features:**
 
-  **Navigation menu** - The navigation menu is clear and consistent throughout the site to provide the users for easy navigation
+  **Navigation menu** - The navigation menu is clear and consistent throughout the site to provide the users  easy navigation
   Menus in the navigation bar reflects user's login status and account roles.
 
   **Landing page** - The landing page has a brief description of the purpose of the site
@@ -190,8 +192,11 @@ Custom models created for this project is as follows:
   Database schema for this site
 
 ## SURFACE
-  **Colour Pallette:**
 
+  **Colour Pallette:**
+   
+   Deep ocean color theme was chosen to be used in this site.
+  
 
 	
   **Typography:**
@@ -234,25 +239,35 @@ Custom models created for this project is as follows:
       **For logged in users, the following are present**
 
       * 
-      * Buttons for 
+      * Buttons for profile
 
   * Footer
 
-    Consistent footer is present in all pages within the site which includes --------
+    Consistent footer is present in all pages within the site which includes links to conmany info, delivery info and contact us page. Also present in the footer are signup to newsletter and link to the company's Facebook page.
   
+
+### Pages
+
   * Landing Page
 
-    Followed by the large hero image , there is a brief introduction on the site and its purpose.
+    Followed by the large hero image , there are large category buttons lined out holizontally, button to display all products and there also is a brief introduction on the site and its purpose.
 
   * Product List page
 
+    This page displays all the products available in the shop. Shoppers can clic the button for each item to display product detail page.
+    Each product has its infomation including product image, tags if aplicable, product name, and price.
 
   * Product Detail page
 
+    This page desiplays the detail of the product the site user is interested. This page gives 3 images each for chosen item, product name, tags if applicable, available stock, price and description. In this page shoppers can add the product to their shopping bag to purchase.
 
   * Bag Page
+    The shopping bag page displays the product the shopper has added. In this page, the shopper can review their purchase and adjust items, go to payment page or go back to browse the products.
 
   * Checkout page
+  
+    The chackout page consists of delviery infomation form, payment information and order summary. The delivery informaion form is used for the shopper to fill out their address and contact information. This section and payment information is liked to stripe payment system where stripe will process the secure payment.
+    Upon successfull payment, the shopper will be redirected to the page with thank you message and order summary. If the payment is unsuccessful, error message will prompt the shopper accordingly.
 
   * Profile page
 
@@ -298,7 +313,7 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 
 * Toast message not displaying when product is added to the shopping bag.
   When toast is created to display feedback messages to site user, messages were successfully displayed when an item was removed from the shopping bag hoever no messages displayed when imem is added to the bag.
-  After contacting Code Institute’s tutor support, Fatima pointed out that I had a JS line in the head of the product detail page in order for the larger images to switch over on click. This script as overriding the toast script. By relocating this script line from the product detail page into the head of base.html, it successfully resolved the issue. 
+  After contacting Code Institute’s tutor support, Fatima pointed out that I had a JS line in the head of the product detail page in order for the larger images to switch over on click. This script as overriding the toast script. By relocating this script line from the product detail page into the head of base.html, it successfully resolved the issue. However, this fix resulted  another issue causing toast message not working properly in shopping bag page when shopper removed an item from shopping bag. As this message was inside try, except block it threw a server error.
   
 * Images not displaying in toast
   This was do to wrong condition set for if the images are present for the item. Simply changed the line as following the images for the products showed properly.
@@ -343,10 +358,12 @@ Following additional packages are installed to create this site by using pip3 in
   * django-crispy-forms
   * django-allauth
   * django-countries
-  * whitenoise
+  * boto3
+  * django-storages
+  * pillow
   * stripe
 
-These required packages are included in requirements.txt by running the command as fllows:
+These required packages are included in requirements.txt by running the command in the workspace as fllows:
 
     pip3 freeze --local > requirements.txt 
 
@@ -355,7 +372,7 @@ Here is the deployment procedure  that I have taken to deploy this project on He
 
 1. (Heroku) In the Heroku dashboard, click new, then enter the app name and specify the region.
 
-2. (Heroku) In the Add-on section in the resources tab, search postgres, then select Heroku Postgres and submit order from button in the popup window.
+2. (Heroku) In the Add-on section in the resources tab, search postgres, then select Heroku Postgres and submit order from button in the popup window. After this process DATABASE_URL variable can be obtained from Config Vars.
 
 3. (Heroku) In the setting tab, click on Reveal Config Vars button then copy the value for DATABASE_URL key.
 
@@ -407,14 +424,12 @@ Heroku Postgres then ensure the changes are reflected in the database
 
 9. (gitpod workspace) In setting.py configure followings:
  
-    * Add 'cloudinary_storage', before 'django.contrib.staticfiles', and 'cloudinary' after it.
-
     * Set STATICFILES_DIRS, STATICFILES_DIRS, STATIC_ROOT, MEDIA_URL and DEFAULT_FILE_STORAGE so that Django can use the directories appropriately.
 
     * Set TEMPLATES_DIR just below BASE_DIR and insert TEMPLATES_DIR in TEMPLATES array
     'DIRS': []
 
-    * Set ALLOWED_HOSTS array as 'tailsontrails.herokuapp.com', 'localhost'
+    * Set ALLOWED_HOSTS array as 'shinjuselect.herokuapp.com', 'localhost'
 
 10. (gitpod workspace) Create Procfile with the contents as follows
 
@@ -429,20 +444,29 @@ Heroku Postgres then ensure the changes are reflected in the database
   Make sure that deployment is successful without any issues in the log
 
 
-
-
 ## Credit
 
 * Contents
+
+color pallete [colorpalettes.net](https://colorpalettes.net/color-palette-2171/)
   
 
 * Coding
+
+ * Code Institute’s Boutique Ado walkthrough
+ * Udemy [Building E-commerce site with Django by Takuma Fujimoto](https://www.udemy.com/course/django-ecweb-vegeket/)
+ * Udemy [Python and Django course by startcode](https://www.udemy.com/course/python-django-web/learn/lecture/23845550)
+ * 
+
   
 
 
 * Images 
   
   *  Products images are taken from [Tensei Pearl online store](https://www.tenseipearl.com/en/) who kindly agreed for me to use of their images in my site for educational purpose
-  * 
+
+  * Some of the site images are taken from https://www.pexels.com/
 
   ## Acknowledgment
+
+  
