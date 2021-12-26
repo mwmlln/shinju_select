@@ -201,6 +201,8 @@ Custom models created for this project is as follows:
 	
   **Typography:**
 
+  Google font Love Light and Lato was used for this sie
+
 
 
 ### Technologies
@@ -265,7 +267,7 @@ Custom models created for this project is as follows:
     The shopping bag page displays the product the shopper has added. In this page, the shopper can review their purchase and adjust items, go to payment page or go back to browse the products.
 
   * Checkout page
-  
+
     The chackout page consists of delviery infomation form, payment information and order summary. The delivery informaion form is used for the shopper to fill out their address and contact information. This section and payment information is liked to stripe payment system where stripe will process the secure payment.
     Upon successfull payment, the shopper will be redirected to the page with thank you message and order summary. If the payment is unsuccessful, error message will prompt the shopper accordingly.
 
