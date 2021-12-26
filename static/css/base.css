@@ -292,9 +292,10 @@ ul {
   height: 107px;
   width: 100%;
 }
+
 @media (max-width: 500px) {
   .main-img {
-    height: 68.8vw;
+    max-height: 68.8vh;
   }
   .sub-img img {
     height: 21.4vw;
