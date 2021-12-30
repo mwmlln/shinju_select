@@ -17,7 +17,13 @@ def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
     product = get_object_or_404(Product, pk=item_id)
-    quantity = int(request.POST.get('quantity'))
+    current_quantity = int(request.POST.get('quantity'))
+    stock = product.stock
+    if current_quantity > stock:
+        quantity = product.stock
+    else:
+        quantity = current_quantity
+    
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
 
