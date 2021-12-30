@@ -61,7 +61,8 @@ def add_product(request):
             return redirect('products:products')
 
         else:
-            # context['image_formset'] = image_formset  
+            # context['image_formset'] = image_formset
+            pass 
 
     else:
         # context['image_formset'] = ImageFormset()  
