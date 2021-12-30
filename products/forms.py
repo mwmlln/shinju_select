@@ -2,7 +2,7 @@ from django import forms
 from .models import Product, Category, Tag, ProductImages
 
 
-class ProductCreateForm(forms.ModelForm):
+class ProductForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -14,8 +14,8 @@ class ProductCreateForm(forms.ModelForm):
         fields = '__all__'
 
 
-ImageFormset = forms.inlineformset_factory(
-                                        Product, ProductImages, fields='__all__',
-                                        extra=1,
-                                        )
+class ImageForm(forms.ModelForm):
 
+    class Meta:
+        model = ProductImages
+        exclude = ('product',)

@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 # Setting to switch to the development environment
-development = os.environ.get('DEVELOPMENT', False)
+development = os.environ.get('DEVELOPMENT')
 
 ALLOWED_HOSTS = ['localhost', 'shinjuselect.herokuapp.com']
 

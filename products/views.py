@@ -5,11 +5,12 @@ from django.views.generic import ListView
 from django.db.models import Q
 from django.views.generic.detail import DetailView
 from .models import Product, Category, Tag
-# from .forms import ProductForm, ImageForm
-from .forms import ProductCreateForm, ImageFormset
+from .forms import ProductForm, ImageForm
 
 
 class ProductListView(ListView):
+    """ A view to show all products, including sorting and search queries """
+
     model = Product
     template_name = 'products/products.html'
 
@@ -26,6 +27,8 @@ class ProductListView(ListView):
 
 
 class CategoryListView(ListView):
+    """View to display products of specific category"""
+
     model = Product
     template_name = 'products/products.html'
  
@@ -35,6 +38,8 @@ class CategoryListView(ListView):
 
 
 class TagListView(ListView):
+    """View to display products of specific tag"""
+
     model = Product
     template_name = 'products/products.html'
  
@@ -44,28 +49,46 @@ class TagListView(ListView):
 
 
 class ProductDetaiView(DetailView):
+    """ A view to show individual product details """
+
     model = Product
     template_name = 'products/product_detail.html'
 
 
 def add_product(request):
-    form = ProductCreateForm(request.POST or None)
-    context = {'form': form}
-    if request.method == 'POST' and form.is_valid():
-        product = form.save(commit=False)
-        # image_formset = ImageFormset(request.POST, files=request.FILES, instance=product)  # 増えた
-        if file_formset.is_valid(): # and image_formset.is_valid():   # image_formset.is_valid()が増えた
-            product.save()
-            file_formset.save()
-            # image_formset.save()  
-            return redirect('products:products')
+    """ Add a product to the store """
 
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+     
+    if request.method == 'POST':
+        product_form = ProductForm(request.POST or None)
+        image_form = ImageForm(request.POST, request.FILES)
+        if product_form.is_valid() and image_form.is_valid():
+            product = product_form.save()
+            images = image_form.save(commit=False)
+            images = images.save(instance=product)
+            messages.success(request, 'Successfully added product!')
+            return redirect(reverse('product_detail', args=[product.id]))
         else:
-            # context['image_formset'] = image_formset
-            pass 
+            messages.error(
+                        request, 
+                        'Failed to add product.'
+                        'Please ensure the form is valid.'
+                        )
 
     else:
-        # context['image_formset'] = ImageFormset()  
-        pass
+        product_form = ProductForm()
+        image_form = ImageForm()
 
-    return render(request, 'products/add_product.html', context)
+    template = 'products/add_product.html'
+    context = {
+        'product_form': product_form,
+        'image_form': image_form
+    }
+
+    return render(request, template, context)
+
+
+
