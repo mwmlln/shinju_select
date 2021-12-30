@@ -12,4 +12,5 @@ urlpatterns = [
         name='category_list'
         ),
     path('tags/<str:pk>/', views.TagListView.as_view(), name='tag_list'),
+    path('add/', views.add_product, name='add_product'),
 ]
