@@ -463,7 +463,8 @@ color pallete [colorpalettes.net](https://colorpalettes.net/color-palette-2171/)
 
  * For multipul images setting in product detail page from [This Blog]https://junpei-sugiyama.com/thumbnail-switching-image/)
 
-  
+ * For creating product with images as a foreign key in one template [stackoverflow](https://stackoverflow.com/questions/3063935/django-how-to-make-one-form-from-multiple-models-containing-foreignkeys)
+ 
 
 
 * Images 

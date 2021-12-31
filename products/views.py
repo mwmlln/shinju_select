@@ -1,5 +1,5 @@
 from django.http import request
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.views.generic import ListView
 from django.db.models import Q
@@ -68,9 +68,10 @@ def add_product(request):
         if product_form.is_valid() and image_form.is_valid():
             product = product_form.save()
             images = image_form.save(commit=False)
-            images = images.save(instance=product)
+            images.product = product
+            images.save()
             messages.success(request, 'Successfully added product!')
-            return redirect(reverse('product_detail', args=[product.id]))
+            return redirect(reverse('products:product_detail', args=[product.id]))
         else:
             messages.error(
                         request, 
