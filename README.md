@@ -120,25 +120,33 @@ Throughout development process of this site, agile development approach was take
   **Navigation menu** - The navigation menu is clear and consistent throughout the site to provide the users  easy navigation
   Menus in the navigation bar reflects user's login status and account roles.
 
-  **Landing page** - The landing page has a brief description of the purpose of the site
+  **Footer** - The footer consists of followings:
 
-  **Product list** - Provides the list of the products summaries 
+   * Links to about, delivery info, and contact pages.
+   * Shop name and newsletter signup 
+   * Facebook link
 
-  **Product detail page** -  Provide the details of the selected item and select size where applicable and button to add the item in the bag
+  **Landing page** - Landing page start with carousel images of products and ocean where pearls for our products are produced. Followed by the images are large category link buttons with associated images, with button to display all product below them. There is a brief description of the purpose of the site for the site.
 
-  **Bag Page** - List the items added in the bag
+  **Product list** - Provides the list of the products summaries. This page displays all the products,  spasific category, or product with specific tags. Each product has image, name, price and tags in this list. Shoppers can then press the button to diplay the product detail page for the product they are interested in.
 
-  **Check out Page** - 
+  **Product detail page** -  Provide the details of the selected item including addtional images and button to add the item in the bag.
+
+  **Bag Page** - List the items added in the bag. Shopper can then review or amend thier bag before they proceed to payment page.
+
+  **Check out Page** - This page is linked to stripe payment system and shoppers can securely make their payment for the products they purchase.
 
   **Payment Page** - 
 
-  **Edit profile Page** - Registered users can update their delivery information
+  **Edit profile Page** - Registered users can update their delivery information. They can also access their order history in this page.
 
   **Delete profile Page** - Registered users can delete their own profile 
 
-  **Admin page** - This page is restricted to the site administrator and is used ---------
+  **Admin page** - This page is restricted to the site administrator and is used for 
 
-  **About the site page** – Information on the site is provided on this page. 
+  **About the site page** – Information about the site is provided on this page. 
+
+  **Delivery info page** – Information about the delivery is provided on this page. 
 
  **Planned Features:**
   * The site should be responsive and user-friendly on all devices.
@@ -194,8 +202,11 @@ Custom models created for this project is as follows:
 ## SURFACE
 
   **Colour Pallette:**
+
+   ![Colour Palette](static/documentation/ss/color-pallets.png)
    
-   Deep ocean color theme was chosen to be used in this site.
+   Deep ocean color theme was chosen to be used in this site [colorpalettes.net](https://colorpalettes.net/color-palette-2171/).
+
   
 
 	
@@ -464,7 +475,7 @@ color pallete [colorpalettes.net](https://colorpalettes.net/color-palette-2171/)
  * For multipul images setting in product detail page from [This Blog]https://junpei-sugiyama.com/thumbnail-switching-image/)
 
  * For creating product with images as a foreign key in one template [stackoverflow](https://stackoverflow.com/questions/3063935/django-how-to-make-one-form-from-multiple-models-containing-foreignkeys)
- 
+
 
 
 * Images 
