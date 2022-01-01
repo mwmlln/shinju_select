@@ -37,6 +37,16 @@ class ContactForm(forms.Form):
                                                 }),
                             )
                             
+    def save(self):
+        data = self.cleaned_data
+        enquiry = Enquiry(
+                    name=data['name'],
+                    subject=data['subject'],
+                    email=data['email'],
+                    message=data['message']
+                    )
+        enquiry.save()
+    
     def send_email(self):
         send_email()
 
