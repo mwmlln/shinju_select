@@ -10,6 +10,13 @@ Shinju Select is a online shop specialised in Akoya Pearl Jewellery sourced dire
 
 This site is created as a portfolio project for Code Institute's Software Development course. Please note that the course duration for my group, coding career for women, is shortened by 3 months.
 
+This website is for educational purposes only and card payment details should be entered as below.
+
+  * To make payment with stripe function, please enter following details: 
+    * Card number : 4242 4242 4242 4242
+    * Date : Any  future date
+    * CVC :  Any 3 numbers
+
 ## The purpose of this site 
 
 This site is create to sell and promote Akoya pearl jewellery produced in Japan.
@@ -55,38 +62,38 @@ This online store is targeted to hight end jewellery market for users who seek h
 
 Issue No. | Title | User story | Acceptance criteria | Implemented
 ----------|-------|------------|---------------------|-------
-#01 | Create Landing page | As a Site owner I can provide clear purpose of the site so that new and returning users know what the web site is about and how to use it | State clear purpose of the site in the page and no confusing elements for site visitors | [ ]
-#02 | View a list of the products | As a shopper I would like to view a list of the products so that I can select some purchase | Create product list page with clear display of the products | [ ]
-#03 | View specific categry of products | As a shopper I would like to view specific category of products so that I can quickly find products I'm interested in without having to search through all products | Create category buttons to filter by category and ensure the appropriate items are displayed | [ ]
-#04 | View individual product details | As a shopper I would like to view individual product details so that I can Identify the price, description, product rating. product image and available sizes | Product detail page to display the product info in details and button to add the item in the bag with quantity and sizing options where applicable | [ ]
-#05| Filter/Tag special items | As a shopper I would like to find out special offers or recommended item so that I can take advantage of savings or limited product availability | Special items list can be selected and displayed in the product list page | [ ]
-#06 | Total price and number of items in the bag | As a shopper I would like to easily view the total of my purchases at any time so that I can to stay on my budget | Display the number of items and total price under bag icon in the navbar | [ ]
-#07 | Product ratings/Reviews | As a shopper I would like to see the review and rating for the products so that I can make a decision based on the comments and rating | Use rating with stars and reviews for items displayed in product detail page | [ ]
-#08 | Registering account | As a Site User I would like to easily register for an account so that I can have a personal account and be able to view my profile | Clear and easy login page and ensure the necessary validation works and feedback returned to the user  | [ ]
-#09 | Login/Log out | As a Site User I would like to easily login or logout so that I can access my personal account information | Login/Logout button easily accessed from navbar | [ ]
-#10 | Password recovery | As a Site User I would like to easily recover my password in case I forget it so that I can recover access to my account | Email vilification to recover password | [ ]
-#11 | Email verification on registration | As a Site User I would like to receive an email confirmation after registering so that I can verify that my account registration was successful | Ensure the email is sent when registration is completed | [ ]
-#12 | User profile page | As a Site User I would like to have a personalized user profile so that I can view my personal order history and order confirmations, and save my payment information | User profile is accessible when user is registered and validate all the entry when entered | [ ]
-#13 | Sign up to newsletter | As a Site User I would like to sign up to newsletter so that I can find out about special offer and new arrival of products | Newsletter signup located in footer registers the emails and deliver the newsletter | [ ]
-#14 | Sorting products | As a Shopper I would like to sort the list of available products so that I can easily identify the best rated, best priced and categorically sorted products | Fully functioning sorting is present in shop page | [ ]
-#15 | Filter by price range | As a Shopper I would like to sort by price range so that I can Quickly see what items are available within my budget | Price range can be set to filter the product that matches the price range | [ ]
-#16 | List of new/limited items | As a Shopper I would like to see the list of new/limited items added to the product so that I can quickly learn about the products that were not included in the last visit to the site | New/special items added to the site is marked new so that returning users can quickly filter them | [ ]
-#17 | Quantity and available stock |As a Shopper I would like to see the available stock and number of item I have selected to purchase so that I can ensure I don't accidentally select the wrong product quantity | Clear feed back and display for items in the cart | [ ]
-#18 | View items in bag | As a Shopper I would like to view items in my bag to be purchased so that I can identify the total cost of my purchase and all items I will receive** | Numbers of the items in the cart is easily viewed from any page within the site | [ ]
-#19 | Adjust bag items | As a Shopper I would like to adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout | Increase/Decrease and remove functionality is present and working in the bag page | [ ]
-#20 | Making payment | As a Shopper I would like to easily enter my payment information so that I can checkout quickly and with no hassles | Retrieve the profile address information if available and validation for the form entry is working and payment information is successfully in stripe dashboard | [ ]
-#21 | Secure payment | As a Shopper I would like to** feel my personal and payment information is safe and secure** so that I can confidently provide the needed information to make a purchase | Profile record is only available to its user and staff and payment page is secure  | [ ]
-#22 | Order confirmation | As a Shopper I would like to view an order confirmation after checkout so that I can verify that I haven't made any mistakes | Oder detail page displayed on successful payment. Order history and status is available in profile page. | [ ]
-#23 | Email confirmation after checking out | As a Shopper I would like to receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records | Ensure that automated email is sent on completing each purchase | [ ]
-#24 | Get a email when product is dispatched | As a Shopper** I would like to get a email when product is dispatched so that I can expect when I will receive the products | Automated email when the order status is changed to DISPATCHED  | [ ]
-#25 | Add a product | As a Store Owner I would like to add a product so that I can add new items to my store | Add product page is available to staff only and staff can add products | [ ]
-#26 | Edit/update a product | As a Store Owner I would like to edit/update a product so that I can change product prices descriptions, images and other product criteria | Edit product page is available and retrieves the existing data for staff to update the data.  | [ ]
-#27 | Delete a product | As a Store Owner I would like to delete a product so that I can remove items that are no longer for sale | Delete product page is available and retrieves the existing data for staff to delete products.  | [ ]
-#28 | Blog Page | As a Store Owner I would like to to provide blog so that I can to provide site visitor the useful and interesting information related to the products. | Functioning blog page that any staff member can create, edit and post | [ ]
-#29 | SEO | As a Store Owner I would like to make sure our site is visible to users who seek related product information on the web so that I can get attention of the potential customers | Keywords, sitemap and robots.txt | [ ]
-#30 | SNS (Facebook) | As a Store Owner I would like to promote our site to SNS users and have better chance in sales so that I can get attention of the potential customers | All necessary information are added and accurate in FACEBOOK page. | [ ]
-#31 | Contabe act us page |As a Store Owner I would like to provide contact us page so that I can receive an enquery about the site or product from site users | Page should ccessible from anywhere in the site | [ ]
-#32 | Automated testing | As a Store Owner I would like to ensure that site works as intended so that I can provide a good service to site user and gain good reputation | Automated testing in addition to manual testing | [ ]
+#01 | Create Landing page | As a Site owner I can provide clear purpose of the site so that new and returning users know what the web site is about and how to use it | State clear purpose of the site in the page and no confusing elements for site visitors | &#9745;
+#02 | View a list of the products | As a shopper I would like to view a list of the products so that I can select some purchase | Create product list page with clear display of the products | &#9745;
+#03 | View specific categry of products | As a shopper I would like to view specific category of products so that I can quickly find products I'm interested in without having to search through all products | Create category buttons to filter by category and ensure the appropriate items are displayed | &#9745;
+#04 | View individual product details | As a shopper I would like to view individual product details so that I can Identify the price, description, product rating. product image and available sizes | Product detail page to display the product info in details and button to add the item in the bag with quantity and sizing options where applicable | &#9745;
+#05| Filter/Tag special items | As a shopper I would like to find out special offers or recommended item so that I can take advantage of savings or limited product availability | Special items list can be selected and displayed in the product list page | &#9745;
+#06 | Total price and number of items in the bag | As a shopper I would like to easily view the total of my purchases at any time so that I can to stay on my budget | Display the number of items and total price under bag icon in the navbar | &#9745;
+#07 | Product ratings/Reviews | As a shopper I would like to see the review and rating for the products so that I can make a decision based on the comments and rating | Use rating with stars and reviews for items displayed in product detail page | &#9744;
+#08 | Registering account | As a Site User I would like to easily register for an account so that I can have a personal account and be able to view my profile | Clear and easy login page and ensure the necessary validation works and feedback returned to the user  | &#9745;
+#09 | Login/Log out | As a Site User I would like to easily login or logout so that I can access my personal account information | Login/Logout button easily accessed from navbar | &#9745;
+#10 | Password recovery | As a Site User I would like to easily recover my password in case I forget it so that I can recover access to my account | Email vilification to recover password | &#9744;
+#11 | Email verification on registration | As a Site User I would like to receive an email confirmation after registering so that I can verify that my account registration was successful | Ensure the email is sent when registration is completed | &#9744;
+#12 | User profile page | As a Site User I would like to have a personalized user profile so that I can view my personal order history and order confirmations, and save my payment information | User profile is accessible when user is registered and validate all the entry when entered | &#9745;
+#13 | Sign up to newsletter | As a Site User I would like to sign up to newsletter so that I can find out about special offer and new arrival of products | Newsletter signup located in footer registers the emails and deliver the newsletter | &#9744;
+#14 | Sorting products | As a Shopper I would like to sort the list of available products so that I can easily identify the best rated, best priced and categorically sorted products | Fully functioning sorting is present in shop page | &#9744;
+#15 | Filter by price range | As a Shopper I would like to sort by price range so that I can Quickly see what items are available within my budget | Price range can be set to filter the product that matches the price range | &#9744;
+#16 | List of new/limited items | As a Shopper I would like to see the list of new/limited items added to the product so that I can quickly learn about the products that were not included in the last visit to the site | New/special items added to the site is marked new so that returning users can quickly filter them | &#9744;
+#17 | Quantity and available stock |As a Shopper I would like to see the available stock and number of item I have selected to purchase so that I can ensure I don't accidentally select the wrong product quantity | Clear feed back and display for items in the cart | &#9744;
+#18 | View items in bag | As a Shopper I would like to view items in my bag to be purchased so that I can identify the total cost of my purchase and all items I will receive** | Numbers of the items in the cart is easily viewed from any page within the site | &#9744;
+#19 | Adjust bag items | As a Shopper I would like to adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout | Increase/Decrease and remove functionality is present and working in the bag page | &#9744;
+#20 | Making payment | As a Shopper I would like to easily enter my payment information so that I can checkout quickly and with no hassles | Retrieve the profile address information if available and validation for the form entry is working and payment information is successfully in stripe dashboard | &#9744;
+#21 | Secure payment | As a Shopper I would like to** feel my personal and payment information is safe and secure** so that I can confidently provide the needed information to make a purchase | Profile record is only available to its user and staff and payment page is secure  | &#9744;
+#22 | Order confirmation | As a Shopper I would like to view an order confirmation after checkout so that I can verify that I haven't made any mistakes | Oder detail page displayed on successful payment. Order history and status is available in profile page. | &#9744;
+#23 | Email confirmation after checking out | As a Shopper I would like to receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records | Ensure that automated email is sent on completing each purchase | &#9744;
+#24 | Get a email when product is dispatched | As a Shopper** I would like to get a email when product is dispatched so that I can expect when I will receive the products | Automated email when the order status is changed to DISPATCHED  | &#9744;
+#25 | Add a product | As a Store Owner I would like to add a product so that I can add new items to my store | Add product page is available to staff only and staff can add products | &#9744;
+#26 | Edit/update a product | As a Store Owner I would like to edit/update a product so that I can change product prices descriptions, images and other product criteria | Edit product page is available and retrieves the existing data for staff to update the data.  | &#9744;
+#27 | Delete a product | As a Store Owner I would like to delete a product so that I can remove items that are no longer for sale | Delete product page is available and retrieves the existing data for staff to delete products.  | &#9744;
+#28 | Blog Page | As a Store Owner I would like to to provide blog so that I can to provide site visitor the useful and interesting information related to the products. | Functioning blog page that any staff member can create, edit and post | &#9744;
+#29 | SEO | As a Store Owner I would like to make sure our site is visible to users who seek related product information on the web so that I can get attention of the potential customers | Keywords, sitemap and robots.txt | &#9744;
+#30 | SNS (Facebook) | As a Store Owner I would like to promote our site to SNS users and have better chance in sales so that I can get attention of the potential customers | All necessary information are added and accurate in FACEBOOK page. | &#9744;
+#31 | Contabe act us page |As a Store Owner I would like to provide contact us page so that I can receive an enquery about the site or product from site users | Page should ccessible from anywhere in the site | &#9744;
+#32 | Automated testing | As a Store Owner I would like to ensure that site works as intended so that I can provide a good service to site user and gain good reputation | Automated testing in addition to manual testing | &#9744;
 
 
 ### STRATEGY
@@ -109,7 +116,7 @@ Throughout development process of this site, agile development approach was take
 
 ### SEO
 
-* Keywords - Keywords are carefully selected to inclrease the visibility of the site on organic search.
+* Keywords - Keywords are carefully selected to increase the visibility of the site on organic search.
 * Description - Description was placedin the html head element to provide the clear information abou the site
 
 
@@ -174,7 +181,10 @@ Custom models created for this project is as follows:
 
   2.	In the Product list page, all of the products are displayed and there is button with each item to open the product detail page
 
-  3. In the product detail page, site users can learn about the products details and add this item in the bag to purchase. There are buttons to go back to the product list page or pressing the toast popup message to view the items in their shopping bag.
+  3. In the product detail page, site users can learn about the products details and add this item in the bag to purchase. 
+  There are buttons for category and tags the displayed product belong to and shoppers can press these buttons to display other similar items to compare products they are interested in.
+  Available stock number is displayed here also. As the products are rather expensive, the site owner should try their best to prevent shoppers being charged for the product that are not available to them.
+  There are button to go back to the product list page or add the item in their shopping bag. When a prodcut is added in the shopping bag popup toast message appears at the top right corner. Shoppers can proceed to the shopping bag page by pressing either the button in the toast message panel or shopping basket icon in the navbar.
 
   4.  In Shopping bag page, shoppers can adjust the item quantity or remove items from their shopping bag.
   When they are happy with their products choices, they can proceed to the checkout page for Secure Payment.
@@ -301,6 +311,8 @@ Custom models created for this project is as follows:
 
 ### Features Left to Implement
 
+* Stock numbers real time update. There is no automated stock number update in the current project and site owner needs to update the stock number manually after each sales. The logic should be in place to update automatically, However, due to the short timescale and current skillset I was unable to implement it.
+
 
 
 ## Testing
@@ -313,6 +325,8 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 ### Manual and Automated testing
 
 **Responsiveness**
+
+Throughout the site is tested to ensure all pages are displayed appropriately in all screen sizes
 
 
 **Testing**
@@ -337,11 +351,19 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 * Delivery and grand total not displaying in checkout page
   I was missing these two lines in cotext.py in bag app and tutor support Fatima, pointed out this error and helped me resolve the issue.
 
+* Items in the bag can exceed the stock amount if the product is added separately.
+  This behaviour was observed in the CI's walkthrough project of Boutique Ado but it appeared more obvious in my project as there was stock number displayed in the product detail page.
+  When a shopper adds an item with quantity within the stock amount and goes back to the same product page and add more of the same item, bag item quantity can exceed the available stock.
+  This is resolved by using if statement to set quantity limit to stock value.
+  Ideally, logic should be put in place to subtract the stock number when the item is added in the bag also return the subtracted number to the stock if purchase is cancelled but I did not have enough time and skillset to implement this logic in time for submission deadline.
+
+
 ### Known error present:
 
-* Items in the bag can exceed the stock amount if the product is added separately.
-  When a shopper adds an item with quantity within the stock amount and goes back to the same product page and add more of the same item, bag item quantity can exceed the available stock.
-  If I had a enough time, a function to examine the quantity in the shopping bag should be implemented.
+* When the issue of shopping item quantity exceeds stock is resolved by setting quantity limit as stock value, JS is still sending the accumulated quantity to toast message. This should be replaced to message to the shopper that the quantity is reached the stock availability.
+
+* Delete items in shopping bag shows no toast message.
+
 
   
 ###  Validating code 
