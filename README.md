@@ -357,12 +357,15 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
   This is resolved by using if statement to set quantity limit to stock value.
   Ideally, logic should be put in place to subtract the stock number when the item is added in the bag also return the subtracted number to the stock if purchase is cancelled but I did not have enough time and skillset to implement this logic in time for submission deadline.
 
+* Delete items in shopping bag shows no toast message.
+  This issue was due to Bootstrap Jquery and Jquery(Ajax) conflict. To display the toast messages, slim Jquery was moved below Ajax Jquery. It has successfully resolved the issue with toast but it resulted main image in product page failed to change when small images are clicked. After searching how to resolve the conflict on the web, solution provided in [this site](https://coderedirect.com/questions/440791/conflict-bootstrap-prototype-js-and-jquery) to add __$.noConflict();__ at the top of the script fixed the problem.
+
 
 ### Known error present:
 
 * When the issue of shopping item quantity exceeds stock is resolved by setting quantity limit as stock value, JS is still sending the accumulated quantity to toast message. This should be replaced to message to the shopper that the quantity is reached the stock availability.
 
-* Delete items in shopping bag shows no toast message.
+
 
 
   
@@ -494,9 +497,11 @@ color pallete [colorpalettes.net](https://colorpalettes.net/color-palette-2171/)
 
  * Udemy [Python and Django course by startcode](https://www.udemy.com/course/python-django-web/learn/lecture/23845550)
 
- * For multipul images setting in product detail page from [This Blog]https://junpei-sugiyama.com/thumbnail-switching-image/)
+ * For multipul images setting in product detail page from [This Blog](https://junpei-sugiyama.com/thumbnail-switching-image/)
 
  * For creating product with images as a foreign key in one template [stackoverflow](https://stackoverflow.com/questions/3063935/django-how-to-make-one-form-from-multiple-models-containing-foreignkeys)
+
+ * For solotion to resolve Jquery and bootstrap JS conflict was found [This site](https://coderedirect.com/questions/440791/conflict-bootstrap-prototype-js-and-jquery)
 
 
 

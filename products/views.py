@@ -71,7 +71,10 @@ def add_product(request):
             images.product = product
             images.save()
             messages.success(request, 'Successfully added product!')
-            return redirect(reverse('products:product_detail', args=[product.id]))
+            return redirect(
+                        reverse('products:product_detail', 
+                        args=[product.id])
+                        )
         else:
             messages.error(
                         request, 
