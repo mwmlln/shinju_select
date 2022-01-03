@@ -24,3 +24,9 @@ class ImageForm(forms.ModelForm):
     class Meta:
         model = ProductImages
         exclude = ('product',)
+
+
+class DeleteProductForm(forms.ModelForm):
+    class Meta:
+        model = Product
+        fields = []

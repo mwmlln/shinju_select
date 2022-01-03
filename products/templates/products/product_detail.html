@@ -10,7 +10,11 @@
     <div class="col-12 col-md-6 mb-5">
       <div class="image-container w-100">
         <div class="main-img js-main-img mb-2">
+          {% if object.productimages_set.all %}
           <img src="{{ object.productimages_set.first.image.url }}" />
+          {% else %}
+          <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="Product has no image">
+          {% endif %}
         </div>
         <ul class="sub-img js-sub-img">
           {% for image in object.productimages_set.all %}
@@ -23,6 +27,12 @@
     </div>
 
     <div class="col-12 col-md-6 mt-5">
+      {% if request.user.is_superuser %}
+            <small class="ml-3">
+              <a href="{% url 'products:edit_product' object.id %}">Edit</a> |
+              <a class="text-danger" href="{% url 'products:delete_product' object.id %}">Delete</a>
+            </small>
+            {% endif %}
       <p>Category: <a href="{% url 'products:category_list' object.category.id %}"
           class="btn btn-outline-secondary">{{ object.category.name | title }}</a></p>
       <div>
@@ -48,10 +58,10 @@
             <div class="input-group-prepend">
               <span class="input-group-text" id="addon-wrapping">Quantity:</span>
             </div>
-            <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="{{ object.stock }}"
-              data-item_id="{{ object.id }}" id="id_qty_{{ object.id }}" />
+            <input class="form-control qty_input" type="number" name="quantity" value="1" min="1"
+              max="{{ object.stock }}" data-item_id="{{ object.id }}" id="id_qty_{{ object.id }}" />
           </div>
-  
+
           <div class="col-12 mt-2">
             <a href="{% url 'products:products' %}" class="btn btn-secondary rounded-0 mt-5">
               <span class="icon">
@@ -65,11 +75,11 @@
         </form>
       </div>
     </div>
-    
+
   </div>
 
   <div class="row mt-5">
-    
+
   </div>
 </div>
 
