@@ -32,7 +32,7 @@ class Product(models.Model):
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     stock = models.PositiveIntegerField(default=0)
-    tags = models.ManyToManyField(Tag,null=True, blank=True)
+    tags = models.ManyToManyField(Tag, blank=True)
 
     def __str__(self):
         return self.name

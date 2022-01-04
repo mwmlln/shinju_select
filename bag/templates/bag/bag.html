@@ -108,6 +108,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
+$.noConflict();
 
 <script type="text/javascript">
   $('.btt-link').click(function (e) {
