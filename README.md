@@ -3,7 +3,7 @@
 
 Shinju Select is a online shop specialised in Akoya Pearl Jewellery sourced directly from Japan
 
-[View the live project here.](#)
+[View the live project here.](http://shinjuselect.herokuapp.com/)
 
 <img src="#" width="500">
 
@@ -24,7 +24,7 @@ Akoya pearls from Japan are known for an excellent quality and tresured by many 
 
 
 ## Target Audience
-This online store is targeted to hight end jewellery market for users who seek high quality Jewellery to last life time.
+This online store is targeted to high end jewellery market for users who seek high quality Jewellery to last life time.
 
 ## User Experience
 
@@ -232,7 +232,6 @@ Custom models created for this project is as follows:
   * CSS3 
   * Python
   * Django 
-  * Cloudinary 
   * Bootstrap 
   * FontAwesome 
   * Google Fonts
@@ -240,7 +239,7 @@ Custom models created for this project is as follows:
   * GitHub 
   * DevTools 
   * Heroku 
-  * WhiteNoise
+  * Amazon S3 storage
   * Stripe
   * Django-Crispy-Forms
 
@@ -294,10 +293,9 @@ Custom models created for this project is as follows:
 
   * Profile page
 
-  * Profile page
-
-
   * About the Site page
+
+  * Delivery info page
 
 
   * Register page
@@ -323,10 +321,6 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 
 
 ### Manual and Automated testing
-
-**Responsiveness**
-
-Throughout the site is tested to ensure all pages are displayed appropriately in all screen sizes
 
 
 **Testing**
