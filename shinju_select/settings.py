@@ -30,17 +30,12 @@ STATIC_DIR = os.path.join(BASE_DIR, 'static')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # Setting to switch to the development environment
 development = os.environ.get('DEVELOPMENT')
 
-ALLOWED_HOSTS = ['localhost', 'shinjuselect.herokuapp.com']
-
-# if development:
-#     ALLOWED_HOSTS = ['localhost']
-# else:
-#     ALLOWED_HOSTS = ['shinjuselect.herokuapp.com']
+ALLOWED_HOSTS = ['shinjuselect.herokuapp.com', 'localhost']
 
 
 # Application definition

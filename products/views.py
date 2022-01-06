@@ -111,9 +111,15 @@ def edit_product(request, product_id):
             product_form.save()
             image_form.save()
             messages.success(request, 'Successfully updated product!')
-            return redirect(reverse('products:product_detail', args=[product.id]))
+            return redirect(reverse(
+                                'products:product_detail',
+                                args=[product.id])
+                                )
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request,
+                        ('Failed to update product.'
+                         'Please ensure the form is valid.')
+                        )
     else:
         product_form = ProductForm(instance=product)
         image_form = ImageForm(instance=product)
@@ -147,7 +153,6 @@ def delete_product(request, product_id):
                 'products/delete_product.html',
                 context={'form': form, }
             )
-
 
     product.delete()
     messages.success(request, 'Product deleted!')

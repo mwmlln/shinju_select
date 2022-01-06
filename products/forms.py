@@ -18,9 +18,6 @@ class ProductForm(forms.ModelForm):
 class ImageForm(forms.ModelForm):
     """ Form to validate image upload and order field"""
 
-    image = forms.ImageField(required=False)
-    order = forms.IntegerField(required=False)
-
     class Meta:
         model = ProductImages
         exclude = ('product',)

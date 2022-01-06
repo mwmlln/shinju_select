@@ -26,6 +26,8 @@
                 <form method="POST" action="{% url 'products:add_product' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ product_form | crispy }}
+                    <hr>
+                    <p class="font-weight-bold"> ** Imange upload is required:</p>
                     {{ image_form | crispy }}
                     <div class="text-right">
                         <a class="btn btn-outline-dark rounded-0" href="{% url 'products:products' %}">Cancel</a>
