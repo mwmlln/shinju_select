@@ -30,7 +30,7 @@
         <strong class="title">QUANTITY</strong>
       </div>
       <div class="col-xs-12 col-sm-2">
-        <strong class="title">SUBTOTAL</strong>
+        <strong class="title text-right">SUBTOTAL</strong>
       </div>
     </div>
     {% for item in bag_items %}
@@ -48,17 +48,15 @@
       <div class="col-xs-12 col-sm-4 mt-2">
         <strong class="product-name">{{ item.product.name}}</strong>
       </div>
-      <div class="col-xs-12 col-sm-2 mt-2">
+      <div class="col-xs-12 col-sm-2 mt-2 text-right">
         <strong class="price"><i class="fa fa-eur"></i> {{ item.product.price }}</strong>
       </div>
       <div class="col-xs-12 col-sm-2 mt-2">
         {% include "bag/quantity-form.html" %}
       </div>
-      <div class="col-xs-12 col-sm-2 mt-2">
+      <div class="col-xs-12 col-sm-2 mt-2 text-right">
         <strong class="price"><i class="fa fa-eur"></i>
             {{ item.product.price | calc_subtotal:item.quantity }}</strong></strong>
-        <a class="remove-item" id="remove_{{ item.item_id }}" href="{% url 'bag:remove_from_bag' item.item_id %}"><i
-            class="fa fa-close"></i></a>
       </div>
     </div>
     {% endfor %}
