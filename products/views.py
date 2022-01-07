@@ -6,6 +6,7 @@ from django.views.generic import ListView
 from django.db.models import Q
 from django.views.generic.detail import DetailView
 from .models import Product, Category, Tag
+from review.models import Review
 from .forms import ProductForm, ImageForm, DeleteProductForm
 
 
@@ -49,11 +50,25 @@ class TagListView(ListView):
         return Product.objects.filter(tags=self.tag)
 
 
+
 class ProductDetaiView(DetailView):
     """ A view to show individual product details """
 
     model = Product
     template_name = 'products/product_detail.html'
+
+    # def get(self, request, pk, *args, **kwargs):
+    #     product = get_object_or_404(Product, pk=pk)
+    #     print(f'product:{product}')
+    #     reviews = Review.objects.filter(product=product)
+    #     return render(
+    #                 request,
+    #                 "products/product_detail.html",
+    #                 {
+    #                 "product": product,
+    #                 "reviews": reviews
+    #                 },
+    #             )
 
 @login_required
 def add_product(request):
@@ -65,12 +80,12 @@ def add_product(request):
      
     if request.method == 'POST':
         product_form = ProductForm(request.POST or None)
-        image_form = ImageForm(request.POST, request.FILES)
+        # image_form = ImageForm(request.POST, request.FILES)
         if product_form.is_valid() and image_form.is_valid():
             product = product_form.save()
-            images = image_form.save(commit=False)
-            images.product = product
-            images.save()
+            # images = image_form.save(commit=False)
+            # images.product = product
+            # images.save()
             messages.success(request, 'Successfully added product!')
             return redirect(
                         reverse('products:product_detail', 
@@ -85,12 +100,12 @@ def add_product(request):
 
     else:
         product_form = ProductForm()
-        image_form = ImageForm()
+        # image_form = ImageForm()
 
     template = 'products/add_product.html'
     context = {
         'product_form': product_form,
-        'image_form': image_form
+        # 'image_form': image_form
     }
 
     return render(request, template, context)
@@ -106,10 +121,10 @@ def edit_product(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         product_form = ProductForm(request.POST, instance=product)
-        image_form = ImageForm(request.POST, request.FILES, instance=product)
+        # image_form = ImageForm(request.POST, request.FILES, instance=product)
         if product_form.is_valid():
             product_form.save()
-            image_form.save()
+            # image_form.save()
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse(
                                 'products:product_detail',
@@ -122,13 +137,13 @@ def edit_product(request, product_id):
                         )
     else:
         product_form = ProductForm(instance=product)
-        image_form = ImageForm(instance=product)
+        # image_form = ImageForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
 
     template = 'products/edit_product.html'
     context = {
         'product_form': product_form,
-        'image_form': image_form,
+        # 'image_form': image_form,
         'product': product,
     }
 

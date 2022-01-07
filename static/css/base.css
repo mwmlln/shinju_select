@@ -57,6 +57,14 @@ main {
   background-color: var(--deep-dark);
 }
 
+.menu-icon {
+  text-align : center;
+}
+
+.img-h150 {
+max-height: 150px;
+}
+
 /* from Bulma */
 .icon {
   align-items: center;
@@ -103,6 +111,7 @@ object-fit: contain;
   background: url('/media/category-ring-image.jpg') no-repeat center center;
   background-position:50% 50%;
   background-size:cover; 
+  color: var(--pale-blue);
 }
 
 .category-sets {
@@ -256,7 +265,7 @@ color: #17a2b8; /* text-info */
 }
 
 
-/* For product detail images */
+/* For product detail images from junpei-sugiyama.com */
 
 ul {
   list-style-type: none;
@@ -303,3 +312,34 @@ ul {
 }
 
 
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+
+/* menu icon alignment */
+@media (max-width: 991px) {
+  .menu-icon {
+    text-align : left;
+  }
+
+  .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
+}
