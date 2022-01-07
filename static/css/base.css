@@ -61,6 +61,10 @@ main {
   text-align : center;
 }
 
+.img-h150 {
+max-height: 150px;
+}
+
 /* from Bulma */
 .icon {
   align-items: center;

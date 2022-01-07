@@ -6,6 +6,7 @@ from django.views.generic import ListView
 from django.db.models import Q
 from django.views.generic.detail import DetailView
 from .models import Product, Category, Tag
+from review.models import Review
 from .forms import ProductForm, ImageForm, DeleteProductForm
 
 
@@ -49,11 +50,25 @@ class TagListView(ListView):
         return Product.objects.filter(tags=self.tag)
 
 
+
 class ProductDetaiView(DetailView):
     """ A view to show individual product details """
 
     model = Product
     template_name = 'products/product_detail.html'
+
+    # def get(self, request, pk, *args, **kwargs):
+    #     product = get_object_or_404(Product, pk=pk)
+    #     print(f'product:{product}')
+    #     reviews = Review.objects.filter(product=product)
+    #     return render(
+    #                 request,
+    #                 "products/product_detail.html",
+    #                 {
+    #                 "product": product,
+    #                 "reviews": reviews
+    #                 },
+    #             )
 
 @login_required
 def add_product(request):
