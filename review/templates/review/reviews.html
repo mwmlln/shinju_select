@@ -13,6 +13,7 @@
                 <div class="row g-0">
 
                     <div class="col-md-4 image-container review-img">
+                        <a href="{% url 'products:product_detail' object.product.id %}">
                         {% if object.product.productimages_set.all %}
                         <img class="card-img img-h150" src="{{ object.product.productimages_set.first.image.url }}"
                             alt="Product image">
@@ -20,6 +21,7 @@
                         <img class="card-img img-h150" src="{{ MEDIA_URL }}noimage.png"
                             alt="Product has no image">
                         {% endif %}
+                    </a> 
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
