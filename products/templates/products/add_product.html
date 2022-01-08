@@ -27,8 +27,7 @@
                     {% csrf_token %}
                     {{ product_form | crispy }}
                     <hr>
-                    <p class="font-weight-bold"> ** Imange upload is required:</p>
-                    {{ image_form | crispy }}
+                    <p class="font-weight-bold"> ** Upload image can be done in the admin page</p>
                     <div class="text-right">
                         <a class="btn btn-outline-dark rounded-0" href="{% url 'products:products' %}">Cancel</a>
                         <button class="btn btn-dark rounded-0" type="submit">Add Product</button>
