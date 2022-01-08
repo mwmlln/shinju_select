@@ -138,22 +138,36 @@ Throughout development process of this site, agile development approach was take
   **Product list** - Provides the list of the products summaries. This page displays all the products,  spasific category, or product with specific tags. Each product has image, name, price and tags in this list. Shoppers can then press the button to diplay the product detail page for the product they are interested in.
 
   **Product detail page** -  Provide the details of the selected item including addtional images and button to add the item in the bag.
+  Here shoppers can find out the details including available stock.
+  There are category and tags if applicable in this page and these are buttons so that shoppers can click the button to open the page with other related items.
 
-  **Bag Page** - List the items added in the bag. Shopper can then review or amend thier bag before they proceed to payment page.
+  **Shopping Bag Page** - This page lists the items added in the bag. Shopper can then review or amend thier bag before they proceed to payment page or go bac to browse shopping page again.
 
   **Check out Page** - This page is linked to stripe payment system and shoppers can securely make their payment for the products they purchase.
+  When they fill the delivery informaion,  option to save the delivery information is given so returning shopper can check out easily from next visit.
 
-  **Payment Page** - 
+  **Order detail Page** - Users can access this page in two ways. One is after the successfull order has been placed and the other is from order history section in profile page.
+  This page displays the detail of the order they placed.
+  There also a link to review page for the product they have purchased if they wish.
 
-  **Edit profile Page** - Registered users can update their delivery information. They can also access their order history in this page.
+  **Edit profile Page** - Registered users can update their delivery information. Here users can also access their order history if order has been placed.
+  Each order history is a link to order detail page where users can review their past orders.
 
-  **Delete profile Page** - Registered users can delete their own profile 
+  **Delete profile Page** - Registered users can delete their own profile
 
-  **Admin page** - This page is restricted to the site administrator and is used for 
+  **Review Page** - List all the reviews users have created. List is also a link to the product so that  shoppers can easily navigate to interested product detail page.
+
+  **Create Review Page** - Shoppers who purchased products can create reviews to share their opinion of the product in this page.
 
   **About the site page** – Information about the site is provided on this page. 
 
   **Delivery info page** – Information about the delivery is provided on this page. 
+
+  **Admin page** - This page is restricted to the site administrator and is used for general site management.
+  Product section in admin site is customised for adding a new product with images together.
+
+  **Product manage page** - Admin user can add a new product in this page.
+
 
  **Planned Features:**
   * The site should be responsive and user-friendly on all devices.
@@ -163,40 +177,48 @@ Throughout development process of this site, agile development approach was take
   * The landing page should provide a clear purpose of the website for any site vistors
   * Users should be able to easily register/login/logout
   * Menus in the navigation bar reflects user's login status and account roles.
-  * 
-  * 
-
+  
 
 #### Custom Model
 
 Custom models created for this project is as follows:
 * Tag
 * ProductImages
+* Review
+* Enquiry
 
+As products unit prices are high, I have customised product model to include stock number to avoid shoppers being charged for the items that are not available.
 
 ### Structure
 
   1.	The site visitor will first be presented with the landing page where they can read the purpose of this site. In the navigation menu they are presented with a choice to register or sign in if already registered. There is a search bar and shop link that opens up the page with products list.
   Below the sliding hero images, there are large links to open the product page with 4 different categories or view all product button will open the all products list.
+  Site visitor can be registered or log in at any time from the navigation menu.
 
-  2.	In the Product list page, all of the products are displayed and there is button with each item to open the product detail page
+  2.	In the Product list page, all of the products are displayed, unless specific category or tag is chosen to open the page. Each product has button to open the product detail page.
 
-  3. In the product detail page, site users can learn about the products details and add this item in the bag to purchase. 
-  There are buttons for category and tags the displayed product belong to and shoppers can press these buttons to display other similar items to compare products they are interested in.
-  Available stock number is displayed here also. As the products are rather expensive, the site owner should try their best to prevent shoppers being charged for the product that are not available to them.
-  There are button to go back to the product list page or add the item in their shopping bag. When a prodcut is added in the shopping bag popup toast message appears at the top right corner. Shoppers can proceed to the shopping bag page by pressing either the button in the toast message panel or shopping basket icon in the navbar.
+  3. In the product detail page, shoppers can learn about the products details and add this item in the bag to purchase. 
+  There are buttons for category and tags displayed in which product belong to and shoppers can press these buttons to display other similar items to compare products they are interested in.
+  Available stock number is displayed here also. As the products sold in this site are rather expensive, the site owner should try their best to prevent shoppers being charged for the product that are not available to them.
+  There are button to go back to the product list page or add the item in their shopping bag. When a prodcut is added in the shopping bag popup toast message appears at the top right corner with the items included in the shopoing bag. Shoppers can proceed to the shopping bag page by pressing either the button in the toast message or shopping basket icon in the navigation bar.
 
   4.  In Shopping bag page, shoppers can adjust the item quantity or remove items from their shopping bag.
-  When they are happy with their products choices, they can proceed to the checkout page for Secure Payment.
+  When they are happy with their item choices, they can proceed to the checkout page for Secure Payment.
 
   5.	On the checkout page, user can enter their delivery and payment information.
-  The entry of the data is validated in order for the payment is requested to stripe page.
+  The entry of the data is validated in order for the payment to proceed to stripe payment system.
   Shoppers can then press the payment button to make payment for the items chosen.
   
   4.	On successful payment, shoppers are redirected to the page with thank you message and order detail.
 
-  5.	(SuperUsers) 
-  6.	(SuperUsers) Manage users
+  5.  If user has registered and logged in, they can access to thier profile page wher they can update their delivery information and review their past purchases. They oder detail page to review their order history in detail.
+
+  6. Order detail hisotry has the details of the order including the product purchased. Here user can open create review page to share their opinion about the product.
+
+  7. Review page, all site visitors can read the reviews to learn more abou the product. This page should help potential customer make their decision to purchase the products.
+
+  5.	(SuperUsers) Product management page can help admin user to create new products.
+  6.	(SuperUsers) Manage users - Django admin pages have been customised to easier product and user managements.
 
 ### SKELETON
   **Wireframe:**
@@ -207,7 +229,12 @@ Custom models created for this project is as follows:
 
   **Database:**
 
-  Database schema for this site
+  Database schema at the planning stage.
+  <details><summary>Planned Database</summary>
+      <img src="static/documentation/ss/db_planning.png" width="500">
+      </details>
+
+  Current Database schema for this site
 
 ## SURFACE
 
@@ -252,16 +279,22 @@ Custom models created for this project is as follows:
 
       Consistent navbar is present for all pages within the site.
       Navbar has the site logo to the left. 
+      Along with the menus that reflects the user status, there is a search bar present for easier product seach.
 
       **For site visitors who are not logged in, the following are present in the navbar:**
 
-      * Home and Shop links
+      * Home , Reviews and Shop links
       * Buttons for Register and Login
+      * Shopping basket icon with total amount in the current shopping bag
           
       **For logged in users, the following are present**
 
-      * 
-      * Buttons for profile
+      * Logout button
+      * Buttons for profile under account icon
+
+      **For superuser
+
+      * Product management page
 
   * Footer
 
@@ -272,12 +305,12 @@ Custom models created for this project is as follows:
 
   * Landing Page
 
-    Followed by the large hero image , there are large category buttons lined out holizontally, button to display all products and there also is a brief introduction on the site and its purpose.
+    Followed by the large hero image , there are large category buttons lined out holizontally, button to display all products below it followed by a brief introduction of the site and its purpose.
 
   * Product List page
 
-    This page displays all the products available in the shop. Shoppers can clic the button for each item to display product detail page.
-    Each product has its infomation including product image, tags if aplicable, product name, and price.
+    This page displays all the products available in the shop. Shoppers can click the button for each item to display product detail page.
+    Each product has its infomation including product image, category, tags if aplicable, product name, and price.
 
   * Product Detail page
 
@@ -288,29 +321,51 @@ Custom models created for this project is as follows:
 
   * Checkout page
 
-    The chackout page consists of delviery infomation form, payment information and order summary. The delivery informaion form is used for the shopper to fill out their address and contact information. This section and payment information is liked to stripe payment system where stripe will process the secure payment.
-    Upon successfull payment, the shopper will be redirected to the page with thank you message and order summary. If the payment is unsuccessful, error message will prompt the shopper accordingly.
+    The chackout page consists of delviery infomation form, payment and information. The delivery informaion form is used for the shopper to fill out their address and contact information. This section and payment information is liked to stripe payment system where stripe will process the secure payment. If the payment is unsuccessful, error message will prompt the shopper accordingly.
+
+  * Order summery page
+
+    Upon successfull payment, the shopper will be redirected to the page with thank you message and order summary. 
+    This page can also be accessed from order history section in profile page.
+    Each product in the order detail has a link to open review page of the product.
 
   * Profile page
 
+    All registered user can open this page to update their delivery informaion.
+    Order summary can be reviewed here and open the order detail page by using the link from this page.
+
   * About the Site page
+    
+    This page provide the general company informaion.
 
   * Delivery info page
+    
+    This page provide the delivery information
 
+  * Contact us page
+    
+    Site visitors can submit any queries from this site
 
   * Register page
-
+    
+    User can easily register with thier email addess here
 
   * Login page
-
+    
+    Registered users can login from this page here.
 
   * Logout page
+   
+    Prompt user to confirm if they wish to logout to avoid accidentally loggingout.
 
 
 ### Features Left to Implement
 
 * Stock numbers real time update. There is no automated stock number update in the current project and site owner needs to update the stock number manually after each sales. The logic should be in place to update automatically, However, due to the short timescale and current skillset I was unable to implement it.
 
+* Product Manage page to upload all the images in one step.
+  Ideally this page should allow superuser to add a product and related images from one page. However, it was more challenging than I hoped and my attempts to use django's inline formset factory to archive this was unsuccessful before the project deadline. Currently only product info without images can be added from this page.
+  However, Product tab in admin page is customised for the superuser to add product and images in one page instead.
 
 
 ## Testing
@@ -333,14 +388,19 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
   As I have decide to use class based view for product list page rather than Code Institute's walkthrough approach of function based view, I was unable to display using link by ?category=ring etc. As a workaround solution, I created CategoryListView and index page was replaced to ListView with category model linked. 
 
 * Toast message not displaying when product is added to the shopping bag.
-  When toast is created to display feedback messages to site user, messages were successfully displayed when an item was removed from the shopping bag hoever no messages displayed when imem is added to the bag.
-  After contacting Code Institute’s tutor support, Fatima pointed out that I had a JS line in the head of the product detail page in order for the larger images to switch over on click. This script as overriding the toast script. By relocating this script line from the product detail page into the head of base.html, it successfully resolved the issue. However, this fix resulted  another issue causing toast message not working properly in shopping bag page when shopper removed an item from shopping bag. As this message was inside try, except block it threw a server error.
+  When toast is created to display feedback messages to site user, messages were successfully displayed when an item was removed from the shopping bag however no messages displayed when imem is added to the bag.
+  After contacting Code Institute’s tutor support, Fatima pointed out that I had a JS line in the head of the product detail page in order for the larger images to switch over on click. This script as overriding the toast script. By relocating this script line from the product detail page into the head of base.html, it successfully resolved the issue. However there seems to be some conflict of Jquery and bootstrap CDN somewhere, the toast massage does not display when user removes an item in the shopping bag.
+  Jquery link for product images is moved to the top of script section in product detail page and $.noConflict(); line is added to minimize the conflict appearing in the site.
   
 * Images not displaying in toast
   This was do to wrong condition set for if the images are present for the item. Simply changed the line as following the images for the products showed properly.
   {% if item.product.productimages_set.all %}
 
 * Adjust Quantity in bag page
+  
+  Adjust quantity was exceeding the stock amount when javascript buttons are added. This issue was resolved by adding the line below in the script. 
+    var qtyMax = parseInt($(`#id_qty_${itemId}`).attr('max'));
+    var plusDisabled = currentValue >= qtyMax;
 
 * Delivery and grand total not displaying in checkout page
   I was missing these two lines in cotext.py in bag app and tutor support Fatima, pointed out this error and helped me resolve the issue.
@@ -349,17 +409,16 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
   This behaviour was observed in the CI's walkthrough project of Boutique Ado but it appeared more obvious in my project as there was stock number displayed in the product detail page.
   When a shopper adds an item with quantity within the stock amount and goes back to the same product page and add more of the same item, bag item quantity can exceed the available stock.
   This is resolved by using if statement to set quantity limit to stock value.
-  Ideally, logic should be put in place to subtract the stock number when the item is added in the bag also return the subtracted number to the stock if purchase is cancelled but I did not have enough time and skillset to implement this logic in time for submission deadline.
-
-* Delete items in shopping bag shows no toast message.
-  This issue was due to Bootstrap Jquery and Jquery(Ajax) conflict. To display the toast messages, slim Jquery was moved below Ajax Jquery. It has successfully resolved the issue with toast but it resulted main image in product page failed to change when small images are clicked. After searching how to resolve the conflict on the web, solution provided in [this site](https://coderedirect.com/questions/440791/conflict-bootstrap-prototype-js-and-jquery) to add __$.noConflict();__ at the top of the script fixed the problem.
+  However, toast message still displays as incremented number in the message section.
+  Ideally, logic should be put in place to subtract the stock number when the item is added in the bag also return the subtracted number back to the stock if purchase is cancelled. I simply did not have enough time and skillset to implement this logic in such short space of time for submission deadline.
 
 
 ### Known error present:
 
 * When the issue of shopping item quantity exceeds stock is resolved by setting quantity limit as stock value, JS is still sending the accumulated quantity to toast message. This should be replaced to message to the shopper that the quantity is reached the stock availability.
 
-
+* Delete items in shopping bag shows no toast message.
+  This issue was due to Bootstrap Jquery and Jquery(Ajax) conflict.  After searching how to resolve the conflict on the web, solution provided in [this site](https://coderedirect.com/questions/440791/conflict-bootstrap-prototype-js-and-jquery) to add __$.noConflict();__ at the top of the script did prevent server error but still not showing the toast message.
 
 
   
@@ -374,9 +433,6 @@ the official W3C validator
 the official (Jigsaw) validator 
 
 [The result link here ]()
-
-### Known error present:
-
 
 
 ## Setting up Django environment.

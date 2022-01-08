@@ -17,7 +17,7 @@ class ContactFormView(FormView):
 
     def form_valid(self, form):
         form.save()
-        # form.send_email()
+        form.send_email()
         messages.success(self.request, 'Message submitted successfully')
         return super().form_valid(form)
 
