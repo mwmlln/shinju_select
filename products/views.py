@@ -6,7 +6,7 @@ from django.views.generic import ListView
 from django.db.models import Q
 from django.views.generic.detail import DetailView
 from .models import Product, Category, Tag
-from .forms import ProductForm, ImageForm, DeleteProductForm
+from .forms import ProductForm, DeleteProductForm
 
 
 class ProductListView(ListView):
@@ -49,7 +49,6 @@ class TagListView(ListView):
         return Product.objects.filter(tags=self.tag)
 
 
-
 class ProductDetaiView(DetailView):
     """ A view to show individual product details """
 
@@ -67,13 +66,13 @@ def add_product(request):
      
     if request.method == 'POST':
         product_form = ProductForm(request.POST or None)
-        if product_form.is_valid() and image_form.is_valid():
+        if product_form.is_valid():
             product = product_form.save()
             messages.success(request, 'Successfully added product!')
             return redirect(
-                        reverse('products:product_detail', 
-                        args=[product.id])
-                        )
+                            reverse('products:product_detail', 
+                            args=[product.id])
+                            )
         else:
             messages.error(
                         request, 
@@ -108,11 +107,11 @@ def edit_product(request, product_id):
             return redirect(reverse(
                                 'products:product_detail',
                                 args=[product.id])
-                                )
+                            )
         else:
-            messages.error(request,
-                        ('Failed to update product.'
-                         'Please ensure the form is valid.')
+            messages.error(request, (
+                                    'Failed to update product.'
+                                    'Please ensure the form is valid.')
                         )
     else:
         product_form = ProductForm(instance=product)
@@ -120,9 +119,9 @@ def edit_product(request, product_id):
 
     template = 'products/edit_product.html'
     context = {
-        'product_form': product_form,
-        'product': product,
-    }
+            'product_form': product_form,
+            'product': product,
+            }
 
     return render(request, template, context)
 

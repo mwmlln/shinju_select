@@ -27,7 +27,6 @@
                     {% csrf_token %}
                     {{ product_form | crispy }}
                     <hr>
-                    {{ image_form | crispy }}
                     <div class="text-right">
                         <a class="btn btn-outline-dark rounded-0" href="{% url 'products:products' %}">Cancel</a>
                         <button class="btn btn-dark rounded-0" type="submit">Update Product</button>

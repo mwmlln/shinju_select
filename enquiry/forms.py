@@ -36,7 +36,7 @@ class ContactForm(forms.Form):
                                                 'placeholder': "Message",
                                                 }),
                             )
-                            
+
     def save(self):
         data = self.cleaned_data
         enquiry = Enquiry(
@@ -46,16 +46,15 @@ class ContactForm(forms.Form):
                     message=data['message']
                     )
         enquiry.save()
-    
+
     def send_email(self):
         subject = self.cleaned_data['subject']
         message = self.cleaned_data['message']
         name = self.cleaned_data['name']
         email = self.cleaned_data['email']
+        from_email = '{name} <{email}>'.format(name=name, email=email)
         recipient_list = [settings.EMAIL_HOST_USER]
         try:
-            send_mail(subject, message, email, recipient_list)
+            send_mail(subject, message, from_email, recipient_list)
         except BadHeaderError:
             return HttpResponse("Invalid header, submission failed")
-
-

@@ -2,7 +2,6 @@ from django.shortcuts import (
                             render, redirect, reverse, get_object_or_404,
                             HttpResponse
                             )
-from django.views.generic.edit import DeleteView
 from django.contrib import messages
 from products.models import Product
 
@@ -60,7 +59,6 @@ def adjust_bag(request, item_id):
 
     request.session['bag'] = bag
     return redirect(reverse('bag:view_bag'))
-
 
 
 def remove_from_bag(request, item_id):

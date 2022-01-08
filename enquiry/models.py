@@ -3,6 +3,7 @@ from django.db import models
 
 STATUS = ((0, "Adcive"), (1, "Closed"))
 
+
 class Enquiry(models.Model):
     name = models.CharField(max_length=50)
     email = models.EmailField(max_length=254, null=False, blank=False)

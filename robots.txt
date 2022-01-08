@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /accounts/
+Sitemap: http://shinjuselect.herokuapp.com/sitemap.xml
