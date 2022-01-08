@@ -141,6 +141,10 @@ object-fit: contain;
   width: 100%;
 }
 
+.mail-chimp-img {
+  max-width: 8rem;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
