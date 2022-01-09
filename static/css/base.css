@@ -26,6 +26,10 @@ main {
   color: black;
 }
 
+.text-white {
+  color: var(--font-white);
+}
+
 .new-button {
   color: #22646e;
   font-weight: bolder;

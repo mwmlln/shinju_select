@@ -24,6 +24,7 @@ Akoya pearls from Japan are known for an excellent quality and tresured by many 
 
 
 ## Target Audience
+
 This online store is targeted to high end jewellery market for users who seek high quality Jewellery to last life time.
 
 ## User Experience
@@ -110,30 +111,57 @@ Issue No. | Title | User story | Acceptance criteria | Implemented
 
   Specialized in Akoya pearl jewellery selected from the trusted source directory from the producer and designer in Japan's No.1 pearl production area
 
+### Businees Model
 
-**Agile software development**
-Throughout development process of this site, agile development approach was taken using GitHub functions which are issues, milestones, iterations and Kanaban board. 
+This site followed principle of B2C E-Commerce business model.
+Research on competitors in the market was carried out prior to designing process. 
+SEO, SNS and Newsletter are included to improve the user experience and increase the oppotunity to attract new customers.
+Web site is carefully designed to give site visitors to easily navigate and find out information about the products and company.
+GDPR link is present to comply the data protection act.
+
+<details><summary>Facebook Page</summary>
+      <img src="static/documentation/ss/fb_page_ss.png" width="500">
+      </details>
+
+<details><summary>Privacy Policy Page</summary>
+      <img src="static/documentation/ss/privacy_policy_ss.png" width="500">
+      </details>
+
+<details><summary>Newsletter Sign up located in Footer</summary>
+      <img src="static/documentation/ss/newsletter_signup_ss.png" width="500">
+      </details>
+
 
 ### SEO
 
-* Keywords - Keywords are carefully selected to increase the visibility of the site on organic search.
-* Description - Description was placedin the html head element to provide the clear information abou the site
+* Keywords - Keywords in the HTML head tag were carefully selected to increase the visibility of the site on organic search.
+* Description - Description was placed in the html head element to provide the clear information about the site
+
+**Agile software development**
+Throughout development process of this site, agile development approach was taken using GitHub functions which are issues, milestones, iterations and Kanaban board. 
 
 
 ### SCOPE
 
 **Features:**
 
-  **Navigation menu** - The navigation menu is clear and consistent throughout the site to provide the users  easy navigation
+  **Navigation menu** 
+
+  <img src="static/documentation/ss/navbar.png" width="500">
+  
+  The navigation menu is clear and consistent throughout the site to provide the users  easy navigation
   Menus in the navigation bar reflects user's login status and account roles.
 
-  **Footer** - The footer consists of followings:
+  **Footer** 
+  <img src="static/documentation/ss/footer_ss.png" width="500">
+   The footer consists of followings:
 
    * Links to about, delivery info, and contact pages.
+   * Link to privacy policy in external site which opens in a new tab
    * Shop name and newsletter signup 
    * Facebook link
 
-  **Landing page** - Landing page start with carousel images of products and ocean where pearls for our products are produced. Followed by the images are large category link buttons with associated images, with button to display all product below them. There is a brief description of the purpose of the site for the site.
+  **Landing page** - Landing page start with carousel images of products and ocean where pearls for our products are produced. Followed by the images are large category link buttons with associated images, with buttons to display all product and newly added products below them. There is a brief description of the purpose of the site for the site.
 
   **Product list** - Provides the list of the products summaries. This page displays all the products,  spasific category, or product with specific tags. Each product has image, name, price and tags in this list. Shoppers can then press the button to diplay the product detail page for the product they are interested in.
 
@@ -155,18 +183,17 @@ Throughout development process of this site, agile development approach was take
 
   **Delete profile Page** - Registered users can delete their own profile
 
-  **Review Page** - List all the reviews users have created. List is also a link to the product so that  shoppers can easily navigate to interested product detail page.
+  **Review Page** - List all the reviews users have created. List is also a link to the product detail page so that shoppers can easily navigate to interested product detail page.
 
   **Create Review Page** - Shoppers who purchased products can create reviews to share their opinion of the product in this page.
 
-  **About the site page** – Information about the site is provided on this page. 
+  **About the company page** – Information about the site and the company is provided on this page. 
 
   **Delivery info page** – Information about the delivery is provided on this page. 
 
-  **Admin page** - This page is restricted to the site administrator and is used for general site management.
-  Product section in admin site is customised for adding a new product with images together.
+  **Admin page** - This page is restricted to the site administrator and is used for general site management. Pages are customized for easy site maintenace.
 
-  **Product manage page** - Admin user can add a new product in this page.
+  **Product manage page** - Admin user can add a new product in this page. Currenty only product infomation without images can be created. Images need to be uploaded in the admin page where product section is custmized for product and images upload at the same time.
 
 
  **Planned Features:**
@@ -239,6 +266,11 @@ As products unit prices are high, I have customised product model to include sto
       <img src="static/documentation/ss/db_schema.drawio.png" width="500">
       </details>
 
+Notes on the current model
+  * As product images are very important for potential customers to make decision for purchase our products, product images are separated from product model so that the multiple images are easier to manage and makes it scalable. In ProductImages model order field is added for easier control of the main images to be chosen regardless the image entry order.
+
+  For Review model, unique_together constraint was initially set to limit customer to create a review once per product but I was unable to implement the functionality in time for deadline therefore it was removed.
+
 ## SURFACE
 
   **Colour Pallette:**
@@ -271,6 +303,7 @@ As products unit prices are high, I have customised product model to include sto
   * Amazon S3 storage
   * Stripe
   * Django-Crispy-Forms
+  * Mailchimp
 
 
 ## Existing Features

@@ -7,7 +7,7 @@ from .models import Enquiry
 
 class ContactForm(forms.Form):
     name = forms.CharField(
-                        label='',
+                        label='Name',
                         max_length=50,
                         widget=forms.TextInput(attrs={
                                                     'class': 'form-control',
@@ -15,7 +15,7 @@ class ContactForm(forms.Form):
                                                     }),
                         )
     subject = forms.CharField(
-                        label='',
+                        label='Subject',
                         max_length=50,
                         widget=forms.TextInput(attrs={
                                                     'class': 'form-control',
@@ -23,14 +23,14 @@ class ContactForm(forms.Form):
                                                     }),
                         )
     email = forms.EmailField(
-                        label='',
+                        label='Email Address',
                         widget=forms.EmailInput(attrs={
                                                 'class': 'form-control',
                                                 'placeholder': "Email address",
                                                 }),
                         )
     message = forms.CharField(
-                            label='',
+                            label='Message',
                             widget=forms.Textarea(attrs={
                                                 'class': 'form-control',
                                                 'placeholder': "Message",

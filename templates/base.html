@@ -75,7 +75,7 @@
             <div class="input-group-append">
               <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                 <span class="icon">
-                  <i class="fas fa-search"></i>
+                  <i class="fas fa-search text-white"></i>
                 </span>
               </button>
             </div>
@@ -86,19 +86,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'products:products' %}">Shop</a>
+              <a class="nav-link text-white" href="{% url 'products:products' %}">Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'review:reviews' %}">Reviews</a>
+              <a class="nav-link text-white" href="{% url 'review:reviews' %}">Reviews</a>
             </li>
             <li class="nav-item list-inline-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+              <a class="nav-link dropdown-toggle text-white" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
                 <div class="menu-icon"><i class="fas fa-user fa-lg"></i></div>
-                <span class="my-0 text text text-small">Account</span>
+                <span class="my-0 text text text-small text-white">Account</span>
               </a>
               <div class="dropdown-menu border-0" aria-labelledby="user-options">
                 {% if request.user.is_authenticated %}
@@ -196,7 +196,7 @@
                   <div class="clear foot">
                     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
                     <p class="brandingLogo"><a href="http://eepurl.com/hRNyr5"
-                        title="Mailchimp - email marketing made easy and fun"><img
+                        title="Mailchimp - email marketing made easy and fun" target="_blank" rel="noopener" ><img
                           src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
                           class="mail-chimp-img"></a></p>
                   </div>
@@ -208,18 +208,18 @@
         </div>
 
         <div class="col-12 col-md-3">
-          <h5 class="text-pale">About the site</h5>
+          <h5 class="text-white">About the site</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="link-secondary text-pale" href="{% url 'about' %}">Company</a></li>
-            <li><a class="link-secondary text-pale" href="{% url 'delivery' %}">Delivery info</a></li>
-            <li><a class="link-secondary text-pale" href="{% url 'enquiry' %}">Contact Us</a></li>
+            <li><a class="link-secondary text-white" href="{% url 'about' %}">Company</a></li>
+            <li><a class="link-secondary text-white" href="{% url 'delivery' %}">Delivery info</a></li>
+            <li><a class="link-secondary text-white" href="{% url 'enquiry' %}">Contact Us</a></li>
             <li class="">
-              <a href="https://www.privacypolicygenerator.info/live.php?token=7SpdnhA2ruO3pMb3qwR2nvD2Z4lKZzv8" class="link-secondary text-pale"
+              <a href="https://www.privacypolicygenerator.info/live.php?token=7SpdnhA2ruO3pMb3qwR2nvD2Z4lKZzv8" class="link-secondary text-white"
                 target="_blank" rel="noopener" aria-label="Open Privacy Policy page in new tab">Privacy Policy
             </li>
             <br>
             <li class="lead h4">
-              <a href="https://www.facebook.com/profile.php?id=100077118873837" class="link-secondary text-pale"
+              <a href="https://www.facebook.com/profile.php?id=100077118873837" class="link-secondary text-white"
                 target="_blank" rel="noopener" aria-label="Open our facebook page in new tab"> <i
                 class="fab fa-facebook-square"></i> Find us on Facebook </a>
             </li>
