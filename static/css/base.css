@@ -184,7 +184,7 @@ object-fit: contain;
 }
 
 .arrow-success {
-  border-bottom-color: #28a745 !important;
+  border-bottom-color: #49BEAA !important;
 }
 
 .arrow-danger {
@@ -213,6 +213,9 @@ object-fit: contain;
   overflow-y: auto;
 }
 
+.update-link, .remove-item {
+  cursor: pointer;
+}
 
 /* Allauth form formatting */
 
