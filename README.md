@@ -235,6 +235,9 @@ As products unit prices are high, I have customised product model to include sto
       </details>
 
   Current Database schema for this site
+  <details><summary>Current Database</summary>
+      <img src="static/documentation/ss/db_schema.drawio.png" width="500">
+      </details>
 
 ## SURFACE
 
@@ -245,7 +248,6 @@ As products unit prices are high, I have customised product model to include sto
    Deep ocean color theme was chosen to be used in this site [colorpalettes.net](https://colorpalettes.net/color-palette-2171/).
 
   
-
 	
   **Typography:**
 
