@@ -52,10 +52,9 @@
   </div>
   
 </div>
-<div class="alert deep-dark-bg d-flex justify-content-center rounded-0" role="alert">
-  <div class="text-center"></a>
+<div class="alert deep-dark-bg d-flex justify-content-around rounded-0" role="alert">
   <a class="btn light-blue-bg text-light" href="{% url 'products:products' %}" role="button">View All products</a>
-  </div>
+  <a class="btn btn-light new-button" href="{% url 'products:tag_list'  pk='new' %}" role="button">New Arrival</a>
 </div>
 
 <div class="text-center">

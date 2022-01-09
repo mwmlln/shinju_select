@@ -26,6 +26,11 @@ main {
   color: black;
 }
 
+.new-button {
+  color: #22646e;
+  font-weight: bolder;
+}
+
 .logo-text {
   font-family: var(--title-font);
   font-size : 2.5rem;
@@ -318,6 +323,9 @@ ul {
   }
 }
 
+.review-star {
+  color: #FDCA40;
+}
 
 /* -------------------------------- Media Queries */
 
