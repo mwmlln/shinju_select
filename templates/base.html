@@ -38,7 +38,7 @@
   {% block corejs %}
   <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
@@ -117,12 +117,12 @@
               <a class="{% if total %}text-info font-weight-bold{% else %}text-light{% endif %} nav-link"
                 href="{% url 'bag:view_bag' %}">
                 <div class="menu-icon">
-                  <div><i class="fas fa-shopping-basket"></i></i></div>
+                  <div><i class="fas fa-shopping-basket"></i></div>
                   <p class="my-0">
                     {% if total %}
-                    &#128;{{ total|floatformat:2 }}
+                    &euro;{{ total|floatformat:2 }}
                     {% else %}
-                    &#128;0.00
+                    &euro;0.00
                     {% endif %}
                   </p>
                 </div>
@@ -198,7 +198,7 @@
                     <p class="brandingLogo"><a href="http://eepurl.com/hRNyr5"
                         title="Mailchimp - email marketing made easy and fun" target="_blank" rel="noopener" ><img
                           src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
-                          class="mail-chimp-img"></a></p>
+                          class="mail-chimp-img" alt="Mailchimp logo"></a></p>
                   </div>
                 </div>
               </div>
@@ -213,17 +213,16 @@
             <li><a class="link-secondary text-white" href="{% url 'about' %}">Company</a></li>
             <li><a class="link-secondary text-white" href="{% url 'delivery' %}">Delivery info</a></li>
             <li><a class="link-secondary text-white" href="{% url 'enquiry' %}">Contact Us</a></li>
-            <li class="">
-              <a href="https://www.privacypolicygenerator.info/live.php?token=7SpdnhA2ruO3pMb3qwR2nvD2Z4lKZzv8" class="link-secondary text-white"
-                target="_blank" rel="noopener" aria-label="Open Privacy Policy page in new tab">Privacy Policy
-            </li>
-            <br>
-            <li class="lead h4">
-              <a href="https://www.facebook.com/profile.php?id=100077118873837" class="link-secondary text-white"
-                target="_blank" rel="noopener" aria-label="Open our facebook page in new tab"> <i
-                class="fab fa-facebook-square"></i> Find us on Facebook </a>
-            </li>
           </ul>
+          <a href="https://www.privacypolicygenerator.info/live.php?token=7SpdnhA2ruO3pMb3qwR2nvD2Z4lKZzv8" class="link-secondary text-white"
+            target="_blank" rel="noopener" aria-label="Open Privacy Policy page in new tab">Privacy Policy</a>
+        
+          <br>
+          <p class="mt-2">
+          <a href="https://www.facebook.com/profile.php?id=100077118873837" class="link-secondary text-white lead h4"
+                target="_blank" rel="noopener" aria-label="Open our facebook page in new tab"> 
+                <i class="fab fa-facebook-square"></i> Find us on Facebook </a>
+              </p>
         </div>
       </div>
     </div>

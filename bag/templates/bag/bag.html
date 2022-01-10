@@ -56,7 +56,7 @@
       </div>
       <div class="col-xs-12 col-sm-2 mt-2 text-right">
         <strong class="price"><i class="fa fa-eur"></i>
-            {{ item.product.price | calc_subtotal:item.quantity }}</strong></strong>
+            {{ item.product.price | calc_subtotal:item.quantity }}</strong>
       </div>
     </div>
     {% endfor %}
@@ -92,7 +92,6 @@
 {% endif %}
 
 
-</div>
 {% endblock %}
 
 {% block postloadjs %}

@@ -15,7 +15,7 @@
       <div class="image-container w-100">
         <div class="main-img js-main-img mb-2">
           {% if object.productimages_set.all %}
-          <img src="{{ object.productimages_set.first.image.url }}" />
+          <img src="{{ object.productimages_set.first.image.url }}" alt="Product image" />
           {% else %}
           <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="Product has no image">
           {% endif %}
@@ -23,7 +23,7 @@
         <ul class="sub-img js-sub-img">
           {% for image in object.productimages_set.all %}
           <li>
-            <img src="{{ image.image.url }}" />
+            <img src="{{ image.image.url }}" alt="Product image" />
           </li>
           {% endfor %}
         </ul>
@@ -46,12 +46,13 @@
           <span>
             <a href="{% url 'products:tag_list' tag.slug %}" class="btn btn-info">{{ tag.name | title }}</a>
           </span>
-          {% endfor %} </p>
+          {% endfor %} 
+        </p>
         {% endif %}
       </div>
       <div>
         <p>Product Description :</p>
-        <p class="ps-5">{{ object.description | linebreaks }}</p>
+        {{ object.description | linebreaks }}
       </div>
       <p>Price : <i class="fa fa-eur"></i>{{object.price}}</p>
       <p>Available stock : {{object.stock}}</p>

@@ -154,6 +154,9 @@ object-fit: contain;
   max-width: 8rem;
 }
 
+.h-2rem{
+  height: 2rem;
+}
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
