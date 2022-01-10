@@ -37,7 +37,6 @@
                         <p class="card-text">{{ object.comment }}</p>
                         <hr />
                         <p class="card-text text-muted h6">Creted on : {{ object.created_at}}</p>
-                        <p class="card-text text-muted h6">Update on : {{ object.update_at}}</p>
                         <!-- Update Review Button-->
                         {% if object.user == request.user%}
                             <div class="card-head text-right">

@@ -251,7 +251,7 @@ As products unit prices are high, I have customised product model to include sto
 
 ### SKELETON
   **Wireframe:**
-  The mockup for this site was done on Balsamiq Wireframes and can be viewed below
+  The mockup for this site was done on Balsamiq Wireframes and can be viewed in this page here [Link to the testing document](static/documentation/WIREFRAMESmd)
   
 
 
