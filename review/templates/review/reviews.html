@@ -38,6 +38,17 @@
                         <hr />
                         <p class="card-text text-muted h6">Creted on : {{ object.created_at}}</p>
                         <p class="card-text text-muted h6">Update on : {{ object.update_at}}</p>
+                        <!-- Update Review Button-->
+                        {% if object.user == request.user%}
+                            <div class="card-head text-right">
+                                <a class="btn btn-danger btn-sm" href="{% url 'review:delete_review' object.id %}">
+                                    Delete this Review
+                                </a>
+                                <a class="btn btn-dark btn-sm" href="{% url 'review:edit_review' object.id %}">
+                                    Edit your Review
+                                </a>
+                            </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>

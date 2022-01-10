@@ -153,7 +153,9 @@ Throughout development process of this site, agile development approach was take
   Menus in the navigation bar reflects user's login status and account roles.
 
   **Footer** 
+
   <img src="static/documentation/ss/footer_ss.png" width="500">
+  
    The footer consists of followings:
 
    * Links to about, delivery info, and contact pages.

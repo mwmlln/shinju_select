@@ -5,3 +5,10 @@ class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
         fields = ['rating', 'comment']
+
+
+class DeleteReviewForm(forms.ModelForm):
+    class Meta:
+        model = Review
+        fields = []
+        

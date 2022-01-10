@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="ms-3 me-3 text-center">
+<div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+    <h2 class="mt-5 test-center">Delete the Review</h2>
+    <p class="mt-5 test-center">Are you sure you want to delete this Review? </p>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+           
+            <input type="submit" value="Confirm Delete" class="btn btn-dark bg-gradient mb-5 mt-3">
+    </form>
+    <a class="navbar-brand" href="{% url 'review:reviews' %}" role="button" >Cancel and go back to Reviews</a>
+</div>
+</div>
+
+{% endblock %}

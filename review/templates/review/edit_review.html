@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-12 col-md-6">
                 <hr>
-                <h2 class="logo-font mb-4">Create review</h2>
+                <h2 class="logo-font mb-4">Edit review</h2>
                 <hr>
             </div>
         </div>
@@ -41,14 +41,17 @@
                     </div>
                   </div>
                   
-                <form method="POST" action="{% url 'review:create_review' product.id %}" class="form mb-2"">
+                <form method="POST" action="{% url 'review:edit_review' review.id %}" class="form mb-2"">
                     {% csrf_token %}
 
                     {{ review_form | crispy }}
 
                     <div class="text-right">
                         <a class="btn btn-outline-dark rounded-0" href="{% url 'products:products' %}">Cancel</a>
-                        <button class="btn btn-dark rounded-0" type="submit">Post your review</button>
+                        <a class="btn btn-danger btn-sm" href="{% url 'review:delete_review' review.id %}">
+                            Delete this Review
+                        </a>
+                        <button class="btn btn-dark rounded-0" type="submit">Update your review</button>
                     </div>
                 </form>
             </div>            
