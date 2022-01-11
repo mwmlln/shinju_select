@@ -20,14 +20,15 @@
 
           <div class="card-body">
             <h5 class="card-title">{{object.name}}</h5>
-            <p>
+            <p>Category: 
               <a href="{% url 'products:category_list' object.category.pk %}">
               {{object.category |upper}}</a>
             </p>
             <p class="card-text">
+              Tags:
               {% if object.tags %}
               {% for tag in object.tags.all %}
-              <span class="badge badge-info">{{ tag.name | title }}</span>
+              <a href="{% url 'products:tag_list' tag.slug %}" class="btn btn-info btn-sm">{{ tag.name | title }}</a>
               {% endfor %}
               {% endif %}
             </p>

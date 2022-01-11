@@ -78,7 +78,7 @@
         {% for order in orders %}
 
         {% for item in order.lineitems.all %}
-        <div class="row border">
+        <div class="row border flex-nowrap">
             <div class="col-1">
                 {% if item.product.productimages_set.all %}
                 <img src="{{ item.product.productimages_set.first.image.url }}" class="h-2rem" alt="product image" />
