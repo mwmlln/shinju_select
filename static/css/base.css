@@ -33,6 +33,7 @@ main {
 .new-button {
   color: #22646e;
   font-weight: bolder;
+  background-color:#f3a230;
 }
 
 .logo-text {
@@ -46,6 +47,18 @@ main {
 
 .light-blue-bg {
   background-color: var(--light-blue);
+}
+
+.mid-blue-bg {
+  background-color: var(--mid-blue);
+}
+
+.btn-limited {
+  background-color: #9DBD42;
+}
+
+.btn-new {
+  background-color:#f3a230;
 }
 
 .overlay {
@@ -135,11 +148,6 @@ object-fit: contain;
   background-color: transparent !important;
 }
 
-.view-all-btn {
-  margin: 0 auto;
-}
-
-
 .mt-product-table .img-holder {
   width: 50px;
   overflow: hidden;
@@ -157,6 +165,7 @@ object-fit: contain;
 .h-2rem{
   height: 2rem;
 }
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -364,4 +373,9 @@ ul {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+
+    .mail-chimp-img {
+      max-width: 5rem;
+    }
 }
+

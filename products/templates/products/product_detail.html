@@ -44,7 +44,7 @@
         <p>Tag :
           {% for tag in object.tags.all %}
           <span>
-            <a href="{% url 'products:tag_list' tag.slug %}" class="btn btn-info">{{ tag.name | title }}</a>
+            <a href="{% url 'products:tag_list' tag.slug %}" class="btn btn-info btn-sm btn-{{ tag.name }}">{{ tag.name | title }}</a>
           </span>
           {% endfor %} 
         </p>
