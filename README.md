@@ -1,11 +1,11 @@
 # Shinju Select 
 
 
-Shinju Select is a online shop specialised in Akoya Pearl Jewellery sourced directly from Japan
+Shinju Select is a online shop specialised in highest quality Akoya Pearl Jewellery sourced directly from Japan
 
-[View the live project here.](http://shinjuselect.herokuapp.com/)
+View the live project here. [Shinju Select](http://shinjuselect.herokuapp.com/)
 
-<img src="#" width="500">
+<img src="static/documentation/ss/mockup_ss.png" width="500">
 
 
 This site is created as a portfolio project for Code Institute's Software Development course. Please note that the course duration for my group, coding career for women, is shortened by 3 months.
@@ -17,19 +17,20 @@ This website is for educational purposes only and card payment details should be
     * Date : Any  future date
     * CVC :  Any 3 numbers
 
-## The purpose of this site 
+
+# 1. User experience (UX)
+
+## 1.1 The purpose of this site 
 
 This site is create to sell and promote Akoya pearl jewellery produced in Japan.
-Akoya pearls from Japan are known for an excellent quality and tresured by many in generations. This online store is specialised in these excellent quality pearl jewellery selected and sourced directory from the area where  harvest of Akoya pearl is the most in Japan.
+Akoya pearls from Japan are known for an excellent quality and tresured by many in generations. This online store is specialised in these excellent quality pearl jewellery selected and sourced directory from the area where harvest of Akoya pearl is the most in Japan.
 
 
-## Target Audience
+## 1.2 Target Audience
 
 This online store is targeted to high end jewellery market for users who seek high quality Jewellery to last life time.
 
-## User Experience
-
-### User Goals
+## 1.3 User Goals
 
 **First time site visitors would like to**
 
@@ -38,8 +39,7 @@ This online store is targeted to high end jewellery market for users who seek hi
  * Find out why the products on this site stand out
  * See what products are available
  * See the preview of the service before they decide to purchase goods
- * See if they provide the service in my area (i.e. Delivery available)
-
+ * See if they provide the service in my area (i.e. Delivery availability)
 
 **Returning registered users would like**
 
@@ -49,7 +49,7 @@ This online store is targeted to high end jewellery market for users who seek hi
   * View the history of my order
   * Quickly find out what items are added recently
 
-### Site Owners Goals
+## 1.4 Site Owners Goals
 
   In addition to user goals, following considerations were taken into account as a site owner to provide a good service
 
@@ -59,7 +59,7 @@ This online store is targeted to high end jewellery market for users who seek hi
  * Provide the message as a feedback when site vistors take any actions within the site
 
 
-### USER STORIES
+## 1.5 USER STORIES
 
 Issue No. | Title | User story | Acceptance criteria | Implemented
 ----------|-------|------------|---------------------|-------
@@ -97,7 +97,7 @@ Issue No. | Title | User story | Acceptance criteria | Implemented
 #32 | Automated testing | As a Store Owner I would like to ensure that site works as intended so that I can provide a good service to site user and gain good reputation | Automated testing in addition to manual testing | &#9744;
 
 
-### STRATEGY
+## 1.6 STRATEGY
 
 * Focus:
 
@@ -141,61 +141,46 @@ GDPR link is present to comply the data protection act.
 Throughout development process of this site, agile development approach was taken using GitHub functions which are issues, milestones, iterations and Kanaban board. 
 
 
-### SCOPE
+## 1.7 SCOPE
 
 **Features:**
 
-  **Navigation menu** 
+  *  The navigation menu is clear and consistent throughout the site to provide the users  easy navigation
+    Menus in the navigation bar reflects user's login status and account roles.
 
-  <img src="static/documentation/ss/navbar.png" width="500">
-  
-  The navigation menu is clear and consistent throughout the site to provide the users  easy navigation
-  Menus in the navigation bar reflects user's login status and account roles.
+  * The footer consists of followings:
 
-  **Footer** 
+    * Links to about, delivery info, and contact pages.
+    * Link to privacy policy in external site which opens in a new tab
+    * Shop name and newsletter signup 
+    * Facebook link
 
-  <img src="static/documentation/ss/footer_ss.png" width="500">
-  
-   The footer consists of followings:
+  * Landing page must inludes buttons for product list page to encourage visitors to check our products.
+  Also the brief summary of our site needs to be included
 
-   * Links to about, delivery info, and contact pages.
-   * Link to privacy policy in external site which opens in a new tab
-   * Shop name and newsletter signup 
-   * Facebook link
+  * Product list page should give users a choice to filter specific category or tags. Pagination should be in place to avoid too much scrolling.
 
-  **Landing page** - Landing page start with carousel images of products and ocean where pearls for our products are produced. Followed by the images are large category link buttons with associated images, with buttons to display all product and newly added products below them. There is a brief description of the purpose of the site for the site.
+  * Product detail page should provide details of the product and additional images. The details should include the available stock. Buttons to proceed to Shopping bag page and Return to Shop page should be provided 
 
-  **Product list** - Provides the list of the products summaries. This page displays all the products,  spasific category, or product with specific tags. Each product has image, name, price and tags in this list. Shoppers can then press the button to diplay the product detail page for the product they are interested in.
+  * Shopping Bag Page should give shoppers to review and adjust thier shopping bag before they proceed to the payment page. They should be provided an option to go back browsing the products.
 
-  **Product detail page** -  Provide the details of the selected item including addtional images and button to add the item in the bag.
-  Here shoppers can find out the details including available stock.
-  There are category and tags if applicable in this page and these are buttons so that shoppers can click the button to open the page with other related items.
+  * Check out Page should be easy and secure for a good online shopping experience. Delievery informaion should be prefilled if the user has filled a prefered delivery address.
 
-  **Shopping Bag Page** - This page lists the items added in the bag. Shopper can then review or amend thier bag before they proceed to payment page or go bac to browse shopping page again.
+  * Order detail Page should be displayed when order is successfully completed. It should be retrievable for the registered user from thier profile page.
 
-  **Check out Page** - This page is linked to stripe payment system and shoppers can securely make their payment for the products they purchase.
-  When they fill the delivery informaion,  option to save the delivery information is given so returning shopper can check out easily from next visit.
+  * Edit profile Page should be accesible for all registered users. Users should be able to set their prefered delivery information. Reviewing order history and choice for creating review should be provided in this page.
 
-  **Order detail Page** - Users can access this page in two ways. One is after the successfull order has been placed and the other is from order history section in profile page.
-  This page displays the detail of the order they placed.
-  There also a link to review page for the product they have purchased if they wish.
+  * Review Page should be included in the nav menu so that site visitors can easily access this page to learn about other shoppers opinions about the products.
 
-  **Edit profile Page** - Registered users can update their delivery information. Here users can also access their order history if order has been placed.
-  Each order history is a link to order detail page where users can review their past orders.
+  * Create Review Page. Link for this page should be limited to the user who has purchased the product. Ideally, limit to one review per purchase.
 
-  **Delete profile Page** - Registered users can delete their own profile
+  * About the company page should be used to provide the imformation about the site and company
 
-  **Review Page** - List all the reviews users have created. List is also a link to the product detail page so that shoppers can easily navigate to interested product detail page.
+  * Delivery info page should provide the nessesary information on delivery and accessible from anywhere within the site.
 
-  **Create Review Page** - Shoppers who purchased products can create reviews to share their opinion of the product in this page.
+  * Contact us page should be present to deal with any enquiries.
 
-  **About the company page** – Information about the site and the company is provided on this page. 
-
-  **Delivery info page** – Information about the delivery is provided on this page. 
-
-  **Admin page** - This page is restricted to the site administrator and is used for general site management. Pages are customized for easy site maintenace.
-
-  **Product manage page** - Admin user can add a new product in this page. Currenty only product infomation without images can be created. Images need to be uploaded in the admin page where product section is custmized for product and images upload at the same time.
+  * Product management page should be present and made accessible only for superuser.
 
 
  **Planned Features:**
@@ -216,9 +201,9 @@ Custom models created for this project is as follows:
 * Review
 * Enquiry
 
-As products unit prices are high, I have customised product model to include stock number to avoid shoppers being charged for the items that are not available.
+As products unit prices are high, I have customised product model to include stock number to avoid shoppers being charged for the items that are not available. 
 
-### Structure
+## 1.8 Structure
 
   1.	The site visitor will first be presented with the landing page where they can read the purpose of this site. In the navigation menu they are presented with a choice to register or sign in if already registered. There is a search bar and shop link that opens up the page with products list.
   Below the sliding hero images, there are large links to open the product page with 4 different categories or view all product button will open the all products list.
@@ -249,14 +234,31 @@ As products unit prices are high, I have customised product model to include sto
   5.	(SuperUsers) Product management page can help admin user to create new products.
   6.	(SuperUsers) Manage users - Django admin pages have been customised to easier product and user managements.
 
-### SKELETON
+## 1.9 SKELETON
+
   **Wireframe:**
   The mockup for this site was done on Balsamiq Wireframes and can be viewed in this page here [Link to the testing document](static/documentation/WIREFRAMESmd)
   
 
 
+## 1.10 SURFACE/ Design
 
-  **Database:**
+  **Colour Pallette:**
+
+   ![Colour Palette](static/documentation/ss/color-pallets.png)
+   
+   Deep ocean color theme was chosen to be used in this site [colorpalettes.net](https://colorpalettes.net/color-palette-2171/).
+
+  
+	
+  **Typography:**
+
+  Google font Love Light and Lato was used for this sie
+
+## 2. Information Architecture
+
+
+**Database:**
 
   Database schema at the planning stage.
   <details><summary>Planned Database</summary>
@@ -273,46 +275,14 @@ Notes on the current model
 
   For Review model, unique_together constraint was initially set to limit customer to create a review once per product but I was unable to implement the functionality in time for deadline therefore it was removed.
 
-## SURFACE
+## 3 Features
 
-  **Colour Pallette:**
+### Existing Features
 
-   ![Colour Palette](static/documentation/ss/color-pallets.png)
-   
-   Deep ocean color theme was chosen to be used in this site [colorpalettes.net](https://colorpalettes.net/color-palette-2171/).
-
-  
-	
-  **Typography:**
-
-  Google font Love Light and Lato was used for this sie
-
-
-
-### Technologies
-
-  * HTML5 
-  * CSS3 
-  * Python
-  * Django 
-  * Bootstrap 
-  * FontAwesome 
-  * Google Fonts
-  * GitPod 
-  * GitHub 
-  * DevTools 
-  * Heroku 
-  * Amazon S3 storage
-  * Stripe
-  * Django-Crispy-Forms
-  * Mailchimp
-
-
-## Existing Features
-
- ### Elements on every page
+ #### Elements on every page
  
    * Navbar
+     <img src="static/documentation/ss/navbar.png" width="500">
 
       Consistent navbar is present for all pages within the site.
       Navbar has the site logo to the left. 
@@ -335,26 +305,30 @@ Notes on the current model
 
   * Footer
 
+    <img src="static/documentation/ss/footer_ss.png" width="500">
+
     Consistent footer is present in all pages within the site which includes links to conmany info, delivery info and contact us page. Also present in the footer are signup to newsletter and link to the company's Facebook page.
   
 
-### Pages
+#### Pages
 
   * Landing Page
 
-    Followed by the large hero image , there are large category buttons lined out holizontally, button to display all products below it followed by a brief introduction of the site and its purpose.
+    Landing page start with carousel images of products and ocean where pearls for our products are produced. Followed by the images are large category link buttons with associated images, with buttons to display all product or New arrival below them. There is a brief description of the purpose of the site.
 
   * Product List page
 
-    This page displays all the products available in the shop. Shoppers can click the button for each item to display product detail page.
-    Each product has its infomation including product image, category, tags if aplicable, product name, and price.
+    This page displays all the products, products with spasific category, or product with specific tags depending on which buttons user has pressed previously. Each product has image, name, category, price and tags in this list. Shoppers can then press the button to diplay the product detail page for the product they are interested in.
+    (Superuser) They have edit/delete link for each product as a product management feature
 
   * Product Detail page
 
-    This page desiplays the detail of the product the site user is interested. This page gives 3 images each for chosen item, product name, tags if applicable, available stock, price and description. In this page shoppers can add the product to their shopping bag to purchase.
+    This page desiplays the detail of the product the site user is interested in. This page gives 3 images each for chosen item, product name, category, tags if applicable, available stock, price and description. In this page shoppers can add the product to their shopping bag to purchase or press KEEP SHOPPING button to go back to browse the products.
+    Category and tags if applicable are buttons which opens same category or tags or that shoppers can compare the similar products they are interested in.
 
-  * Bag Page
-    The shopping bag page displays the product the shopper has added. In this page, the shopper can review their purchase and adjust items, go to payment page or go back to browse the products.
+  * Shopping Bag Page
+
+    This page lists the items currently in the bag. Shoppers can then review or amend thier bag before they proceed to payment page or go back to browse shop page again.
 
   * Checkout page
 
@@ -364,36 +338,49 @@ Notes on the current model
 
     Upon successfull payment, the shopper will be redirected to the page with thank you message and order summary. 
     This page can also be accessed from order history section in profile page.
-    Each product in the order detail has a link to open review page of the product.
 
   * Profile page
 
     All registered user can open this page to update their delivery informaion.
     Order summary can be reviewed here and open the order detail page by using the link from this page.
+    Also purchased product history is located at the end of the page where users have a link to create a review of their purchase.
+
+  * Review Page
+
+     List all the reviews users have created. List is also a link to the product detail page so that shoppers can easily navigate to interested product detail page based on the review.
+
+  * Create Review Page 
+
+    Shoppers who purchased products can create reviews to share their opinion of the product in this page. Users are given a choice of 5 stars and leaving a comment about the product.
 
   * About the Site page
-    
-    This page provide the general company informaion.
+
+    Information about the site and the company is provided on this page. 
 
   * Delivery info page
     
-    This page provide the delivery information
+    Information about the delivery is provided on this page. 
 
   * Contact us page
     
     Site visitors can submit any queries from this site
 
+  * Product management page
+
+    This page is restricted to the site administrator and is used for adding a new product. 
+    Currenty only product infomation without images can be created. Images need to be uploaded in the admin page where product section is custmized for product and images upload at the same time.
+
   * Register page
     
-    User can easily register with thier email addess here
+    User can easily register with thier email addess in this page. Verification email will be sent to registered email address and users need to verify the email address before the account is activated
 
   * Login page
     
-    Registered users can login from this page here.
+    Registered users can login from this page.
 
   * Logout page
    
-    Prompt user to confirm if they wish to logout to avoid accidentally loggingout.
+    Prompt user to confirm if they wish to logout in order to avoid accidentally logging out.
 
 
 ### Features Left to Implement
@@ -403,6 +390,26 @@ Notes on the current model
 * Product Manage page to upload all the images in one step.
   Ideally this page should allow superuser to add a product and related images from one page. However, it was more challenging than I hoped and my attempts to use django's inline formset factory to archive this was unsuccessful before the project deadline. Currently only product info without images can be added from this page.
   However, Product tab in admin page is customised for the superuser to add product and images in one page instead.
+
+
+### Technologies
+
+  * HTML5 
+  * CSS3 
+  * Python
+  * Django 
+  * Bootstrap 
+  * FontAwesome 
+  * Google Fonts
+  * GitPod 
+  * GitHub 
+  * DevTools 
+  * Heroku 
+  * Amazon S3 storage
+  * Stripe
+  * Django-Crispy-Forms
+  * Mailchimp
+
 
 
 ## Testing
@@ -426,8 +433,8 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 
 * Toast message not displaying when product is added to the shopping bag.
   When toast is created to display feedback messages to site user, messages were successfully displayed when an item was removed from the shopping bag however no messages displayed when imem is added to the bag.
-  After contacting Code Institute’s tutor support, Fatima pointed out that I had a JS line in the head of the product detail page in order for the larger images to switch over on click. This script as overriding the toast script. By relocating this script line from the product detail page into the head of base.html, it successfully resolved the issue. However there seems to be some conflict of Jquery and bootstrap CDN somewhere, the toast massage does not display when user removes an item in the shopping bag.
-  Jquery link for product images is moved to the top of script section in product detail page and $.noConflict(); line is added to minimize the conflict appearing in the site.
+  After contacting Code Institute’s tutor support, Fatima pointed out that I had a JS line in the head of the product detail page in order for the larger images to switch over on click. This script as overriding the toast script. By relocating this script line from the product detail page into the head of base.html, it successfully resolved the issue. However there still seems to be some conflict of Jquery and bootstrap CDN somewhere, the toast massage does not display when user removes an item in the shopping bag with no error message in console.
+  Jquery link used for product images is moved to the top of script section in product detail page and $.noConflict(); line is added to minimize the conflict appearing within the site.
   
 * Images not displaying in toast
   This was do to wrong condition set for if the images are present for the item. Simply changed the line as following the images for the products showed properly.
@@ -446,16 +453,14 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
   This behaviour was observed in the CI's walkthrough project of Boutique Ado but it appeared more obvious in my project as there was stock number displayed in the product detail page.
   When a shopper adds an item with quantity within the stock amount and goes back to the same product page and add more of the same item, bag item quantity can exceed the available stock.
   This is resolved by using if statement to set quantity limit to stock value.
-  However, toast message still displays as incremented number in the message section.
+  To accomodate this workaround solution, incremented quantity is removed from toast message to avoid confusion.
   Ideally, logic should be put in place to subtract the stock number when the item is added in the bag also return the subtracted number back to the stock if purchase is cancelled. I simply did not have enough time and skillset to implement this logic in such short space of time for submission deadline.
 
 
 ### Known error present:
 
-* When the issue of shopping item quantity exceeds stock is resolved by setting quantity limit as stock value, JS is still sending the accumulated quantity to toast message. This should be replaced to message to the shopper that the quantity is reached the stock availability.
-
 * Delete items in shopping bag shows no toast message.
-  This issue was due to Bootstrap Jquery and Jquery(Ajax) conflict.  After searching how to resolve the conflict on the web, solution provided in [this site](https://coderedirect.com/questions/440791/conflict-bootstrap-prototype-js-and-jquery) to add __$.noConflict();__ at the top of the script did prevent server error but still not showing the toast message.
+  This issue seems to be related to Bootstrap Jquery and Jquery(Ajax) conflict.  After searching how to resolve the conflict on the web, solution provided in [this site](https://coderedirect.com/questions/440791/conflict-bootstrap-prototype-js-and-jquery) to add __$.noConflict();__ at the top of the script did prevent server error but still not showing the toast message.
 
 
   
