@@ -30,7 +30,7 @@ class Order(models.Model):
                                         null=False, default=0
                                         )
     order_total = models.DecimalField(
-                                    max_digits=10, decimal_places=2, 
+                                    max_digits=10, decimal_places=2,
                                     null=False, default=0
                                     )
     grand_total = models.DecimalField(
@@ -83,7 +83,7 @@ class OrderLineItem(models.Model):
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=2,
                                          null=False, blank=False,
                                          editable=False)
-                                         
+
     def save(self, *args, **kwargs):
         """
         Override the original save method to set the lineitem total

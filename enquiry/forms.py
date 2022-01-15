@@ -7,7 +7,7 @@ from .models import Enquiry
 
 class ContactForm(forms.Form):
     """Form for conact page"""
-    
+
     name = forms.CharField(
                         label='Name',
                         max_length=50,

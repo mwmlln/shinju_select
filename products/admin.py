@@ -6,7 +6,7 @@ from .models import (
 
 class TagInline(admin.TabularInline):
     model = Product.tags.through
- 
+
 
 class ImageInLine(admin.TabularInline):
     model = ProductImages

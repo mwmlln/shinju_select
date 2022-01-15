@@ -16,7 +16,7 @@ class ReviewList(ListView):
 @login_required
 def create_review(request, product_id):
     """ Diplays Create a review page """
-    
+
     if request.method == 'POST':
         review_form = ReviewForm(request.POST)
         product = get_object_or_404(Product, pk=product_id)
@@ -28,7 +28,7 @@ def create_review(request, product_id):
             return redirect(reverse(
                                     'products:product_detail',
                                     args=[product.id]))
-            
+
         else:
             messages.error(request,
                            ('Failed to create a review. Please ensure'

@@ -18,7 +18,7 @@ class ProductListView(ListView):
 
     def get_queryset(self):
         query = self.request.GET.get('q')
- 
+
         if query:
             object_list = Product.objects.filter(
                 Q(name__icontains=query) | Q(description__icontains=query)
@@ -33,7 +33,7 @@ class CategoryListView(ListView):
 
     model = Product
     template_name = 'products/products.html'
- 
+
     def get_queryset(self):
         self.category = Category.objects.get(pk=self.kwargs['pk'])
         return Product.objects.filter(category=self.category)
@@ -44,7 +44,7 @@ class TagListView(ListView):
 
     model = Product
     template_name = 'products/products.html'
- 
+
     def get_queryset(self):
         self.tag = Tag.objects.get(slug=self.kwargs['pk'])
         return Product.objects.filter(tags=self.tag)
@@ -64,19 +64,19 @@ def add_product(request):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-     
+
     if request.method == 'POST':
         product_form = ProductForm(request.POST or None)
         if product_form.is_valid():
             product = product_form.save()
             messages.success(request, 'Successfully added product!')
             return redirect(
-                            reverse('products:product_detail', 
-                            args=[product.id])
+                            reverse('products:product_detail',
+                                    args=[product.id])
                             )
         else:
             messages.error(
-                        request, 
+                        request,
                         'Failed to add product.'
                         'Please ensure the form is valid.'
                         )
@@ -112,8 +112,8 @@ def edit_product(request, product_id):
         else:
             messages.error(request, (
                                     'Failed to update product.'
-                                    'Please ensure the form is valid.')
-                        )
+                                    'Please ensure the form is valid.'))
+
     else:
         product_form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
