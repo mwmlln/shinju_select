@@ -22,7 +22,7 @@ def add_to_bag(request, item_id):
         quantity = product.stock
     else:
         quantity = current_quantity
-    
+
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
 
@@ -70,4 +70,3 @@ def remove_from_bag(request, item_id):
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
-

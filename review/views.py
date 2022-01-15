@@ -52,10 +52,10 @@ def edit_review(request, review_id):
     review = get_object_or_404(Review, pk=review_id)
     product = review.product
     if request.user != review.user:
-            messages.error(request, (
-                                    'You have no permission to access this page'
-                                    ))
-            return redirect('home')
+        messages.error(request, (
+                                'You have no permission to access this page'
+                                ))
+        return redirect('home')
     if request.method == 'POST':
         review_form = ReviewForm(request.POST, instance=review)
         if review_form.is_valid():
@@ -88,11 +88,11 @@ def delete_review(request, review_id):
 
     review = get_object_or_404(Review, pk=review_id)
     if request.user != review.user:
-            messages.error(request, (
-                                    'You have no permission to'
-                                    'access this page'
-                                    ))
-            return redirect('home')
+        messages.error(request, (
+                                'You have no permission to'
+                                'access this page'
+                                ))
+        return redirect('home')
 
     form = DeleteReviewForm(request.POST, instance=review)
     if request.method == 'POST':
@@ -106,4 +106,3 @@ def delete_review(request, review_id):
                 'review/delete_review.html',
                 context={'form': form, }
             )
-

@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 from products.models import Product
-from checkout.models import Order
 
 
 SCORE_CHOICES = [
@@ -19,7 +18,11 @@ class Review(models.Model):
                         on_delete=models.CASCADE,
                         related_name='review')
     comment = models.TextField(max_length=255)
-    rating = models.PositiveSmallIntegerField(null=True, default=3, choices=SCORE_CHOICES)
+    rating = models.PositiveSmallIntegerField(
+                                            null=True,
+                                            default=3,
+                                            choices=SCORE_CHOICES
+                                            )
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
