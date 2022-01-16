@@ -1,7 +1,7 @@
 # Shinju Select 
 
 
-Shinju Select is a online shop specialised in highest quality Akoya Pearl Jewellery sourced directly from Japan
+Shinju Select is an online shop specialised in highest quality Akoya Pearl Jewellery sourced directly from Japan
 
 View the live project here. [Shinju Select](http://shinjuselect.herokuapp.com/)
 
@@ -22,13 +22,15 @@ This website is for educational purposes only and card payment details should be
 
 ## 1.1 The purpose of this site 
 
-This site is create to sell and promote Akoya pearl jewellery produced in Japan.
-Akoya pearls from Japan are known for an excellent quality and tresured by many in generations. This online store is specialised in these excellent quality pearl jewellery selected and sourced directory from the area where harvest of Akoya pearl is the most in Japan.
+This site is created to sell and promote Akoya pearl jewellery produced in Japan.
+Akoya pearls from Japan are known for an excellent quality and tresured by many in generations. This online store is specialised in this excellent quality pearl jewellery selected and sourced directory from the area where harvest of Akoya pearl is the most in Japan.
 
 
 ## 1.2 Target Audience
 
-This online store is targeted to high end jewellery market for users who seek high quality Jewellery to last life time.
+This online store is targeted to high end jewellery market for users who seek highest quality Jewellery to last not only life time but generations.
+Target audience includes shoppers searching for Jewellery for wedding or other special occasions, shoppers who are searching for a special treat for themselves or shoppers who are looking for a very special gift to someone special.
+
 
 ## 1.3 User Goals
 
@@ -56,7 +58,7 @@ This online store is targeted to high end jewellery market for users who seek hi
  * Non-registered site visitors have restricted access to the appropriate pages
  * All the site elements reflect the user's login status
  * Restrict the pages to user's account status accordingly
- * Provide the message as a feedback when site vistors take any actions within the site
+ * Provide the message as feedback when site visitors take any actions within the site
 
 
 ## 1.5 USER STORIES
@@ -73,13 +75,13 @@ Issue No. | Title | User story | Acceptance criteria | Implemented
 #08 | Registering account | As a Site User I would like to easily register for an account so that I can have a personal account and be able to view my profile | Clear and easy login page and ensure the necessary validation works and feedback returned to the user  | &#9745;
 #09 | Login/Log out | As a Site User I would like to easily login or logout so that I can access my personal account information | Login/Logout button easily accessed from navbar | &#9745;
 #10 | Password recovery | As a Site User I would like to easily recover my password in case I forget it so that I can recover access to my account | Email vilification to recover password | &#9745;
-#11 | Email verification on registration | As a Site User I would like to receive an email confirmation after registering so that I can verify that my account registration was successful | Ensure the email is sent when registration is completed | &#9745;
+#11 | Email verification on registration | As a Site User I would like to receive an email in order for register so that I can make sure that no other person can register on the site using my email | Ensure the email is sent for registration to completed | &#9745;
 #12 | User profile page | As a Site User I would like to have a personalized user profile so that I can view my personal order history and order confirmations, and save my payment information | User profile is accessible when user is registered and validate all the entry when entered | &#9745;
 #13 | Sign up to newsletter | As a Site User I would like to sign up to newsletter so that I can find out about special offer and new arrival of products | Newsletter signup located in footer registers the emails and deliver the newsletter | &#9745;
 #14 | Sorting products | As a Shopper I would like to sort the list of available products so that I can easily identify the best rated, best priced and categorically sorted products | Fully functioning sorting is present in shop page | &#9744;
 #15 | Filter by price range | As a Shopper I would like to sort by price range so that I can Quickly see what items are available within my budget | Price range can be set to filter the product that matches the price range | &#9744;
 #16 | List of new/limited items | As a Shopper I would like to see the list of new/limited items added to the product so that I can quickly learn about the products that were not included in the last visit to the site | New/special items added to the site is marked new so that returning users can quickly filter them | &#9745;
-#17 | Quantity and available stock |As a Shopper I would like to see the available stock and number of item I have selected to purchase so that I can ensure I don't accidentally select the wrong product quantity | Clear feed back and display for items in the cart | &#9745;
+#17 | Quantity and available stock |As a Shopper I would like to see the available stock and number of items I have selected to purchase so that I can ensure I don't accidentally select the wrong product quantity | Clear feedback and display for items in the cart | &#9745;
 #18 | View items in bag | As a Shopper I would like to view items in my bag to be purchased so that I can identify the total cost of my purchase and all items I will receive** | Numbers of the items in the cart is easily viewed from any page within the site | &#9745;
 #19 | Adjust bag items | As a Shopper I would like to adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout | Increase/Decrease and remove functionality is present and working in the bag page | &#9745;
 #20 | Making payment | As a Shopper I would like to easily enter my payment information so that I can checkout quickly and with no hassles | Retrieve the profile address information if available and validation for the form entry is working and payment information is successfully in stripe dashboard | &#9745;
@@ -93,7 +95,7 @@ Issue No. | Title | User story | Acceptance criteria | Implemented
 #28 | Blog Page | As a Store Owner I would like to to provide blog so that I can to provide site visitor the useful and interesting information related to the products. | Functioning blog page that any staff member can create, edit and post | &#9744;
 #29 | SEO | As a Store Owner I would like to make sure our site is visible to users who seek related product information on the web so that I can get attention of the potential customers | Keywords, sitemap and robots.txt | &#9745;
 #30 | SNS (Facebook) | As a Store Owner I would like to promote our site to SNS users and have better chance in sales so that I can get attention of the potential customers | All necessary information are added and accurate in FACEBOOK page. | &#9745;
-#31 | Contact us page |As a Store Owner I would like to provide contact us page so that I can receive an enquery about the site or product from site users | Page should ccessible from anywhere in the site | &#9745;
+#31 | Contact us page |As a Store Owner I would like to provide contact us page so that I can receive an enquiry about the site or product from site users | Page should accessible from anywhere in the site | &#9745;
 #32 | Automated testing | As a Store Owner I would like to ensure that site works as intended so that I can provide a good service to site user and gain good reputation | Automated testing in addition to manual testing | &#9744;
 
 
@@ -101,21 +103,21 @@ Issue No. | Title | User story | Acceptance criteria | Implemented
 
 * Focus:
 
-  The focus of this project is to provide high qualty online store experience for site visitors when they shop or browse jewellery for their spacial occations online.
+  The focus of this project is to provide high quality online store experience for site visitors when they shop or browse jewellery for their special occasions online.
 
 * Definition:
   
-  This site is an online store to sell high quality Akoya pearl jewellery online. It also hopes to promete Akoya pearl products from Japan.
+  This site is an online store to sell high quality Akoya pearl jewellery online. It also hopes to promote Akoya pearl products from Japan.
 
 * Value:
 
   Specialized in Akoya pearl jewellery selected from the trusted source directory from the producer and designer in Japan's No.1 pearl production area
 
-### Businees Model
+### Business Model
 
 This site followed principle of B2C E-Commerce business model.
 Research on competitors in the market was carried out prior to designing process. 
-SEO, SNS and Newsletter are included to improve the user experience and increase the oppotunity to attract new customers.
+SEO, SNS and Newsletter are included to improve the user experience and increase the opportunity to attract new customers.
 Web site is carefully designed to give site visitors to easily navigate and find out information about the products and company.
 GDPR link is present to comply the data protection act.
 
@@ -138,7 +140,7 @@ GDPR link is present to comply the data protection act.
 * Description - Description was placed in the html head element to provide the clear information about the site
 
 **Agile software development**
-Throughout development process of this site, agile development approach was taken using GitHub functions which are issues, milestones, iterations and Kanaban board. 
+Throughout development process of this site, agile development approach was taken using GitHub functions which are issues, milestones, iterations and Kanban board. 
 
 
 ## 1.7 SCOPE
@@ -155,28 +157,28 @@ Throughout development process of this site, agile development approach was take
     * Shop name and newsletter signup 
     * Facebook link
 
-  * Landing page must inludes buttons for product list page to encourage visitors to check our products.
-  Also the brief summary of our site needs to be included
+  * Landing page must inlude buttons for product list page to encourage visitors to check our products.
+  Also, the brief summary of our site needs to be included
 
   * Product list page should give users a choice to filter specific category or tags. Pagination should be in place to avoid too much scrolling.
 
   * Product detail page should provide details of the product and additional images. The details should include the available stock. Buttons to proceed to Shopping bag page and Return to Shop page should be provided 
 
-  * Shopping Bag Page should give shoppers to review and adjust thier shopping bag before they proceed to the payment page. They should be provided an option to go back browsing the products.
+  * Shopping Bag Page should give shoppers to review and adjust their shopping bag before they proceed to the payment page. They should be provided an option to go back browsing the products.
 
-  * Check out Page should be easy and secure for a good online shopping experience. Delievery informaion should be prefilled if the user has filled a prefered delivery address.
+  * Check out Page should be easy and secure for a good online shopping experience. Delivery information should be prefilled if the user has filled a preferred delivery address.
 
-  * Order detail Page should be displayed when order is successfully completed. It should be retrievable for the registered user from thier profile page.
+  * Order detail Page should be displayed when order is successfully completed. It should be retrievable for the registered user from their profile page.
 
-  * Edit profile Page should be accesible for all registered users. Users should be able to set their prefered delivery information. Reviewing order history and choice for creating review should be provided in this page.
+  * Edit profile Page should be accessible for all registered users. Users should be able to set their preferred delivery information. Reviewing order history and choice for creating review should be provided in this page.
 
-  * Review Page should be included in the nav menu so that site visitors can easily access this page to learn about other shoppers opinions about the products.
+  * Review Page should be included in the nav menu so that site visitors can easily access this page to learn about other shoppers' opinions about the products.
 
   * Create Review Page. Link for this page should be limited to the user who has purchased the product. Ideally, limit to one review per purchase.
 
-  * About the company page should be used to provide the imformation about the site and company
+  * About the company page should be used to provide the information about the site and company
 
-  * Delivery info page should provide the nessesary information on delivery and accessible from anywhere within the site.
+  * Delivery info page should provide the information on delivery and accessible from anywhere within the site.
 
   * Contact us page should be present to deal with any enquiries.
 
@@ -188,7 +190,7 @@ Throughout development process of this site, agile development approach was take
   * Intuitive and user-friendly navigation
   * Intuitive and user-friendly layout
   * There should be an 'about page' to provide information 
-  * The landing page should provide a clear purpose of the website for any site vistors
+  * The landing page should provide a clear purpose of the website for any site visitors
   * Users should be able to easily register/login/logout
   * Menus in the navigation bar reflects user's login status and account roles.
   
@@ -214,7 +216,7 @@ As products unit prices are high, I have customised product model to include sto
   3. In the product detail page, shoppers can learn about the products details and add this item in the bag to purchase. 
   There are buttons for category and tags displayed in which product belong to and shoppers can press these buttons to display other similar items to compare products they are interested in.
   Available stock number is displayed here also. As the products sold in this site are rather expensive, the site owner should try their best to prevent shoppers being charged for the product that are not available to them.
-  There are button to go back to the product list page or add the item in their shopping bag. When a prodcut is added in the shopping bag popup toast message appears at the top right corner with the items included in the shopoing bag. Shoppers can proceed to the shopping bag page by pressing either the button in the toast message or shopping basket icon in the navigation bar.
+  There are button to go back to the product list page or add the item in their shopping bag. When a product is added in the shopping bag popup toast message appears at the top right corner with the items included in the shopping bag. Shoppers can proceed to the shopping bag page by pressing either the button in the toast message or shopping basket icon in the navigation bar.
 
   4.  In Shopping bag page, shoppers can adjust the item quantity or remove items from their shopping bag.
   When they are happy with their item choices, they can proceed to the checkout page for Secure Payment.
@@ -225,11 +227,11 @@ As products unit prices are high, I have customised product model to include sto
   
   4.	On successful payment, shoppers are redirected to the page with thank you message and order detail.
 
-  5.  If user has registered and logged in, they can access to thier profile page wher they can update their delivery information and review their past purchases. They oder detail page to review their order history in detail.
+  5.  If user has registered and logged in, they can access to their profile page where they can update their delivery information and review their past purchases. The link provided in this page can open order detail page to review their order history in detail.
 
-  6. Order detail hisotry has the details of the order including the product purchased. Here user can open create review page to share their opinion about the product.
+  6. Order detail history has the details of the order including the product purchased. Here user can open create review page to share their opinion about the product.
 
-  7. Review page, all site visitors can read the reviews to learn more abou the product. This page should help potential customer make their decision to purchase the products.
+  7. Review page, all site visitors can read the reviews to learn more about the product. This page should help potential customer make their decision to purchase the products.
 
   5.	(SuperUsers) Product management page can help admin user to create new products.
   6.	(SuperUsers) Manage users - Django admin pages have been customised to easier product and user managements.
@@ -243,7 +245,7 @@ As products unit prices are high, I have customised product model to include sto
 
 ## 1.10 SURFACE/ Design
 
-  **Colour Pallette:**
+  **Colour Palette:**
 
    ![Colour Palette](static/documentation/ss/color-pallets.png)
    
@@ -253,7 +255,7 @@ As products unit prices are high, I have customised product model to include sto
 	
   **Typography:**
 
-  Google font Love Light and Lato was used for this sie
+  Google font Love Light and Lato was used for this site
 
 ## 2. Information Architecture
 
@@ -277,7 +279,7 @@ Notes on the current model
 
 ## 3 Features
 
-### Existing Features
+### 3.1 Existing Features
 
  #### Elements on every page
  
@@ -286,7 +288,7 @@ Notes on the current model
 
       Consistent navbar is present for all pages within the site.
       Navbar has the site logo to the left. 
-      Along with the menus that reflects the user status, there is a search bar present for easier product seach.
+      Along with the menus that reflects the user status, there is a search bar present for easier product search.
 
       **For site visitors who are not logged in, the following are present in the navbar:**
 
@@ -307,7 +309,7 @@ Notes on the current model
 
     <img src="static/documentation/ss/footer_ss.png" width="500">
 
-    Consistent footer is present in all pages within the site which includes links to conmany info, delivery info and contact us page. Also present in the footer are signup to newsletter and link to the company's Facebook page.
+    Consistent footer is present in all pages within the site which includes links to company info, delivery info and contact us page. Also present in the footer are signup to newsletter and link to the company's Facebook page.
   
 
 #### Pages
@@ -318,7 +320,7 @@ Notes on the current model
 
   * Product List page
 
-    This page displays all the products, products with spasific category, or product with specific tags depending on which buttons user has pressed previously. Each product has image, name, category, price and tags in this list. Shoppers can then press the button to diplay the product detail page for the product they are interested in.
+    This page displays all the products, products with specific category, or product with specific tags depending on which buttons user has pressed previously. Each product has image, name, category, price and tags in this list. Shoppers can then press the button to display the product detail page for the product they are interested in.
     (Superuser) They have edit/delete link for each product as a product management feature
 
   * Product Detail page
@@ -328,20 +330,20 @@ Notes on the current model
 
   * Shopping Bag Page
 
-    This page lists the items currently in the bag. Shoppers can then review or amend thier bag before they proceed to payment page or go back to browse shop page again.
+    This page lists the items currently in the bag. Shoppers can then review or amend their bag before they proceed to payment page or go back to browse shop page again.
 
   * Checkout page
 
-    The chackout page consists of delviery infomation form, payment and information. The delivery informaion form is used for the shopper to fill out their address and contact information. This section and payment information is liked to stripe payment system where stripe will process the secure payment. If the payment is unsuccessful, error message will prompt the shopper accordingly.
+    The checkout page consists of delivery information form, payment and information. The delivery information form is used for the shopper to fill out their address and contact information. This section and payment information is liked to stripe payment system where stripe will process the secure payment. If the payment is unsuccessful, error message will prompt the shopper accordingly.
 
   * Order summery page
 
-    Upon successfull payment, the shopper will be redirected to the page with thank you message and order summary. 
+    Upon successful payment, the shopper will be redirected to the page with thank you message and order summary. 
     This page can also be accessed from order history section in profile page.
 
   * Profile page
 
-    All registered user can open this page to update their delivery informaion.
+    All registered user can open this page to update their delivery information.
     Order summary can be reviewed here and open the order detail page by using the link from this page.
     Also purchased product history is located at the end of the page where users have a link to create a review of their purchase.
 
@@ -367,12 +369,11 @@ Notes on the current model
 
   * Product management page
 
-    This page is restricted to the site administrator and is used for adding a new product. 
-    Currenty only product infomation without images can be created. Images need to be uploaded in the admin page where product section is custmized for product and images upload at the same time.
+    This page is restricted to the site administrator and is used for adding a new product. Currently only product information without images can be created. Images need to be uploaded in the admin page where product section is customized for product and images upload at the same time.
 
   * Register page
     
-    User can easily register with thier email addess in this page. Verification email will be sent to registered email address and users need to verify the email address before the account is activated
+    User can easily register with their email address in this page. Verification email will be sent to registered email address and users need to verify the email address before the account is activated
 
   * Login page
     
@@ -383,21 +384,27 @@ Notes on the current model
     Prompt user to confirm if they wish to logout in order to avoid accidentally logging out.
 
 
-### Features Left to Implement
+### 3.2 Features Left to Implement
 
-* Stock numbers real time update. There is no automated stock number update in the current project and site owner needs to update the stock number manually after each sales. The logic should be in place to update automatically, However, due to the short timescale and current skillset I was unable to implement it.
+* Stock numbers real time update. There is no automated stock number update in the current project and site owner needs to update the stock number manually after each sale. The logic should be in place to update automatically, However, due to the short timescale and current skillset I was unable to implement it.
 
 * Product Manage page to upload all the images in one step.
-  Ideally this page should allow superuser to add a product and related images from one page. However, it was more challenging than I hoped and my attempts to use django's inline formset factory to archive this was unsuccessful before the project deadline. Currently only product info without images can be added from this page.
+  Ideally this page should allow superuser to add a product and related images from one page. However, it was more challenging than I hoped and my attempts to use Django's inline formset factory to archive this was unsuccessful before the project deadline. Currently only product info without images can be added from this page.
   However, Product tab in admin page is customised for the superuser to add product and images in one page instead.
 
 
-### Technologies
+## 4 Technologies used
+
+Languages used
 
   * HTML5 
   * CSS3 
   * Python
-  * Django 
+  * JavaScript 
+  * jQuery
+
+Frameworks, libraries & other
+  * Django
   * Bootstrap 
   * FontAwesome 
   * Google Fonts
@@ -406,13 +413,19 @@ Notes on the current model
   * DevTools 
   * Heroku 
   * Amazon S3 storage
+  * Boto3
   * Stripe
+  * Gunicorn
   * Django-Crispy-Forms
   * Mailchimp
 
+Databases
+
+ * SQlite3
+ * Heroku PostgreSQL 
 
 
-## Testing
+## 5 Testing
 
 ### Responsiveness 
 
@@ -432,7 +445,7 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
   As I have decide to use class based view for product list page rather than Code Institute's walkthrough approach of function based view, I was unable to display using link by ?category=ring etc. As a workaround solution, I created CategoryListView and index page was replaced to ListView with category model linked. 
 
 * Toast message not displaying when product is added to the shopping bag.
-  When toast is created to display feedback messages to site user, messages were successfully displayed when an item was removed from the shopping bag however no messages displayed when imem is added to the bag.
+  When toast is created to display feedback messages to site user, messages were successfully displayed when an item was removed from the shopping bag however no messages displayed when item is added to the bag.
   After contacting Code Institute’s tutor support, Fatima pointed out that I had a JS line in the head of the product detail page in order for the larger images to switch over on click. This script as overriding the toast script. By relocating this script line from the product detail page into the head of base.html, it successfully resolved the issue. However there still seems to be some conflict of Jquery and bootstrap CDN somewhere, the toast massage does not display when user removes an item in the shopping bag with no error message in console.
   Jquery link used for product images is moved to the top of script section in product detail page and $.noConflict(); line is added to minimize the conflict appearing within the site.
   
@@ -453,7 +466,7 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
   This behaviour was observed in the CI's walkthrough project of Boutique Ado but it appeared more obvious in my project as there was stock number displayed in the product detail page.
   When a shopper adds an item with quantity within the stock amount and goes back to the same product page and add more of the same item, bag item quantity can exceed the available stock.
   This is resolved by using if statement to set quantity limit to stock value.
-  To accomodate this workaround solution, incremented quantity is removed from toast message to avoid confusion.
+  As a workaround solution, incremented quantity is removed from toast message to avoid confusion.
   Ideally, logic should be put in place to subtract the stock number when the item is added in the bag also return the subtracted number back to the stock if purchase is cancelled. I simply did not have enough time and skillset to implement this logic in such short space of time for submission deadline.
 
 
@@ -477,14 +490,17 @@ the official (Jigsaw) validator
 [The result link here ]()
 
 
-## Setting up Django environment.
+## 6 Deployment
 
-Following additional packages are installed to create this site by using pip3 install.
+### Setting up Django environment.
+
+1. Following additional packages are installed to create this site by using pip3 install in gidpod terminal
   
+  * djanfo
   * gunicorn
   * psycopg2
   * dj-database-url
-  * dj3-cloudinary-storage
+  * django-storages
   * django-crispy-forms
   * django-allauth
   * django-countries
@@ -497,16 +513,29 @@ These required packages are included in requirements.txt by running the command 
 
     pip3 freeze --local > requirements.txt 
 
-## Deployment
+
+2. Set up the env.py in the gitpod workspace for followings
+
+    os.environ["DATABASE_URL"] = "your postgres DB"
+
+    os.environ["SECRET_KEY"] = "your django secret key"
+
+    os.environ["STRIPE_PUBLIC_KEY"] = ""
+
+    os.environ["STRIPE_SECRET_KEY"] = ""
+
+    os.environ["STRIPE_WH_SECRET"] = ""
+
+
 Here is the deployment procedure  that I have taken to deploy this project on Heroku
 
-1. (Heroku) In the Heroku dashboard, click new, then enter the app name and specify the region.
+3. (Heroku) In the Heroku dashboard, click new, then enter the app name and specify the region.
 
 2. (Heroku) In the Add-on section in the resources tab, search postgres, then select Heroku Postgres and submit order from button in the popup window. After this process DATABASE_URL variable can be obtained from Config Vars.
 
 3. (Heroku) In the setting tab, click on Reveal Config Vars button then copy the value for DATABASE_URL key.
 
-4. (gitpod workspace) Create env.py directly under the repo directory same lavel as manage.py and make sure the file name is included in .gitignore to avoid the file being pushed to GitHub as this is a setting for local development site in Gitpod. 
+4. (gitpod workspace) Create env.py directly under the repo directory same level as manage.py and make sure the file name is included in .gitignore to avoid the file being pushed to GitHub as this is a setting for local development site in Gitpod. 
 Enter DATABASE_URL and SECRET_KEY with their values.
 Heroku Config vars need to be set accordingly including DATABASE_URL and SECRET_KEY
 
@@ -548,7 +577,7 @@ Heroku Config vars need to be set accordingly including DATABASE_URL and SECRET_
 python3 manage.py migrate. Check the resource tab in heroku and choose 
 Heroku Postgres then ensure the changes are reflected in the database
 
-7. (Browser) Login to Cloudinary website and copy the API Environment variable and paste in env.py and also Config Vars in Heroku.
+7. (Browser) AWS setting 
 
 8. (Heroku) DISABLE_COLLECTSTATIC set to 1 in Config Vars in Heroku as the initial deployment does not contain static files yet.
 
@@ -578,7 +607,7 @@ Heroku Postgres then ensure the changes are reflected in the database
 
 * Contents
 
-color pallete [colorpalettes.net](https://colorpalettes.net/color-palette-2171/)
+color palette [colorpalettes.net](https://colorpalettes.net/color-palette-2171/)
   
 
 * Coding
@@ -589,11 +618,11 @@ color pallete [colorpalettes.net](https://colorpalettes.net/color-palette-2171/)
 
  * Udemy [Python and Django course by startcode](https://www.udemy.com/course/python-django-web/learn/lecture/23845550)
 
- * For multipul images setting in product detail page from [This Blog](https://junpei-sugiyama.com/thumbnail-switching-image/)
+ * For multiple images setting in product detail page from [This Blog](https://junpei-sugiyama.com/thumbnail-switching-image/)
 
  * For creating product with images as a foreign key in one template [stackoverflow](https://stackoverflow.com/questions/3063935/django-how-to-make-one-form-from-multiple-models-containing-foreignkeys)
 
- * For solotion to resolve Jquery and bootstrap JS conflict was found [This site](https://coderedirect.com/questions/440791/conflict-bootstrap-prototype-js-and-jquery)
+ * For solution to resolve Jquery and bootstrap JS conflict was found [This site](https://coderedirect.com/questions/440791/conflict-bootstrap-prototype-js-and-jquery)
 
 
 
@@ -605,4 +634,7 @@ color pallete [colorpalettes.net](https://colorpalettes.net/color-palette-2171/)
 
   ## Acknowledgment
 
+  Thank you for the CI's tutor support team for helping me resolve some issues.
+
+  I would like to thank my cohort group of coding career for women for sharing all their knowledge and supporting each other. Also a thanks to our group facilitator Kasia for her  support for us. 
   

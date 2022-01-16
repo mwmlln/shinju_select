@@ -75,6 +75,8 @@
 
         <h5>Purchase Hisotry</h5>
 
+        {% if order %}
+
         {% for order in orders %}
 
         {% for item in order.lineitems.all %}
@@ -99,6 +101,10 @@
         </div>
         {% endfor %}
         {% endfor %}
+        {% else %}
+        <p>There is no purchase to date</p>
+        {% endif %}
+
     </div>
 
 </div>
