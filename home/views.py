@@ -18,3 +18,8 @@ class AboutView(TemplateView):
 class DeliveryView(TemplateView):
     """View to display delivery info page"""
     template_name = 'home/delivery.html'
+
+
+class FaqsView(TemplateView):
+    """View to display delivery info page"""
+    template_name = 'home/faqs.html'
