@@ -283,7 +283,7 @@ Notes on the current model
 
  #### Elements on every page
  
-   * Navbar
+   1. Navbar
      <img src="static/documentation/ss/navbar.png" width="500">
 
       Consistent navbar is present for all pages within the site.
@@ -305,84 +305,93 @@ Notes on the current model
 
       * Product management page
 
-  * Footer
+  2. Footer
 
-    <img src="static/documentation/ss/footer_ss.png" width="500">
+      <img src="static/documentation/ss/footer_ss.png" width="500">
 
-    Consistent footer is present in all pages within the site which includes links to company info, delivery info and contact us page. Also present in the footer are signup to newsletter and link to the company's Facebook page.
+      Consistent footer is present in all pages within the site which includes links to company info, delivery info and contact us page. Also present in the footer are signup to newsletter and link to the company's Facebook page.
   
 
 #### Pages
 
-  * Landing Page
+  3. Landing Page
 
-    Landing page start with carousel images of products and ocean where pearls for our products are produced. Followed by the images are large category link buttons with associated images, with buttons to display all product or New arrival below them. There is a brief description of the purpose of the site.
+      Landing page start with carousel images of products and ocean where pearls for our products are produced. Followed by the images are large category link buttons with associated images, with buttons to display all product or New arrival below them. There is a brief description of the purpose of the site.
 
-  * Product List page
+  4. Product List page
 
-    This page displays all the products, products with specific category, or product with specific tags depending on which buttons user has pressed previously. Each product has image, name, category, price and tags in this list. Shoppers can then press the button to display the product detail page for the product they are interested in.
-    (Superuser) They have edit/delete link for each product as a product management feature
+      This page displays all the products, products with specific category, or product with specific tags depending on which buttons user has pressed previously. Each product has image, name, category, price and tags in this list. Shoppers can then press the button to display the product detail page for the product they are interested in.
+      (Superuser) They have edit/delete link for each product as a product management feature
 
-  * Product Detail page
+  5. Product Detail page
 
-    This page desiplays the detail of the product the site user is interested in. This page gives 3 images each for chosen item, product name, category, tags if applicable, available stock, price and description. In this page shoppers can add the product to their shopping bag to purchase or press KEEP SHOPPING button to go back to browse the products.
-    Category and tags if applicable are buttons which opens same category or tags or that shoppers can compare the similar products they are interested in.
+      This page desiplays the detail of the product the site user is interested in. This page gives 3 images each for chosen item, product name, category, tags if applicable, available stock, price and description. In this page shoppers can add the product to their shopping bag to purchase or press KEEP SHOPPING button to go back to browse the products.
+      Category and tags if applicable are buttons which opens same category or tags or that shoppers can compare the similar products they are interested in.
 
-  * Shopping Bag Page
+  6. Shopping Bag Page
 
-    This page lists the items currently in the bag. Shoppers can then review or amend their bag before they proceed to payment page or go back to browse shop page again.
+      This page lists the items currently in the bag. Shoppers can then review or amend their bag before they proceed to payment page or go back to browse shop page again.
 
-  * Checkout page
+  7. Checkout page
 
-    The checkout page consists of delivery information form, payment and information. The delivery information form is used for the shopper to fill out their address and contact information. This section and payment information is liked to stripe payment system where stripe will process the secure payment. If the payment is unsuccessful, error message will prompt the shopper accordingly.
+      The checkout page consists of delivery information form, payment and information. The delivery information form is used for the shopper to fill out their address and contact information. This section and payment information is liked to stripe payment system where stripe will process the secure payment. If the payment is unsuccessful, error message will prompt the shopper accordingly.
 
-  * Order summery page
+  8. Order summery page
 
-    Upon successful payment, the shopper will be redirected to the page with thank you message and order summary. 
-    This page can also be accessed from order history section in profile page.
+      Upon successful payment, the shopper will be redirected to the page with thank you message and order summary. 
+      This page can also be accessed from order history section in profile page.
 
-  * Profile page
+  9. Profile page
 
-    All registered user can open this page to update their delivery information.
-    Order summary can be reviewed here and open the order detail page by using the link from this page.
-    Also purchased product history is located at the end of the page where users have a link to create a review of their purchase.
+      All registered user can open this page to update their delivery information.
+      Order summary can be reviewed here and open the order detail page by using the link from this page.
+      Also purchased product history is located at the end of the page where users have a link to create a review of their purchase.
 
-  * Review Page
+  10. Review Page
 
-     List all the reviews users have created. List is also a link to the product detail page so that shoppers can easily navigate to interested product detail page based on the review.
+      List all the reviews users have created. List is also a link to the product detail page so that shoppers can easily navigate to interested product detail page based on the review.
 
-  * Create Review Page 
+  11. Create Review Page 
 
-    Shoppers who purchased products can create reviews to share their opinion of the product in this page. Users are given a choice of 5 stars and leaving a comment about the product.
+      Shoppers who purchased products can create reviews to share their opinion of the product in this page. Users are given a choice of 5 stars and leaving a comment about the product.
 
-  * About the Site page
+  12. About the Site page
 
-    Information about the site and the company is provided on this page. 
+      Information about the site and the company is provided on this page. 
 
-  * Delivery info page
+  13. Delivery info page
     
-    Information about the delivery is provided on this page. 
+      Information about the delivery is provided on this page. 
 
-  * Contact us page
+  14. FAQs page
     
-    Site visitors can submit any queries from this site
+      This page provides Frequently Asked Questions and site's response to them.
 
-  * Product management page
-
-    This page is restricted to the site administrator and is used for adding a new product. Currently only product information without images can be created. Images need to be uploaded in the admin page where product section is customized for product and images upload at the same time.
-
-  * Register page
+  15. Contact us page
     
-    User can easily register with their email address in this page. Verification email will be sent to registered email address and users need to verify the email address before the account is activated
+      Site visitors can submit any queries from this site
 
-  * Login page
-    
-    Registered users can login from this page.
+  16. Product management page
 
-  * Logout page
-   
-    Prompt user to confirm if they wish to logout in order to avoid accidentally logging out.
+      This page is restricted to the site administrator and is used for adding a new product. Currently only product information without images can be created. Images need to be uploaded in the admin page where product section is customized for product and images upload at the same time.
 
+  17. Django-Allauth features
+
+      * Register page
+        
+          User can easily register with their email address in this page. Verification email will be sent to registered email address and users need to verify the email address before the account is activated
+
+      * Login page
+        
+        Registered users can login from this page.
+
+      * Logout page
+      
+        Prompt user to confirm if they wish to logout in order to avoid accidentally logging out.
+
+  18. Error pages
+
+      Custom error handling pages for 404 and 500 errors are present in the site.
 
 ### 3.2 Features Left to Implement
 
@@ -427,17 +436,7 @@ Databases
 
 ## 5 Testing
 
-### Responsiveness 
-
-Throughout the site is tested to ensure all pages are displayed appropriately in all screen sizes
-
-
-### Manual and Automated testing
-
-
-**Testing**
-
-  Manual testing was carried out to ensure the site works as intended. Testing document can be found here [Link to the testing document](static/documentation/TESTING.md)
+  Testing was carried out to ensure the site works as intended. Testing document can be found here [Link to the testing document](static/documentation/TESTING.md)
 
 ### Errors encountered during development
 
@@ -480,19 +479,36 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 ###  Validating code 
 
 
-the official W3C validator
+* The official W3C validator
 
-[The result link here ]()
+  Every page in the site was tested and no errors are found.
+
+  [One of the results link here ](https://validator.w3.org/nu/?showsource=yes&doc=http%3A%2F%2Fshinjuselect.herokuapp.com)
 
 
-the official (Jigsaw) validator 
+* The official (Jigsaw) validator for CSS
 
-[The result link here ]()
+  [The results link here ](https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fshinjuselect.herokuapp.com&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+
+* [JS Hint](https://jshint.com/): No errors found for all Javascripts used in the site.
+
+* [Python validator | PEP8](http://pep8online.com/)  No errors found
 
 
 ## 6 Deployment
 
-### Setting up Django environment.
+**Requirements**
+
+* Python3
+* Github account
+* Heroku account
+* Gitpod or other IDE
+* Stripe account
+* AWS Amazon account
+* Gmail account
+
+### Setting up Django environment in local workspace.
 
 1. Following additional packages are installed to create this site by using pip3 install in gidpod terminal
   
@@ -509,35 +525,41 @@ the official (Jigsaw) validator
   * pillow
   * stripe
 
-These required packages are included in requirements.txt by running the command in the workspace as fllows:
+    These required packages need to be included in requirements.txt by running the command in the workspace as fllows:
 
-    pip3 freeze --local > requirements.txt 
+      `pip3 freeze --local > requirements.txt`
 
+2. Create a Procfile with the following text: 
 
-2. Set up the env.py in the gitpod workspace for followings
+    `web: gunicorn <name app>.wsgi:application` 
+    
+    (This file is required for Heroku to recognize which file is needed as entry point.)
 
-    os.environ["DATABASE_URL"] = "your postgres DB"
+3. Set up Heroku
 
-    os.environ["SECRET_KEY"] = "your django secret key"
+    * Create a Heroku account and create a new app and select your region from your dashboard
 
-    os.environ["STRIPE_PUBLIC_KEY"] = ""
+    * In the Add-on section of the resources tab, search postgres, then select Heroku Postgres and submit order from button in the popup window. After this process DATABASE_URL variable can be obtained from Config Vars.
 
-    os.environ["STRIPE_SECRET_KEY"] = ""
+    * In the setting tab, click on Reveal Config Vars button then copy the value for DATABASE_URL key.
+      
 
-    os.environ["STRIPE_WH_SECRET"] = ""
+4. (gitpod workspace) Local env.py in the gitpod workspace should have followings
 
+        import os
+        
+        os.environ["DATABASE_URL"] = "postgres DB url"  (Use the value copied from the previous step in Heroku)
 
-Here is the deployment procedure  that I have taken to deploy this project on Heroku
+        os.environ["SECRET_KEY"] = "django secret key"
 
-3. (Heroku) In the Heroku dashboard, click new, then enter the app name and specify the region.
+        os.environ["STRIPE_PUBLIC_KEY"] = "stripe public key"
 
-2. (Heroku) In the Add-on section in the resources tab, search postgres, then select Heroku Postgres and submit order from button in the popup window. After this process DATABASE_URL variable can be obtained from Config Vars.
+        os.environ["STRIPE_SECRET_KEY"] = "stripe secret key"
 
-3. (Heroku) In the setting tab, click on Reveal Config Vars button then copy the value for DATABASE_URL key.
+        os.environ["STRIPE_WH_SECRET"] = "stripe webhook key"
 
-4. (gitpod workspace) Create env.py directly under the repo directory same level as manage.py and make sure the file name is included in .gitignore to avoid the file being pushed to GitHub as this is a setting for local development site in Gitpod. 
-Enter DATABASE_URL and SECRET_KEY with their values.
-Heroku Config vars need to be set accordingly including DATABASE_URL and SECRET_KEY
+        os.environ["DEVELOPMENT"] = "False"   # For switching DB for testing
+
 
 5. (gitpod workspace) In setting.py file include followings:
 
@@ -545,8 +567,8 @@ Heroku Config vars need to be set accordingly including DATABASE_URL and SECRET_
         import dj_database_url
         if os.path.isfile('env.py'):
             import env
-        modify SECRET_KEY line to SECRET_KEY = os.
-        environ.get('SECRET_KEY')
+
+        SECRET_KEY = os.environ.get('SECRET_KEY')  ## Modify
 
     **Replace DATABASES as follows**
 
@@ -562,24 +584,34 @@ Heroku Config vars need to be set accordingly including DATABASE_URL and SECRET_
                 'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
             }
 
-      **For whitenoise:**
 
-      Add following in the MIDDLEWARE list just below 'django.middleware.security.SecurityMiddleware',
+6. (In gitpod terminal) Migrate the change and create superuser for Heroku Postgres DB by :
 
-        'whitenoise.middleware.WhiteNoiseMiddleware',
+    `python3 manage.py migrate`
 
-      Add another line:
+    `python3 manage.py createsuperuser`
+    
+    Go to the resource tab in Heroku dashboard, choose Heroku Postgres. There you can see the Database entry is increased as the migrate is reflected.
 
-        STATIC_ROOT = BASE_DIR / 'staticfiles'
+7. (Browser) AWS setting
+
+    Create an account in AWS then login. Create a S3 bucket using Heroku app url. Information on AWS S3 storage can be found [here](https://aws.amazon.com/s3/)
 
 
-6. (In gitpod terminal) Migrate the change by
-python3 manage.py migrate. Check the resource tab in heroku and choose 
-Heroku Postgres then ensure the changes are reflected in the database
+8. (Heroku) Set Heroku Config Vars ( Setting Tab > Reveal Config Vars ) as follows:
 
-7. (Browser) AWS setting 
-
-8. (Heroku) DISABLE_COLLECTSTATIC set to 1 in Config Vars in Heroku as the initial deployment does not contain static files yet.
+    | KEY            | VALUE         |
+    |----------------|---------------|
+    | AWS_ACCESS_KEY_ID | `<aws access key>`  |
+    | AWS_SECRET_ACCESS_KEY | `<aws secret access key>`  |
+    | DATABASE_URL| `<postgres database url>`  |
+    | EMAIL_HOST_PASS | `<email password(generated by Gmail)>` |
+    | EMAIL_HOST_USER| `<email address>`  |
+    | SECRET_KEY | `<your Django secret key>`  |
+    | STRIPE_PUBLIC_KEY| `<your stripe public key>`  |
+    | STRIPE_SECRET_KEY| `<your stripe secret key>`  |
+    | STRIPE_WH_SECRET| `<your stripe wh key>`  |
+    | USE_AWS | `True`  |
 
 9. (gitpod workspace) In setting.py configure followings:
  
@@ -590,17 +622,15 @@ Heroku Postgres then ensure the changes are reflected in the database
 
     * Set ALLOWED_HOSTS array as 'shinjuselect.herokuapp.com', 'localhost'
 
-10. (gitpod workspace) Create Procfile with the contents as follows
-
-    web: gunicorn shinju_select.wsgi
+10. (gitpod workspace)
 
     Commit and push the changes to GitHub
 
-11. (Heroku) In the deployment tab in Heroku page, connect to GitHub and search for the repository then Connect.
+11. (Heroku) In the Deployment tab in Heroku dashboard, connect to GitHub and search for the repository then Connect.
 
-    Click on Deploy Branch
+    Click on `Deploy Branch`
   
-  Make sure that deployment is successful without any issues in the log
+    Make sure that deployment is successful without any issues raised in the log
 
 
 ## Credit
@@ -612,25 +642,25 @@ color palette [colorpalettes.net](https://colorpalettes.net/color-palette-2171/)
 
 * Coding
 
- * Code Institute’s Boutique Ado walkthrough
+  * Code Institute’s Boutique Ado walkthrough
 
- * Udemy [Building E-commerce site with Django by Takuma Fujimoto](https://www.udemy.com/course/django-ecweb-vegeket/)
+  * Udemy [Building E-commerce site with Django by Takuma Fujimoto](https://www.udemy.com/course/django-ecweb-vegeket/)
 
- * Udemy [Python and Django course by startcode](https://www.udemy.com/course/python-django-web/learn/lecture/23845550)
+  * Udemy [Python and Django course by startcode](https://www.udemy.com/course/python-django-web/learn/lecture/23845550)
 
- * For multiple images setting in product detail page from [This Blog](https://junpei-sugiyama.com/thumbnail-switching-image/)
+  * For multiple images setting in product detail page from [This Blog](https://junpei-sugiyama.com/thumbnail-switching-image/)
 
- * For creating product with images as a foreign key in one template [stackoverflow](https://stackoverflow.com/questions/3063935/django-how-to-make-one-form-from-multiple-models-containing-foreignkeys)
+  * For creating product with images as a foreign key in one template [stackoverflow](https://stackoverflow.com/questions/3063935/django-how-to-make-one-form-from-multiple-models-containing-foreignkeys)
 
- * For solution to resolve Jquery and bootstrap JS conflict was found [This site](https://coderedirect.com/questions/440791/conflict-bootstrap-prototype-js-and-jquery)
+  * For solution to resolve Jquery and bootstrap JS conflict was found [This site](https://coderedirect.com/questions/440791/conflict-bootstrap-prototype-js-and-jquery)
 
 
 
 * Images 
   
-  *  Products images are taken from [Tensei Pearl online store](https://www.tenseipearl.com/en/) who kindly agreed for me to use of their images in my site for educational purpose
+  *  Products images are taken from [Tensei Pearl online store](https://www.tenseipearl.com/en/) who kindly gave me their permission to use their images in my site for educational purpose
 
-  * Some of the site images are taken from https://www.pexels.com/
+  * Some of the site images are taken from [pexels.com](https://www.pexels.com/)
 
   ## Acknowledgment
 

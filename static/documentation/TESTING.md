@@ -1,10 +1,16 @@
 # Testing
 
+
+## Responsiveness 
+
+Throughout the site is tested to ensure all pages are displayed appropriately in all screen sizes
+
 ## Automated Testing
 
 ### Testing using Django Unittest
 
 
+## Manual Testing
 
 
 ## User Story testing
