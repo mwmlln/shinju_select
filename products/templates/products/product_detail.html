@@ -7,21 +7,21 @@
 
 {% block content %}
 
-<h1 class="text-center mt-5">{{object.name}}</h1>
+<h1 class="text-center mt-5">{{product.name}}</h1>
 
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-6 mb-5">
       <div class="image-container w-100">
         <div class="main-img js-main-img mb-2">
-          {% if object.productimages_set.all %}
-          <img src="{{ object.productimages_set.first.image.url }}" alt="Product image" />
+          {% if product.productimages_set.all %}
+          <img src="{{ product.productimages_set.first.image.url }}" alt="Product image" />
           {% else %}
           <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="Product has no image">
           {% endif %}
         </div>
         <ul class="sub-img js-sub-img">
-          {% for image in object.productimages_set.all %}
+          {% for image in product.productimages_set.all %}
           <li>
             <img src="{{ image.image.url }}" alt="Product image" />
           </li>
@@ -33,38 +33,39 @@
     <div class="col-12 col-md-6 mt-5">
       {% if request.user.is_superuser %}
       <small class="ml-3">
-        <a href="{% url 'products:edit_product' object.id %}">Edit</a> |
-        <a class="text-danger" href="{% url 'products:delete_product' object.id %}">Delete</a>
+        <a href="{% url 'products:edit_product' product.id %}">Edit</a> |
+        <a class="text-danger" href="{% url 'products:delete_product' product.id %}">Delete</a>
       </small>
       {% endif %}
-      <p>Category: <a href="{% url 'products:category_list' object.category.id %}"
-          class="btn btn-outline-secondary">{{ object.category.name | title }}</a></p>
+      <p>Category: <a href="{% url 'products:category_list' product.category.id %}"
+          class="btn btn-outline-secondary">{{ product.category.name | title }}</a></p>
       <div>
-        {% if object.tags.all %}
+        {% if product.tags.all %}
         <p>Tag :
-          {% for tag in object.tags.all %}
+          {% for tag in product.tags.all %}
           <span>
-            <a href="{% url 'products:tag_list' tag.slug %}" class="btn btn-info btn-sm btn-{{ tag.name }}">{{ tag.name | title }}</a>
+            <a href="{% url 'products:tag_list' tag.slug %}"
+              class="btn btn-info btn-sm btn-{{ tag.name }}">{{ tag.name | title }}</a>
           </span>
-          {% endfor %} 
+          {% endfor %}
         </p>
         {% endif %}
       </div>
       <div>
         <p>Product Description :</p>
-        {{ object.description | linebreaks }}
+        {{ product.description | linebreaks }}
       </div>
-      <p>Price : <i class="fa fa-eur"></i>{{object.price}}</p>
-      <p>Available stock : {{object.stock}}</p>
+      <p>Price : <i class="fa fa-eur"></i>{{product.price}}</p>
+      <p>Available stock : {{product.stock}}</p>
       <div>
-        <form class="form" action="{% url 'bag:add_to_bag' object.id %}" method="POST">
+        <form class="form" action="{% url 'bag:add_to_bag' product.id %}" method="POST">
           {% csrf_token %}
           <div class="input-group flex-nowrap">
             <div class="input-group-prepend">
               <span class="input-group-text" id="addon-wrapping">Quantity:</span>
             </div>
             <input class="form-control qty_input" type="number" name="quantity" value="1" min="1"
-              max="{{ object.stock }}" data-item_id="{{ object.id }}" id="id_qty_{{ object.id }}" />
+              max="{{ product.stock }}" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}" />
           </div>
 
           <div class="col-12 mt-2">
@@ -83,8 +84,36 @@
 
   </div>
 
-  <div class="row mt-5">
+  <div class="mt-5">
+    <div class="bg-light mb-0 pl-3">
+      <h4>Reviews for this product</h4>
+    </div>
 
+    <div class="mb-5 mt-0 review-box overflow-auto">
+
+
+      {% if reviews %}
+      {% for review in reviews %}
+
+      <div class="ml-3">
+        <h5>
+          <span class="review-star">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star{% if review.rating < 2 %}-o{% endif %}" aria-hidden="true"></i>
+            <i class="fa fa-star{% if review.rating < 3 %}-o{% endif %}" aria-hidden="true"></i>
+            <i class="fa fa-star{% if review.rating < 4 %}-o{% endif %}" aria-hidden="true"></i>
+            <i class="fa fa-star{% if review.rating < 5 %}-o{% endif %}" aria-hidden="true"></i>
+          </span>
+        </h5>
+        <p>{{ review.comment }}</p>
+        <p>Creted on : {{ review.created_at}}</p>
+        <hr>
+      </div>
+      {% endfor %}
+      {% else %}
+      <p class="font-weight-bold text-center">There is no reviews on this product yet</p>
+      {% endif %}
+    </div>
   </div>
 </div>
 

@@ -338,6 +338,11 @@ ul {
   }
 }
 
+.review-box {
+  border: 3px solid var(--mid-blue);
+  max-height: 200px;
+}
+
 .review-star {
   color: #FDCA40;
 }

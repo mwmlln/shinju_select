@@ -7,6 +7,7 @@ from django.db.models import Q
 from django.views.generic.detail import DetailView
 from .models import Product, Category, Tag
 from .forms import ProductForm, DeleteProductForm
+from review.models import Review
 
 
 class ProductListView(ListView):
@@ -55,6 +56,18 @@ class ProductDetaiView(DetailView):
 
     model = Product
     template_name = 'products/product_detail.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        queryset = Product.objects.all()
+        product = get_object_or_404(queryset, pk=self.kwargs['pk'])
+        reviews = Review.objects.filter(product=product)
+        context = {
+                'product': product,
+                'reviews': reviews,
+                }
+
+        return context
 
 
 @login_required
