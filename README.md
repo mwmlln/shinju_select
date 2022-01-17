@@ -17,22 +17,56 @@ This website is for educational purposes only and card payment details should be
     * Date : Any  future date
     * CVC :  Any 3 numbers
 
+- [Shinju Select](#shinju-select)
+  * [1. User experience (UX)](#1-user-experience--ux-)
+    + [1.1 The purpose of this site](#11-the-purpose-of-this-site)
+    + [1.2 Target Audience](#12-target-audience)
+    + [1.3 User Goals](#13-user-goals)
+    + [1.4 Site Owners Goals](#14-site-owners-goals)
+    + [1.5 USER STORIES](#15-user-stories)
+    + [1.6 STRATEGY](#16-strategy)
+    + [Business Model](#business-model)
+    + [SEO](#seo)
+    + [1.7 SCOPE](#17-scope)
+      - [Custom Model](#custom-model)
+    + [1.8 Structure](#18-structure)
+    + [1.9 SKELETON](#19-skeleton)
+    + [1.10 SURFACE/ Design](#110-surface--design)
+  * [2. Information Architecture](#2-information-architecture)
+  * [3 Features](#3-features)
+    + [3.1 Existing Features](#31-existing-features)
+      - [Elements on every page](#elements-on-every-page)
+      - [Pages](#pages)
+    + [3.2 Features Left to Implement](#32-features-left-to-implement)
+  * [4 Technologies used](#4-technologies-used)
+  * [5 Testing](#5-testing)
+    + [Errors encountered during development](#errors-encountered-during-development)
+    + [Known error present:](#known-error-present-)
+    + [Validating code](#validating-code)
+  * [6 Deployment](#6-deployment)
+    + [Deployment procedures](#deployment-procedures)
+  * [7. Credit](#7-credit)
+  * [8. Acknowledgment](#8-acknowledgment)
 
-# 1. User experience (UX)
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-## 1.1 The purpose of this site 
+
+
+## 1. User experience (UX)
+
+### 1.1 The purpose of this site 
 
 This site is created to sell and promote Akoya pearl jewellery produced in Japan.
 Akoya pearls from Japan are known for an excellent quality and tresured by many in generations. This online store is specialised in this excellent quality pearl jewellery selected and sourced directory from the area where harvest of Akoya pearl is the most in Japan.
 
 
-## 1.2 Target Audience
+### 1.2 Target Audience
 
 This online store is targeted to high end jewellery market for users who seek highest quality Jewellery to last not only life time but generations.
 Target audience includes shoppers searching for Jewellery for wedding or other special occasions, shoppers who are searching for a special treat for themselves or shoppers who are looking for a very special gift to someone special.
 
 
-## 1.3 User Goals
+### 1.3 User Goals
 
 **First time site visitors would like to**
 
@@ -51,7 +85,7 @@ Target audience includes shoppers searching for Jewellery for wedding or other s
   * View the history of my order
   * Quickly find out what items are added recently
 
-## 1.4 Site Owners Goals
+### 1.4 Site Owners Goals
 
   In addition to user goals, following considerations were taken into account as a site owner to provide a good service
 
@@ -61,7 +95,7 @@ Target audience includes shoppers searching for Jewellery for wedding or other s
  * Provide the message as feedback when site visitors take any actions within the site
 
 
-## 1.5 USER STORIES
+### 1.5 USER STORIES
 
 Issue No. | Title | User story | Acceptance criteria | Implemented
 ----------|-------|------------|---------------------|-------
@@ -99,7 +133,7 @@ Issue No. | Title | User story | Acceptance criteria | Implemented
 #32 | Automated testing | As a Store Owner I would like to ensure that site works as intended so that I can provide a good service to site user and gain good reputation | Automated testing in addition to manual testing | &#9744;
 
 
-## 1.6 STRATEGY
+### 1.6 STRATEGY
 
 * Focus:
 
@@ -115,11 +149,11 @@ Issue No. | Title | User story | Acceptance criteria | Implemented
 
 ### Business Model
 
-This site followed principle of B2C E-Commerce business model.
-Research on competitors in the market was carried out prior to designing process. 
-SEO, SNS and Newsletter are included to improve the user experience and increase the opportunity to attract new customers.
-Web site is carefully designed to give site visitors to easily navigate and find out information about the products and company.
-GDPR link is present to comply the data protection act.
+  This site followed principle of B2C E-Commerce business model.
+  Research on competitors in the market was carried out prior to designing process. 
+  SEO, SNS and Newsletter are included to improve the user experience and increase the opportunity to attract new customers.
+  Web site is carefully designed to give site visitors to easily navigate and find out information about the products and company.
+  GDPR link is present to comply the data protection act.
 
 <details><summary>Facebook Page</summary>
       <img src="static/documentation/ss/fb_page_ss.png" width="500">
@@ -143,7 +177,7 @@ GDPR link is present to comply the data protection act.
 Throughout development process of this site, agile development approach was taken using GitHub functions which are issues, milestones, iterations and Kanban board. 
 
 
-## 1.7 SCOPE
+### 1.7 SCOPE
 
 **Features:**
 
@@ -205,7 +239,7 @@ Custom models created for this project is as follows:
 
 As products unit prices are high, I have customised product model to include stock number to avoid shoppers being charged for the items that are not available. 
 
-## 1.8 Structure
+### 1.8 Structure
 
   1.	The site visitor will first be presented with the landing page where they can read the purpose of this site. In the navigation menu they are presented with a choice to register or sign in if already registered. There is a search bar and shop link that opens up the page with products list.
   Below the sliding hero images, there are large links to open the product page with 4 different categories or view all product button will open the all products list.
@@ -236,14 +270,14 @@ As products unit prices are high, I have customised product model to include sto
   5.	(SuperUsers) Product management page can help admin user to create new products.
   6.	(SuperUsers) Manage users - Django admin pages have been customised to easier product and user managements.
 
-## 1.9 SKELETON
+### 1.9 SKELETON
 
   **Wireframe:**
   The mockup for this site was done on Balsamiq Wireframes and can be viewed in this page here [Link to the testing document](static/documentation/WIREFRAMESmd)
   
 
 
-## 1.10 SURFACE/ Design
+### 1.10 SURFACE/ Design
 
   **Colour Palette:**
 
@@ -284,7 +318,6 @@ Notes on the current model
  #### Elements on every page
  
    1. Navbar
-     <img src="static/documentation/ss/navbar.png" width="500">
 
       Consistent navbar is present for all pages within the site.
       Navbar has the site logo to the left. 
@@ -298,18 +331,16 @@ Notes on the current model
           
       **For logged in users, the following are present**
 
-      * Logout button
-      * Buttons for profile under account icon
+      * Logout button is replaced Register and Login link
+      * Buttons for profile page under account icon
 
       **For superuser
 
-      * Product management page
+      * Link to Product management page
 
   2. Footer
 
-      <img src="static/documentation/ss/footer_ss.png" width="500">
-
-      Consistent footer is present in all pages within the site which includes links to company info, delivery info and contact us page. Also present in the footer are signup to newsletter and link to the company's Facebook page.
+      Consistent footer is present in all pages within the site which includes links to company info, delivery info, FAQs and contact us page. Also present in the footer are signup to newsletter and link to the company's Facebook page.
   
 
 #### Pages
@@ -446,17 +477,20 @@ Databases
 * Toast message not displaying when product is added to the shopping bag.
   When toast is created to display feedback messages to site user, messages were successfully displayed when an item was removed from the shopping bag however no messages displayed when item is added to the bag.
   After contacting Code Institute’s tutor support, Fatima pointed out that I had a JS line in the head of the product detail page in order for the larger images to switch over on click. This script as overriding the toast script. By relocating this script line from the product detail page into the head of base.html, it successfully resolved the issue. However there still seems to be some conflict of Jquery and bootstrap CDN somewhere, the toast massage does not display when user removes an item in the shopping bag with no error message in console.
-  Jquery link used for product images is moved to the top of script section in product detail page and $.noConflict(); line is added to minimize the conflict appearing within the site.
+  Jquery link used for product images is moved to the top of script section in product detail page and `$.noConflict(); `line is added to minimize the conflict appearing within the site.
   
 * Images not displaying in toast
   This was do to wrong condition set for if the images are present for the item. Simply changed the line as following the images for the products showed properly.
-  {% if item.product.productimages_set.all %}
+
+  `{% if item.product.productimages_set.all %}`
 
 * Adjust Quantity in bag page
   
   Adjust quantity was exceeding the stock amount when javascript buttons are added. This issue was resolved by adding the line below in the script. 
-    var qtyMax = parseInt($(`#id_qty_${itemId}`).attr('max'));
-    var plusDisabled = currentValue >= qtyMax;
+
+    `var qtyMax = parseInt($(`#id_qty_${itemId}`).attr('max'));`
+
+    `var plusDisabled = currentValue >= qtyMax;`
 
 * Delivery and grand total not displaying in checkout page
   I was missing these two lines in cotext.py in bag app and tutor support Fatima, pointed out this error and helped me resolve the issue.
@@ -472,7 +506,7 @@ Databases
 ### Known error present:
 
 * Delete items in shopping bag shows no toast message.
-  This issue seems to be related to Bootstrap Jquery and Jquery(Ajax) conflict.  After searching how to resolve the conflict on the web, solution provided in [this site](https://coderedirect.com/questions/440791/conflict-bootstrap-prototype-js-and-jquery) to add __$.noConflict();__ at the top of the script did prevent server error but still not showing the toast message.
+  This issue seems to be related to Bootstrap Jquery and Jquery(Ajax) conflict.  After searching how to resolve the conflict on the web, solution provided in [this site](https://coderedirect.com/questions/440791/conflict-bootstrap-prototype-js-and-jquery) to add `$.noConflict();`  at the top of the script did prevent server error but still not showing the toast message.
 
 
   
@@ -487,6 +521,8 @@ Databases
 
 
 * The official (Jigsaw) validator for CSS
+
+  No errors are found when tested in official (Jigsaw) validator.
 
   [The results link here ](https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fshinjuselect.herokuapp.com&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
@@ -508,22 +544,23 @@ Databases
 * AWS Amazon account
 * Gmail account
 
-### Setting up Django environment in local workspace.
+### Deployment procedures
 
-1. Following additional packages are installed to create this site by using pip3 install in gidpod terminal
+1. Setting up Django environment in local workspace.
+Following additional packages are installed to create this site by using pip3 install in gidpod terminal
   
-  * djanfo
-  * gunicorn
-  * psycopg2
-  * dj-database-url
-  * django-storages
-  * django-crispy-forms
-  * django-allauth
-  * django-countries
-  * boto3
-  * django-storages
-  * pillow
-  * stripe
+    * djanfo
+    * gunicorn
+    * psycopg2
+    * dj-database-url
+    * django-storages
+    * django-crispy-forms
+    * django-allauth
+    * django-countries
+    * boto3
+    * django-storages
+    * pillow
+    * stripe
 
     These required packages need to be included in requirements.txt by running the command in the workspace as fllows:
 
@@ -633,11 +670,11 @@ Databases
     Make sure that deployment is successful without any issues raised in the log
 
 
-## Credit
+## 7. Credit
 
 * Contents
 
-color palette [colorpalettes.net](https://colorpalettes.net/color-palette-2171/)
+  color palette [colorpalettes.net](https://colorpalettes.net/color-palette-2171/)
   
 
 * Coding
@@ -662,9 +699,16 @@ color palette [colorpalettes.net](https://colorpalettes.net/color-palette-2171/)
 
   * Some of the site images are taken from [pexels.com](https://www.pexels.com/)
 
-  ## Acknowledgment
+  ## 8. Acknowledgment
 
-  Thank you for the CI's tutor support team for helping me resolve some issues.
-
-  I would like to thank my cohort group of coding career for women for sharing all their knowledge and supporting each other. Also a thanks to our group facilitator Kasia for her  support for us. 
+  Thanks to the following people and organizations who helped me complete this project.
   
+  * Code Institute's tutor support team for helping me resolve some issues.
+
+  * My cohort group of coding career for women for sharing all their knowledge and supporting each other. 
+  
+  * My group facilitator, Kasia for her support for us. 
+
+  * My mentor, Precious Ijege for pointing me to the right direction.
+
+[Back to Top](#shinju-select)
