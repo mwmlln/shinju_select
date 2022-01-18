@@ -23,39 +23,38 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
     Tasks
     * a. There should be a button to open the product page clearly visible when the landing page is opened so that the site victors can easily move to the page to see the products &#9745;
     * b. Pages should be responsive in all screen sizes &#9745;
-    * c. Home button in Navbar and About page button should be located in footer so that site user can access these pages anywhere within the site &#9745;
+    * c. Home button visible in Navbar and About page button should be located in footer so that site user can access these pages anywhere within the site &#9745;
 
 ### #02 View a list of the products
 
   * Acceptance criteria : Create product list page with clear display of the products &#9745;
 
-  Tasks
+    Tasks
 
-  * a. 4 products listed in a row and 2 rows per page. Pagination in place for 8 items  - changed to 3 products in a row and 12 per page to inmprove the visual impact of the products &#9745;
-  * b. Product name, price and category is listed under the product image &#9745;
-
-  * c. Sort bar and price filter should be located at the top - Not implemented
+    * a. 4 products listed in a row and 2 rows per page. Pagination in place for 8 items  - changed to 3 products in a row and 12 per page to improve the visual impact of the products &#9745;
+    * b. Product name, price and category is listed under the product image &#9745;
+    * c. Sort bar and price filter should be located at the top - Not implemented
 
 ### #03 View specific categry of products
 
   * Acceptance criteria : Create category buttons to filter by category and ensure the appropriate items are displayed &#9745;
 
-  Tasks
+    Tasks
 
-  * a. category buttons in the landing page and product list page - only impletemted in landing page &#9745;
-  * b.  Choosing category should only displays the chosen category products &#9745;
-  * c. There should be 4 categories at least as a start up &#9745;
+    * a. category buttons in the landing page and product list page - only impletemted in landing page &#9745;
+    * b.  Choosing category should only displays the chosen category products &#9745;
+    * c. There should be 4 categories at least as a start up &#9745;
 
 ### #04 View individual product details
 
   * Acceptance criteria : Product detail page to display the product info in details and button to add the item in the bag with quantity and sizing options where applicable &#9745;
 
-  Tasks
+    Tasks
 
-  * a. Product images display on the left &#9745;
-  * b.  Product name, adjust size and quantity, price, category, back to shopping page link and add button on the right - Size option not implemented 
-  * c. Product description below the image and buttons - Changed to the side as it looked neater
-  * d. Product review box at the bottom of the page - Not implemented 
+    * a. Product images display on the left &#9745;
+    * b.  Product name, adjust size and quantity, price, category, back to shopping page link and add button on the right - Size option not implemented 
+    * c. Product description below the image and buttons - Changed to the side as it looked neater
+    * d. Product review box at the bottom of the page &#9745;
 
 ### #05 Filter/Tag special items
 

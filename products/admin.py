@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import (
-    Tag, Category, Product, ProductImages
-)
+                    Tag, Category, Product, ProductImages
+                )
 
 
 class TagInline(admin.TabularInline):
