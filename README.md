@@ -1,7 +1,7 @@
 # Shinju Select 
 
 
-Shinju Select is an online shop specialised in highest quality Akoya Pearl Jewellery sourced directly from Japan
+Shinju Select is an online shop specialising in highest quality Akoya Pearl Jewellery sourced directly from Japan
 
 View the live project here. [Shinju Select](http://shinjuselect.herokuapp.com/)
 
@@ -58,13 +58,13 @@ This website is for educational purposes only and card payment details should be
 ### 1.1 The purpose of this site 
 
 This site is created to sell and promote Akoya pearl jewellery produced in Japan.
-Akoya pearls from Japan are known for an excellent quality and tresured by many in generations. This online store is specialised in this excellent quality pearl jewellery selected and sourced directory from the area where harvest of Akoya pearl is the most in Japan.
+Akoya pearls from Japan are known for an excellent quality and tresured by many for generations. This online store specialises in this excellent quality pearl jewellery selected and sourced directly from the area where harvest of Akoya pearl is most prelevant in Japan.
 
 
 ### 1.2 Target Audience
 
-This online store is targeted to high end jewellery market for users who seek highest quality Jewellery to last not only life time but generations.
-Target audience includes shoppers searching for Jewellery for wedding or other special occasions, shoppers who are searching for a special treat for themselves or shoppers who are looking for a very special gift to someone special.
+This online store is targeted to a high end  market for users who seek highest quality jewellery to last not only a life time but generations after.
+Target audience includes shoppers searching for jewellery for their wedding or other special occasions, also for those who are searching for a special treat for themselves or looking for a very distinctive gift to someone special.
 
 
 ### 1.3 User Goals
@@ -81,10 +81,10 @@ Target audience includes shoppers searching for Jewellery for wedding or other s
 **Returning registered users would like**
 
   * Easily login and log out
-  * Quickly navigate to the pages or items they wish
+  * Quickly navigate to the pages or items they wish to seek
   * See/edit my profile 
   * View the history of my order
-  * Quickly find out what items are added recently
+  * Quickly find out what items have been added recently
 
 ### 1.4 Site Owners Goals
 
@@ -101,36 +101,36 @@ Target audience includes shoppers searching for Jewellery for wedding or other s
 Issue No. | Title | User story | Acceptance criteria | Implemented
 ----------|-------|------------|---------------------|-------
 #01 | Create Landing page | As a Site owner I can provide clear purpose of the site so that new and returning users know what the web site is about and how to use it | State clear purpose of the site in the page and no confusing elements for site visitors | &#9745;
-#02 | View a list of the products | As a shopper I would like to view a list of the products so that I can select some purchase | Create product list page with clear display of the products | &#9745;
+#02 | View a list of the products | As a shopper I would like to view a list of the products so that I can select some to purchase | Create product list page with clear display of the products | &#9745;
 #03 | View specific categry of products | As a shopper I would like to view specific category of products so that I can quickly find products I'm interested in without having to search through all products | Create category buttons to filter by category and ensure the appropriate items are displayed | &#9745;
-#04 | View individual product details | As a shopper I would like to view individual product details so that I can Identify the price, description, product rating. product image and available sizes | Product detail page to display the product info in details and button to add the item in the bag with quantity and sizing options where applicable | &#9745;
+#04 | View individual product details | As a shopper I would like to view individual product details so that I can identify the price, description, product rating, product image and available sizes | Product detail page to display the product info in details and button to add the item in the bag with quantity and sizing options where applicable | &#9745;
 #05| Filter/Tag special items | As a shopper I would like to find out special offers or recommended item so that I can take advantage of savings or limited product availability | Special items list can be selected and displayed in the product list page | &#9745;
-#06 | Total price and number of items in the bag | As a shopper I would like to easily view the total of my purchases at any time so that I can to stay on my budget | Display the number of items and total price under bag icon in the navbar | &#9745;
+#06 | Total price and number of items in the bag | As a shopper I would like to easily view the total of my purchases at any time so that I can stay on my budget | Display the number of items and total price under bag icon in the navbar | &#9745;
 #07 | Product ratings/Reviews | As a shopper I would like to see the review and rating for the products so that I can make a decision based on the comments and rating | Use rating with stars and reviews for items displayed in product detail page | &#9745;
 #08 | Registering account | As a Site User I would like to easily register for an account so that I can have a personal account and be able to view my profile | Clear and easy login page and ensure the necessary validation works and feedback returned to the user  | &#9745;
 #09 | Login/Log out | As a Site User I would like to easily login or logout so that I can access my personal account information | Login/Logout button easily accessed from navbar | &#9745;
-#10 | Password recovery | As a Site User I would like to easily recover my password in case I forget it so that I can recover access to my account | Email vilification to recover password | &#9745;
+#10 | Password recovery | As a Site User I would like to easily recover my password in case I forget it so that I can recover access to my account | Email verification to recover password | &#9745;
 #11 | Email verification on registration | As a Site User I would like to receive an email in order for register so that I can make sure that no other person can register on the site using my email | Ensure the email is sent for registration to completed | &#9745;
 #12 | User profile page | As a Site User I would like to have a personalized user profile so that I can view my personal order history and order confirmations, and save my payment information | User profile is accessible when user is registered and validate all the entry when entered | &#9745;
 #13 | Sign up to newsletter | As a Site User I would like to sign up to newsletter so that I can find out about special offer and new arrival of products | Newsletter signup located in footer registers the emails and deliver the newsletter | &#9745;
 #14 | Sorting products | As a Shopper I would like to sort the list of available products so that I can easily identify the best rated, best priced and categorically sorted products | Fully functioning sorting is present in shop page | &#9744;
 #15 | Filter by price range | As a Shopper I would like to sort by price range so that I can Quickly see what items are available within my budget | Price range can be set to filter the product that matches the price range | &#9744;
-#16 | List of new/limited items | As a Shopper I would like to see the list of new/limited items added to the product so that I can quickly learn about the products that were not included in the last visit to the site | New/special items added to the site is marked new so that returning users can quickly filter them | &#9745;
+#16 | List of new/limited items | As a Shopper I would like to see the list of new/limited items added to the site so that I can quickly learn about the products that were not included in the last visit to the site | New/special items added to the site is marked new so that returning users can quickly filter them | &#9745;
 #17 | Quantity and available stock |As a Shopper I would like to see the available stock and number of items I have selected to purchase so that I can ensure I don't accidentally select the wrong product quantity | Clear feedback and display for items in the cart | &#9745;
-#18 | View items in bag | As a Shopper I would like to view items in my bag to be purchased so that I can identify the total cost of my purchase and all items I will receive** | Numbers of the items in the cart is easily viewed from any page within the site | &#9745;
+#18 | View items in bag | As a Shopper I would like to view items in my bag to be purchased so that I can identify the total cost of my purchase and all items I will receive | Numbers of the items in the cart is easily viewed from any page within the site | &#9745;
 #19 | Adjust bag items | As a Shopper I would like to adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout | Increase/Decrease and remove functionality is present and working in the bag page | &#9745;
-#20 | Making payment | As a Shopper I would like to easily enter my payment information so that I can checkout quickly and with no hassles | Retrieve the profile address information if available and validation for the form entry is working and payment information is successfully in stripe dashboard | &#9745;
-#21 | Secure payment | As a Shopper I would like to** feel my personal and payment information is safe and secure** so that I can confidently provide the needed information to make a purchase | Profile record is only available to its user and staff and payment page is secure  | &#9745;
-#22 | Order confirmation | As a Shopper I would like to view an order confirmation after checkout so that I can verify that I haven't made any mistakes | Oder detail page displayed on successful payment. Order history and status is available in profile page. | &#9745;
+#20 | Making payment | As a Shopper I would like to easily enter my payment information so that I can checkout quickly and with no hassle | Retrieve the profile address information if available and validation for the form entry is working and payment information is successfully in stripe dashboard | &#9745;
+#21 | Secure payment | As a Shopper I would like to feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase | Profile record is only available to its user and staff and payment page is secure  | &#9745;
+#22 | Order confirmation | As a Shopper I would like to view an order confirmation after checkout so that I can verify that I haven't made any mistakes | Order detail page displayed on successful payment. Order history and status is available in profile page. | &#9745;
 #23 | Email confirmation after checking out | As a Shopper I would like to receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records | Ensure that automated email is sent on completing each purchase | &#9745;
-#24 | Get a email when product is dispatched | As a Shopper** I would like to get a email when product is dispatched so that I can expect when I will receive the products | Automated email when the order status is changed to DISPATCHED  | &#9744;
+#24 | Get a email when product is dispatched | As a Shopper I would like to get a email when product is dispatched so that I can expect when I will receive the products | Automated email when the order status is changed to DISPATCHED  | &#9744;
 #25 | Add a product | As a Store Owner I would like to add a product so that I can add new items to my store | Add product page is available to staff only and staff can add products | &#9745;
 #26 | Edit/update a product | As a Store Owner I would like to edit/update a product so that I can change product prices descriptions, images and other product criteria | Edit product page is available and retrieves the existing data for staff to update the data.  | &#9745;
 #27 | Delete a product | As a Store Owner I would like to delete a product so that I can remove items that are no longer for sale | Delete product page is available and retrieves the existing data for staff to delete products.  | &#9745;
-#28 | Blog Page | As a Store Owner I would like to to provide blog so that I can to provide site visitor the useful and interesting information related to the products. | Functioning blog page that any staff member can create, edit and post | &#9744;
+#28 | Blog Page | As a Store Owner I would like to to provide a blog so that I can to provide site visitor the useful and interesting information related to the products. | Functioning blog page that any staff member can create, edit and post | &#9744;
 #29 | SEO | As a Store Owner I would like to make sure our site is visible to users who seek related product information on the web so that I can get attention of the potential customers | Keywords, sitemap and robots.txt | &#9745;
 #30 | SNS (Facebook) | As a Store Owner I would like to promote our site to SNS users and have better chance in sales so that I can get attention of the potential customers | All necessary information are added and accurate in FACEBOOK page. | &#9745;
-#31 | Contact us page |As a Store Owner I would like to provide contact us page so that I can receive an enquiry about the site or product from site users | Page should accessible from anywhere in the site | &#9745;
+#31 | Contact us page |As a Store Owner I would like to provide a 'contact us' page so that I can receive an enquiry about the site or product from site users | Page should accessible from anywhere in the site | &#9745;
 #32 | Automated testing | As a Store Owner I would like to ensure that site works as intended so that I can provide a good service to site user and gain good reputation | Automated testing in addition to manual testing | &#9744;
 
 
@@ -138,7 +138,7 @@ Issue No. | Title | User story | Acceptance criteria | Implemented
 
 * Focus:
 
-  The focus of this project is to provide high quality online store experience for site visitors when they shop or browse jewellery for their special occasions online.
+  The focus of this project is to provide a high quality online store experience for site visitors when they shop or browse jewellery for their special occasions online.
 
 * Definition:
   
@@ -146,7 +146,7 @@ Issue No. | Title | User story | Acceptance criteria | Implemented
 
 * Value:
 
-  Specialized in Akoya pearl jewellery selected from the trusted source directory from the producer and designer in Japan's No.1 pearl production area
+  Specialized in Akoya pearl jewellery, selected from the trusted source directly from the producer and designer in Japan's No.1 pearl production area
 
 #### Business Model
 
@@ -183,7 +183,7 @@ Issue No. | Title | User story | Acceptance criteria | Implemented
 
 **Features:**
 
-  *  The navigation menu is clear and consistent throughout the site to provide the users  easy navigation
+  *  The navigation menu is clear and consistent throughout the site to provide the users easy navigation. 
     Menus in the navigation bar reflects user's login status and account roles.
 
   * The footer consists of followings:
@@ -239,20 +239,20 @@ Custom models created for this project is as follows:
 * Review
 * Enquiry
 
-As products unit prices are high, I have customised product model to include stock number to avoid shoppers being charged for the items that are not available. 
+As products unit prices are high, I have customised a product model to include stock number to avoid shoppers being charged for the items that are not available. 
 
 ### 1.8 Structure
 
   1.	The site visitor will first be presented with the landing page where they can read the purpose of this site. In the navigation menu they are presented with a choice to register or sign in if already registered. There is a search bar and shop link that opens up the page with products list.
-  Below the sliding hero images, there are large links to open the product page in 4 different categories, view all or New products.
-  Site visitor can be registered or log in from the navigation menu at any time.
+  Below the sliding hero images, there are large links to open the product page in 4 different categories, view all or new products.
+  Site visitors can be registered or log in from the navigation menu at any time.
 
   2.	In the Product list page, all of the products are displayed, unless specific category or tag is chosen to open the page. Each product has button to open the product detail page.
 
   3. In the product detail page, shoppers can learn about the products details and add this item in the bag to purchase. 
-  There are buttons for category and tags displayed in which product belong to and shoppers can press these buttons to display other similar items to compare products they are interested in.
+  There are tags displayed for products to be sorted into different categories and shoppers can press these buttons to display other similar items to compare products they are interested in.
   Available stock number is displayed here also. As the products sold in this site are rather expensive, the site owner should try their best to prevent shoppers being charged for the product that are not available to them.
-  There are button to go back to the product list page or add the item in their shopping bag. When a product is added in the shopping bag popup toast message appears at the top right corner with the items included in the shopping bag. Shoppers can proceed to the shopping bag page by pressing either the button in the toast message or shopping basket icon in the navigation bar.
+  There is a  button to go back to the product list page or add the item in their shopping bag. When a product is added in the shopping bag popup toast message appears at the top right corner with the items included in the shopping bag. Shoppers can proceed to the shopping bag page by pressing either the button in the toast message or shopping basket icon in the navigation bar.
 
   4.  In Shopping bag page, shoppers can adjust the item quantity or remove items from their shopping bag.
   When they are happy with their item choices, they can proceed to the checkout page for Secure Payment.
@@ -261,13 +261,13 @@ As products unit prices are high, I have customised product model to include sto
   The entry of the data is validated in order for the payment to proceed to stripe payment system.
   Shoppers can then press the payment button to make payment for the items chosen.
   
-  4.	On successful payment, shoppers are redirected to the page with thank you message and order detail.
+  4.	On successful payment, shoppers are redirected to the page with a thank you message and order detail.
 
   5.  If user has registered and logged in, they can access to their profile page where they can update their delivery information and review their past purchases. The link provided in this page can open order detail page to review their order history in detail.
 
-  6. Order detail history has the details of the order including the product purchased. Here user can open create review page to share their opinion about the product.
+  6. Order detail history has the details of the order including the product purchased. Here, users can open and create a review page to share their opinion about the product.
 
-  7. Review page, all site visitors can read the reviews to learn more about the product. This page should help potential customer make their decision to purchase the products.
+  7. Review page, all site visitors can read the reviews to learn more about the product. This page should help potential customers make their decision to purchase the products.
 
   5.	(SuperUsers) Product management page can help admin user to create new products.
   6.	(SuperUsers) Manage users - Django admin pages have been customised to easier product and user managements.
@@ -309,7 +309,7 @@ As products unit prices are high, I have customised product model to include sto
       </details>
 
 Notes on the current model
-  * As product images are very important for potential customers to make decision for purchase our products, product images are separated from product model so that the multiple images are easier to manage and makes it scalable. In ProductImages model order field is added for easier control of the main images to be chosen regardless the image entry order.
+  * As product images are very important for potential customers to make decisions to purchase our products, product images are separated from product model so that the multiple images are easier to manage and makes it scalable. In ProductImages model order field is added for easier control of the main images to be chosen regardless the image entry order.
 
   For Review model, unique_together constraint was initially set to limit customer to create a review once per product but I was unable to implement the functionality in time for deadline therefore it was removed.
 
@@ -333,7 +333,7 @@ Notes on the current model
           
       **For logged in users, the following are present**
 
-      * Logout button is replaced Register and Login link
+      * Logout button replaces Register and Login link
       * Buttons for profile page under account icon
 
       **For superuser
@@ -354,7 +354,7 @@ Notes on the current model
   4. Product List page
 
       This page displays all the products, products with specific category, or product with specific tags depending on which buttons user has pressed previously. Each product has image, name, category, price and tags in this list. Shoppers can then press the button to display the product detail page for the product they are interested in.
-      (Superuser) They have edit/delete link for each product as a product management feature
+      (Superuser) They have  an edit/delete link for each product as a product management feature
 
   5. Product Detail page
 
@@ -376,9 +376,9 @@ Notes on the current model
 
   9. Profile page
 
-      All registered user can open this page to update their delivery information.
-      Order summary can be reviewed here and open the order detail page by using the link from this page.
-      Also purchased product history is located at the end of the page where users have a link to create a review of their purchase.
+      All registered users can open this page to update their delivery information.
+      Order summary can be reviewed here and  can open the order detail page by using the link from this page.
+      Also, purchased product history is located at the end of the page where users have a link to create a review of their purchase.
 
   10. Review Page
 
@@ -474,7 +474,7 @@ Databases
 ### Errors encountered during development
 
 * Product List pages filtered by category: 
-  As I have decide to use class based view for product list page rather than Code Institute's walkthrough approach of function based view, I was unable to display using link by ?category=ring etc. As a workaround solution, I created CategoryListView and index page was replaced to ListView with category model linked. 
+  As I have decide to use class based view for product list page rather than Code Institute's walkthrough approach of function based view, I was unable to display using link by category=ring etc. As a workaround solution, I created CategoryListView and index page was replaced to ListView with category model linked. 
 
 * Toast message not displaying when product is added to the shopping bag.
   When toast is created to display feedback messages to site user, messages were successfully displayed when an item was removed from the shopping bag however no messages displayed when item is added to the bag.
@@ -697,7 +697,7 @@ Following additional packages are installed to create this site by using pip3 in
 
 * Images 
   
-  *  Products images are taken from [Tensei Pearl online store](https://www.tenseipearl.com/en/) who kindly gave me their permission to use their images in my site for educational purpose
+  *  Products images are taken from [Tensei Pearl online store](https://www.tenseipearl.com/en/) who kindly gave me their permission to use their images in my site for educational purposes
 
   * Some of the site images are taken from [pexels.com](https://www.pexels.com/)
 
