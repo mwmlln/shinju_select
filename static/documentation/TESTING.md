@@ -9,6 +9,7 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 
 ### Testing using Django Unittest
 
+This site was mainly tested manually, but some automated tests using unittest was carried out. The test files are located in the test directories under the corresponding app. 
 
 ## Manual Testing
 
@@ -35,13 +36,13 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
     * b. Product name, price and category is listed under the product image &#9745;
     * c. Sort bar and price filter should be located at the top - Not implemented
 
-### #03 View specific categry of products
+### #03 View specific category of products
 
   * Acceptance criteria : Create category buttons to filter by category and ensure the appropriate items are displayed &#9745;
 
     Tasks
 
-    * a. category buttons in the landing page and product list page - only impletemted in landing page &#9745;
+    * a. category buttons in the landing page and product list page - only implemented in landing page &#9745;
     * b.  Choosing category should only displays the chosen category products &#9745;
     * c. There should be 4 categories at least as a start up &#9745;
 
@@ -75,11 +76,11 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 
 ### #07 Product ratings/Reviews
 
-  * Acceptance criteria :  Use rating with stars and reviews for items displayed in product detail page - Showing average is not impletemented
+  * Acceptance criteria :  Use rating with stars and reviews for items displayed in product detail page - Showing average is not implemented
 
     Tasks
 
-    * a. Rating should use 5 stars with average review result is filled in yellow inside them - Avarage not impletemented
+    * a. Rating should use 5 stars with average review result is filled in yellow inside them - Average not implemented
     * b. Reviews should be displayed in the product detail page for relevant items only &#9745;
 
 ### #08 Registering account
@@ -118,7 +119,7 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
     Tasks
 
     * a. Ensure the email delivery is successful &#9745;
-    * b. Email body should include the link to valify email for successful registration &#9745;
+    * b. Email body should include the link to verify email for successful registration &#9745;
 
 ### #12 User profile page
 
@@ -131,7 +132,7 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 
 ### #13 Sign up to newsletter
 
-  * Acceptance criteria : Newsletter signup located in footer. Site users can registers to receive newsletter &#9745;
+  * Acceptance criteria : Newsletter signup located in footer. Site users can register to receive newsletter &#9745;
 
 
     Tasks
@@ -140,7 +141,7 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 
 ### #14 Sorting products
 
-  * Acceptance criteria : Fully functioning sorting is present in shop page. As products number is small to start with this functions is set as Could Have
+  * Acceptance criteria : Fully functioning sorting is present in shop page. As products number is small to start with this function is set as Could Have
 
 
     Tasks
@@ -150,7 +151,7 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 
 ### #15 Filter by price range
 
-  * Acceptance criteria : Price range can be set to filter the product that matches the price range - As products number is small to start with this functions is set as Sould Have and other issues were prioritized
+  * Acceptance criteria : Price range can be set to filter the product that matches the price range - As products number is small to start with this function is set as Should Have and other issues were prioritized
 
     Tasks
 
@@ -168,7 +169,7 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 
 ### #17 Quantity and available stock
 
-  * Acceptance criteria : State the number of available stock clearly in the product detail page and prevent exceeding stock number in the shopping bag &#9745;
+  * Acceptance criteria : State the number of available stocks clearly in the product detail page and prevent exceeding stock number in the shopping bag &#9745;
 
     Tasks
 
@@ -201,7 +202,7 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 
     * a. Stripe payment form functioning and sent to stripe to process &#9745; 
     * b. Webhook working before redirection &#9745;
-    * c. Form validation present and working as intendedon &#9745;
+    * c. Form validation present and working as intended &#9745;
 
 ### #21 Secure payment 
 
@@ -266,7 +267,7 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
       * b. sitemap and robots.txt present &#9745;
 
 ### #30 SNS (Facebook)
-  * Acceptance criteria : All necessary information are added and accurate in FACEBOOK page. &#9745;
+  * Acceptance criteria : All necessary information is added and accurate in FACEBOOK page. &#9745;
 
     Tasks 
 
@@ -289,24 +290,20 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 
 Testing to ensure navigation and footer function and display as intended.
 
-* All links are tested to ensure that no broken links are present and user is directed to appropriate page. External links open in a new tab in the browser.
-
-* The navbar is visible as a hamburger menu on mobile devices.
-
-* Navigation menus reflect user login status and user's privilege.
-* Profile page link is visible and accessible for logged in users only
-* Product management manus are visible and accesible only for users with superuser status 
-* Search bar is tested to ensure that appropriate result returns. No result found message displays when no item for search words were returned.
-
-* Newsletter Signup  
-Ensure that email address is registered in mailchimp every time users enter their email address.
+  * All links are tested to ensure that no broken links are present and user is directed to appropriate page. External links open in a new tab in the browser.
+  * The navbar is visible as a hamburger menu on mobile devices.
+  * Navigation menus reflect user login status and user's privilege.
+  * Profile page link is visible and accessible for logged in users only
+  * Product management manus are visible and accesible only for users with superuser status 
+  * Search bar is tested to ensure that appropriate result returns. No result found message displays when no item for search words were returned.
+  * Newsletter Signup - Ensure that email address is registered in mailchimp every time users enter their email address.
   
 #### Landing page
 
-* Visual inspections are carried out to ensure that the images are showing properly in all device sizes.
-* All the bottons are tested to ensure that it opens appropriate page when clicked.
-* Category links will open product list page with appropriate filter applied.
-* All products and New Arrival buttons will open product list page with appropriate filter applied.
+  * Visual inspections are carried out to ensure that the images are showing properly in all device sizes.
+  * All the bottons are tested to ensure that it opens appropriate page when clicked.
+  * Category links will open product list page with appropriate filter applied.
+  * All products and New Arrival buttons will open product list page with appropriate filter applied.
 
 #### Product List page
 
@@ -382,7 +379,7 @@ Ensure that email address is registered in mailchimp every time users enter thei
 
 #### Deleivery info page
 
-* Visual inspection to ensure that page contains and displays appropriate information. 
+  * Visual inspection to ensure that page contains and displays appropriate information. 
 
 #### Contact us page
 

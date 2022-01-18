@@ -510,8 +510,10 @@ Databases
 * Delete items in shopping bag shows no toast message.
   This issue seems to be related to Bootstrap Jquery and Jquery(Ajax) conflict.  After searching how to resolve the conflict on the web, solution provided in [this site](https://coderedirect.com/questions/440791/conflict-bootstrap-prototype-js-and-jquery) to add `$.noConflict();`  at the top of the script did prevent server error but still not showing the toast message.
 
+* There is E10,000 limit per transaction in stripe testing account. This issue was informed by my mentor.
 
-  
+* Unselecting the save profile info checkbox in checkout page still saves the changes in preferred delivery info. This issue was also informed me by my mentor. I have attempted to solve this issue by replacing Boolean($('#id-save-info').attr('checked')); to Boolean($('#id-save-info').prop('checked')); but had no luck resolving the issue.
+
 ###  Validating code 
 
 
@@ -701,16 +703,16 @@ Following additional packages are installed to create this site by using pip3 in
 
   * Some of the site images are taken from [pexels.com](https://www.pexels.com/)
 
-  ## 8. Acknowledgment
+## 8. Acknowledgment
 
-  Thanks to the following people and organizations who helped me complete this project.
-  
+Thanks to the following people and organizations who helped me complete this project.
+
   * Code Institute's tutor support team for helping me resolve some issues.
 
   * My cohort group of coding career for women for sharing all their knowledge and supporting each other. 
-  
+
   * My group facilitator, Kasia for her support for us. 
 
-  * My mentor, Precious Ijege for pointing me to the right direction.
+  * My mentor, Precious Ijege for his advices and pointing me to the right direction.
 
 [Back to Top](#shinju-select)
