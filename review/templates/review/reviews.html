@@ -25,28 +25,28 @@
                 <div class="col-md-8">
                     <div class="card-body">
                         <h4>{{ object.product.name }}</h4>
-                        <h5 class="card-title">Rating : 
+                        <h5 class="card-title">Rating :
                             <span class="review-star">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star{% if object.rating < 2 %}-o{% endif %}" aria-hidden="true"></i>
-                            <i class="fa fa-star{% if object.rating < 3 %}-o{% endif %}" aria-hidden="true"></i>
-                            <i class="fa fa-star{% if object.rating < 4 %}-o{% endif %}" aria-hidden="true"></i>
-                            <i class="fa fa-star{% if object.rating < 5 %}-o{% endif %}" aria-hidden="true"></i>
-                        </span>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star{% if object.rating < 2 %}-o{% endif %}" aria-hidden="true"></i>
+                                <i class="fa fa-star{% if object.rating < 3 %}-o{% endif %}" aria-hidden="true"></i>
+                                <i class="fa fa-star{% if object.rating < 4 %}-o{% endif %}" aria-hidden="true"></i>
+                                <i class="fa fa-star{% if object.rating < 5 %}-o{% endif %}" aria-hidden="true"></i>
+                            </span>
                         </h5>
                         <p class="card-text">{{ object.comment }}</p>
                         <hr />
                         <p class="card-text text-muted h6">Creted on : {{ object.created_at}}</p>
                         <!-- Update Review Button-->
                         {% if object.user == request.user%}
-                            <div class="card-head text-right">
-                                <a class="btn btn-danger btn-sm" href="{% url 'review:delete_review' object.id %}">
-                                    Delete this Review
-                                </a>
-                                <a class="btn btn-dark btn-sm" href="{% url 'review:edit_review' object.id %}">
-                                    Edit your Review
-                                </a>
-                            </div>
+                        <div class="card-head text-right">
+                            <a class="btn btn-danger btn-sm" href="{% url 'review:delete_review' object.id %}">
+                                Delete this Review
+                            </a>
+                            <a class="btn btn-dark btn-sm" href="{% url 'review:edit_review' object.id %}">
+                                Edit your Review
+                            </a>
+                        </div>
                         {% endif %}
                     </div>
                 </div>

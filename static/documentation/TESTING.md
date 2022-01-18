@@ -314,99 +314,94 @@ Visual inspections are carried out to ensure that the images are showing properl
 
 #### Product List page
 
-Display on all device sizes were checked to ensure there are no issues with any of the page elements visibility.
-Testing was carried to check all buttons and links to open the appropriate pages.
-Tested various filter on numbers of occations to ensure that appropriate items are displayed.
+ * All buttons and links to open the appropriate pages.
+ * Filters such as category, tags or search results returns only related items
 
 #### Product Detail page
 
-Tested deisplay on all device sizes for responsiveness.
-Image display is tested numbers of times to ensure that main images swiches on click or tap appropriately in any device.
-Quantity input form was tested with attempt of various numbers input to ensure it only allows valid numbers between 1 and stock amount. Input for deciaml numbers are prevented as it results in server error.
-KEEP SHOPPING button brings the page back to product list.
-ADD TO BAG button adds the item in the shopping bag and feefback in toast message diaplays and cart in the navbar reflect the change immidiately.
+ * Main images swiches on click or tap appropriately in any device.
+ * Quantity input form was tested with attempt of various numbers input to ensure it only allows valid numbers between 1 and stock amount. Input for deciaml numbers are prevented as it results in server error.
+ * KEEP SHOPPING button brings the page back to product list page.
+ * ADD TO BAG button adds the item in the shopping bag, feefback in toast message displays and the shopping bag icon in the navbar reflect the change immidiately.
+ * Reviews displayed are only for the product selected.
 
 #### Shoppint bag page
 
-Tested deisplay on all device sizes for responsiveness.
-Changing the quantity by + and - buttons and update link work and reflect the change as intended. Decimal numbers input are prevented from entered by disabling the manual input in the quantity field.
-Delete link removes the selected item only from the shopping bag.
-Buttons both open the page appropriately.
+ * Changing the quantity by + and - buttons and update link work and reflect the change as intended. Decimal numbers input are prevented from entered by disabling the manual input in the quantity field.
+ * Quantity field can only update within stock numbers.
+ * Delete link removes the selected item only from the shopping bag.
+ * Buttons open the appropriate links.
 
 #### Checkout page
 
-Tested deisplay on all device sizes for responsiveness.
-Order details displays on the left side.
-Order details reflect current items in the shopping bag.
-Shipping info is prefilled if the user has updated thier profile except name field.
-User can manually input or modify the fields as needed.
-Adjust bag will return to the shopping bag page where users can make adjustments to their items.
-Red warning textsto inform the total amount to be charged matches the order total.
-With the testing payment details, Complete Order button will process the payment and record is updated in Stripe page.
+ * Order details displays on the left side.
+ * Order details reflect current items in the shopping bag.
+ * Shipping info is prefilled if the user has updated thier profile except name field.
+ * User can manually input or modify the fields as needed.
+ * Adjust bag button will return to the shopping bag page where users can make adjustments to their items.
+ * Red warning textsto inform the total amount to be charged matches the order total.
+ * With the testing payment details, Complete Order button will process the payment and record is updated in Stripe page.
 
 #### Checkout success page
 
-Tested deisplay on all device sizes for responsiveness.
-Toast message includes all nessasary information including order number and email address.
-
-All the informaion related to the order is included in the page include order number, order date, items in the order,shippping information and the amount of the order.
+ * Toast message includes all nessasary information including order number and email address.
+ * All the informaion related to the order is included in the page include order number, order date, items in the order,shippping information and the amount of the order.
 
 #### My Profile page
 
-Shipping infomation located on the left for bigger screen and top for smaller devices.
-If user has filled the fields previously, fields are prefilled.
-Update informaion button reflect the changes made and return to the same page with up-to-date informaion.
-Toast message displays to notify the change.
-Order history is located on the right on the bigger screen and below the delivery infomation with smaller device screens.
-Write a review link in purchase history opens create review page
+ * Shipping infomation located on the left for bigger screen and top for smaller devices.
+ * If user has filled the fields previously, fields are prefilled.
+ * Update informaion button reflect the changes made and return to the same page with up-to-date informaion.
+ * Toast message displays to notify the change.
+ * Order history is located on the right on the bigger screen and below the delivery infomation with smaller device screens.
+ * Write a review link in purchase history opens create review page
 
 #### Create/Edit review page
 
-Tested to create a new review to ensure that new review is properly created and listed in the review page.
-Editing the review is tested to ensure the fields are prefilled with appropriate entries and update reflect as expected.
+ * Create a test review to ensure that new review is properly created and listed in the review page.
+ * Editing the review is tested to ensure the fields are prefilled with appropriate entries and update reflect as expected.
 
 #### Delete review page
 
-Tested to ensure that this page is only accessible to review user. Typing this url address with other user status redirects to home with a error message to state the user has no permission.
-Confirmed that the review is removed from the reviews page and DB on pressing the delete button.
+ * Tested to ensure that this page is only accessible to review user. Typing this url address with other user status redirects to home with a error message to state the user has no permission.
+ * Confirmed that the review is removed from the reviews page and DB on pressing the delete button.
 
 #### Reviews page
 
-Ensure that all reviews has links to their reviewed product detail page.
-Pagination is properly in place.
-Images and review contains display properly.
+ * Ensure that all reviews has links to their reviewed product detail page.
+ * Pagination is properly in place.
+ * Images and review contains display properly.
 
 #### Product management page
 
-Opening this page from the main manu should open the empty form to add a new product. Each fields have validation in place and product saves as expected.
-If opened from edit/delete link, it should retreive the instance of the product.
-All links for this page is restricted to superuser and ensured that access is denied for users with non-superuser status.
+ * Opening this page from the main manu should open the empty form to add a new product. Each fields have validation in place and product saves as expected.
+ * If opened from edit/delete link, it should retreive the instance of the product.
+ * All links for this page is restricted to superuser and ensured that access is denied for users with non-superuser status.
 
 #### About the Site page
 
-Responsiveness is tested to ensure all elements in the page display properly.
+ * Visual inspection to ensure that page contains and displays appropriate information. 
 
 #### Deleivery info page#
 
-Responsiveness is tested to ensure all elements in the page display properly. Ensured the image doesn't display to avoid congestion in smaller screen.
+* Visual inspection to ensure that page contains and displays appropriate information. 
 
 #### Contact us page
 
-Responsiveness tested on all device sizes.
-Test was carried out to ensure that forms are validated, email sent also saved in the database on submission of the form.
-Email delievery to the site owner is confirmed.
+ * Ensure that forms are validated, email sent also saved in the database on submission of the form.
+ * Email delievery to the site owner is confirmed.
 
 #### Register page
 
-Tested in to ensure the validation works and email with confirmation link is provided.
+ * Tested in to ensure the validation works and email with confirmation link is provided.
 
 #### Login page
 
-Tested numerous times loggin in using boths emails and usernames.
+ * Tested numerous times loggin in using boths emails and usernames.
 
 #### Logout page
 
-Tested to ensure that user status cahnges once the logout button is clicked and user will no longer to allow the restricted pages.
+ * Tested to ensure that user status cahnges once the logout button is clicked and user will no longer to allow the restricted pages.
 
 
   [<<< Back to README](../../README.md)

@@ -17,6 +17,8 @@ This website is for educational purposes only and card payment details should be
     * Date : Any  future date
     * CVC :  Any 3 numbers
 
+## TOC
+
 - [Shinju Select](#shinju-select)
   * [1. User experience (UX)](#1-user-experience--ux-)
     + [1.1 The purpose of this site](#11-the-purpose-of-this-site)
@@ -25,8 +27,8 @@ This website is for educational purposes only and card payment details should be
     + [1.4 Site Owners Goals](#14-site-owners-goals)
     + [1.5 USER STORIES](#15-user-stories)
     + [1.6 STRATEGY](#16-strategy)
-    + [Business Model](#business-model)
-    + [SEO](#seo)
+      - [Business Model](#business-model)
+      - [SEO](#seo)
     + [1.7 SCOPE](#17-scope)
       - [Custom Model](#custom-model)
     + [1.8 Structure](#18-structure)
@@ -49,7 +51,6 @@ This website is for educational purposes only and card payment details should be
   * [8. Acknowledgment](#8-acknowledgment)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 
 ## 1. User experience (UX)
@@ -147,34 +148,35 @@ Issue No. | Title | User story | Acceptance criteria | Implemented
 
   Specialized in Akoya pearl jewellery selected from the trusted source directory from the producer and designer in Japan's No.1 pearl production area
 
-### Business Model
+#### Business Model
 
-  This site followed principle of B2C E-Commerce business model.
-  Research on competitors in the market was carried out prior to designing process. 
-  SEO, SNS and Newsletter are included to improve the user experience and increase the opportunity to attract new customers.
-  Web site is carefully designed to give site visitors to easily navigate and find out information about the products and company.
-  GDPR link is present to comply the data protection act.
+    This site followed principle of B2C E-Commerce business model.
+    Research on competitors in the market was carried out prior to designing process. 
+    SEO, SNS and Newsletter are included to improve the user experience and increase the opportunity to attract new customers.
+    Web site is carefully designed to give site visitors to easily navigate and find out information about the products and company.
+    GDPR link is present to comply the data protection act.
 
-<details><summary>Facebook Page</summary>
-      <img src="static/documentation/ss/fb_page_ss.png" width="500">
-      </details>
+  <details><summary>Facebook Page</summary>
+        <img src="static/documentation/ss/fb_page_ss.png" width="500">
+        </details>
 
-<details><summary>Privacy Policy Page</summary>
-      <img src="static/documentation/ss/privacy_policy_ss.png" width="500">
-      </details>
+  <details><summary>Privacy Policy Page</summary>
+        <img src="static/documentation/ss/privacy_policy_ss.png" width="500">
+        </details>
 
-<details><summary>Newsletter Sign up located in Footer</summary>
-      <img src="static/documentation/ss/newsletter_signup_ss.png" width="500">
-      </details>
+  <details><summary>Newsletter Sign up located in Footer</summary>
+        <img src="static/documentation/ss/newsletter_signup_ss.png" width="500">
+        </details>
 
 
-### SEO
+#### SEO
 
-* Keywords - Keywords in the HTML head tag were carefully selected to increase the visibility of the site on organic search.
-* Description - Description was placed in the html head element to provide the clear information about the site
+  * Keywords - Keywords in the HTML head tag were carefully selected to increase the visibility of the site on organic search.
+  * Description - Description was placed in the html head element to provide the clear information about the site
 
-**Agile software development**
-Throughout development process of this site, agile development approach was taken using GitHub functions which are issues, milestones, iterations and Kanban board. 
+    **Agile software development**
+    
+    Throughout development process of this site, agile development approach was taken using GitHub functions which are issues, milestones, iterations and Kanban board. 
 
 
 ### 1.7 SCOPE
@@ -206,7 +208,7 @@ Throughout development process of this site, agile development approach was take
 
   * Edit profile Page should be accessible for all registered users. Users should be able to set their preferred delivery information. Reviewing order history and choice for creating review should be provided in this page.
 
-  * Review Page should be included in the nav menu so that site visitors can easily access this page to learn about other shoppers' opinions about the products.
+  * Review Page link should be included in the nav menu so that site visitors can easily access this page to learn about other shoppers' opinions about the products.
 
   * Create Review Page. Link for this page should be limited to the user who has purchased the product. Ideally, limit to one review per purchase.
 
@@ -242,8 +244,8 @@ As products unit prices are high, I have customised product model to include sto
 ### 1.8 Structure
 
   1.	The site visitor will first be presented with the landing page where they can read the purpose of this site. In the navigation menu they are presented with a choice to register or sign in if already registered. There is a search bar and shop link that opens up the page with products list.
-  Below the sliding hero images, there are large links to open the product page with 4 different categories or view all product button will open the all products list.
-  Site visitor can be registered or log in at any time from the navigation menu.
+  Below the sliding hero images, there are large links to open the product page in 4 different categories, view all or New products.
+  Site visitor can be registered or log in from the navigation menu at any time.
 
   2.	In the Product list page, all of the products are displayed, unless specific category or tag is chosen to open the page. Each product has button to open the product detail page.
 
