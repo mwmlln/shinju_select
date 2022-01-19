@@ -3,7 +3,7 @@
 
 ## Responsiveness 
 
-Throughout the site is tested to ensure all pages are displayed appropriately in all screen sizes
+Throughout, the site is tested to ensure all pages are displayed appropriately in all screen sizes
 
 ## Automated Testing
 
@@ -22,7 +22,7 @@ This site was mainly tested manually, but some automated tests using unittest we
   * Acceptance criteria - State clear purpose of the site in the page and no confusing elements for site visitors &#9745;
   
     Tasks
-    * a. There should be a button to open the product page clearly visible when the landing page is opened so that the site victors can easily move to the page to see the products &#9745;
+    * a. There should be a button to open the product page clearly visible when the landing page is opened so that the site visitors can easily move to the page to see the products &#9745;
     * b. Pages should be responsive in all screen sizes &#9745;
     * c. Home button visible in Navbar and About page button should be located in footer so that site user can access these pages anywhere within the site &#9745;
 
@@ -52,7 +52,7 @@ This site was mainly tested manually, but some automated tests using unittest we
 
     Tasks
 
-    * a. Product images display on the left &#9745;
+    * a. Product images displayed on the left &#9745;
     * b.  Product name, adjust size and quantity, price, category, back to shopping page link and add button on the right - Size option not implemented 
     * c. Product description below the image and buttons - Changed to the side as it looked neater
     * d. Product review box at the bottom of the page &#9745;
@@ -106,7 +106,7 @@ This site was mainly tested manually, but some automated tests using unittest we
 
 ### #10 Password recovery
 
-  * Acceptance criteria : Email vilification to recover password
+  * Acceptance criteria : Email verification to recover password
 
     Tasks
 
@@ -141,7 +141,7 @@ This site was mainly tested manually, but some automated tests using unittest we
 
 ### #14 Sorting products
 
-  * Acceptance criteria : Fully functioning sorting is present in shop page. As products number is small to start with this function is set as Could Have
+  * Acceptance criteria : Fully functioning sorting is present in shop page. As products number is small to start with, this function is set as Could Have
 
 
     Tasks
@@ -151,7 +151,7 @@ This site was mainly tested manually, but some automated tests using unittest we
 
 ### #15 Filter by price range
 
-  * Acceptance criteria : Price range can be set to filter the product that matches the price range - As products number is small to start with this function is set as Should Have and other issues were prioritized
+  * Acceptance criteria : Price range can be set to filter the product that matches the price range - As products number is small to start with, this function is set as Should Have and other issues were prioritized
 
     Tasks
 
@@ -215,7 +215,7 @@ This site was mainly tested manually, but some automated tests using unittest we
     Tasks 
 
     * a. On successful checkout, users should be directed to "thank you for your order" page &#9745;
-    * b. In user's profile, order history with order status should be displayed - Oder status not implemented
+    * b. In user's profile, order history with order status should be displayed - Order status not implemented
 
 ### #23 Email confirmation after checking out
 
@@ -294,7 +294,7 @@ Testing to ensure navigation and footer function and display as intended.
   * The navbar is visible as a hamburger menu on mobile devices.
   * Navigation menus reflect user login status and user's privilege.
   * Profile page link is visible and accessible for logged in users only
-  * Product management manus are visible and accessible only for users with superuser status 
+  * Product management menus are visible and accessible only for users with superuser status 
   * Search bar is tested to ensure that appropriate result returns. No result found message displays when no item for search words were returned.
   * Newsletter Signup - Ensure that email address is registered in mailchimp every time users enter their email address.
   
@@ -313,7 +313,7 @@ Testing to ensure navigation and footer function and display as intended.
 
 #### Product Detail page
 
- * Main images switches by clicking or tapping appropriately in any device.
+ * Main images switches by clicking or tapping appropriately on any device.
  * Quantity input form was tested with attempt of various numbers input to ensure it only allows valid numbers between 1 and stock amount. Input for decimal numbers are prevented as it results in server error.
  * KEEP SHOPPING button brings the page back to product list page.
  * ADD TO BAG button adds the item in the shopping bag, feedback in toast message displays and the shopping bag icon in the navbar reflect the change immediately.
@@ -358,7 +358,7 @@ Testing to ensure navigation and footer function and display as intended.
 
 #### Delete review page
 
- * Tested to ensure that this page is only accessible for review writer. Typing this url address with other user status redirects to home with a error message to state the user has no permission.
+ * Tested to ensure that this page is only accessible for review writer. Typing this url address with other user status redirects to home with an error message to state the user has no permission.
  * Confirmed that the review is removed from the reviews page and DB on pressing the delete button.
 
 #### Reviews page
