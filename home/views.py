@@ -21,5 +21,5 @@ class DeliveryView(TemplateView):
 
 
 class FaqsView(TemplateView):
-    """View to display delivery info page"""
+    """View to display FAQs page"""
     template_name = 'home/faqs.html'

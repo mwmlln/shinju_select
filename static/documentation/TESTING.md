@@ -9,7 +9,7 @@ Throughout the site is tested to ensure all pages are displayed appropriately in
 
 ### Testing using Django Unittest
 
-This site was mainly tested manually, but some automated tests using unittest was carried out. The test files are located in the test directories under the corresponding app. 
+This site was mainly tested manually, but some automated tests using unittest were carried out. The test files are located in the test directories under the corresponding app. 
 
 ## Manual Testing
 
@@ -294,14 +294,14 @@ Testing to ensure navigation and footer function and display as intended.
   * The navbar is visible as a hamburger menu on mobile devices.
   * Navigation menus reflect user login status and user's privilege.
   * Profile page link is visible and accessible for logged in users only
-  * Product management manus are visible and accesible only for users with superuser status 
+  * Product management manus are visible and accessible only for users with superuser status 
   * Search bar is tested to ensure that appropriate result returns. No result found message displays when no item for search words were returned.
   * Newsletter Signup - Ensure that email address is registered in mailchimp every time users enter their email address.
   
 #### Landing page
 
   * Visual inspections are carried out to ensure that the images are showing properly in all device sizes.
-  * All the bottons are tested to ensure that it opens appropriate page when clicked.
+  * All the buttons are tested to ensure that it opens appropriate page when clicked.
   * Category links will open product list page with appropriate filter applied.
   * All products and New Arrival buttons will open product list page with appropriate filter applied.
 
@@ -313,13 +313,13 @@ Testing to ensure navigation and footer function and display as intended.
 
 #### Product Detail page
 
- * Main images swiches by clicking or tapping appropriately in any device.
- * Quantity input form was tested with attempt of various numbers input to ensure it only allows valid numbers between 1 and stock amount. Input for deciaml numbers are prevented as it results in server error.
+ * Main images switches by clicking or tapping appropriately in any device.
+ * Quantity input form was tested with attempt of various numbers input to ensure it only allows valid numbers between 1 and stock amount. Input for decimal numbers are prevented as it results in server error.
  * KEEP SHOPPING button brings the page back to product list page.
- * ADD TO BAG button adds the item in the shopping bag, feefback in toast message displays and the shopping bag icon in the navbar reflect the change immidiately.
+ * ADD TO BAG button adds the item in the shopping bag, feedback in toast message displays and the shopping bag icon in the navbar reflect the change immediately.
  * Reviews displayed are only for the product selected.
 
-#### Shoppint bag page
+#### Shopping bag page
 
  * Changing the quantity by + and - buttons and update link work and reflect the change as intended. Decimal numbers entries are prevented by disabling the manual input in the quantity field.
  * Quantity field can only update within stock numbers.
@@ -330,7 +330,7 @@ Testing to ensure navigation and footer function and display as intended.
 
  * Order details displays on the left side.
  * Order details reflect current items in the shopping bag.
- * Shipping info is prefilled if the user has updated thier profile except name field.
+ * Shipping info is prefilled if the user has updated their profile except name field.
  * User can manually input or modify the fields as needed.
  * Adjust bag button will return to the shopping bag page where users can make adjustments to their items.
  * Red warning texts to inform the total amount to be charged matches the order total.
@@ -339,16 +339,16 @@ Testing to ensure navigation and footer function and display as intended.
 
 #### Checkout success page
 
- * Toast message includes all nessasary information including order number and email address.
- * All the informaion related to the order is included in the page include order number, order date, items in the order,shippping information and the amount of the order.
+ * Toast message includes all necessary information including order number and email address.
+ * All the information related to the order is included in the page include order number, order date, items in the order, shipping information and the amount of the order.
 
 #### My Profile page
 
- * Shipping infomation located on the left for bigger screen and top for smaller devices.
+ * Shipping information located on the left for bigger screen and top for smaller devices.
  * If user has filled the fields previously, fields are prefilled.
- * Update informaion button reflect the changes made and return to the same page with up-to-date informaion.
+ * Update information button reflect the changes made and return to the same page with up-to-date information.
  * Toast message displays to notify the change.
- * Order history is located on the right on the bigger screen and below the delivery infomation on smaller device screens.
+ * Order history is located on the right on the bigger screen and below the delivery information on smaller device screens.
  * Write a review link in purchase history opens create review page
 
 #### Create/Edit review page
@@ -363,14 +363,14 @@ Testing to ensure navigation and footer function and display as intended.
 
 #### Reviews page
 
- * Ensure that all reviews has links to their reviewed product detail page.
+ * Ensure that all reviews have links to their reviewed product detail page.
  * Pagination is properly in place.
  * Images and contents of reviews display properly.
 
 #### Product management page
 
  * Opening this page from the main menu should open the empty form to add a new product. Each fields have validation in place and product saves as expected.
- * If opened from edit/delete link, it should retreive the instance of the product.
+ * If opened from edit link, it should retrieve the instance of the product.
  * All links for this page is restricted to superuser and ensured that access is denied for users with non-superuser status.
 
 #### About the Site page
@@ -392,11 +392,11 @@ Testing to ensure navigation and footer function and display as intended.
 
 #### Login page
 
- * Tested numerous times loggin in using boths emails and usernames.
+ * Tested numerous times logging in using both emails and usernames.
 
 #### Logout page
 
- * Tested to ensure that user status cahnges once the logout button is clicked and user will no longer to allow the restricted pages.
+ * Tested to ensure that user status changes once the logout button is clicked and user will no longer to allow the restricted pages.
 
 
   [<<< Back to README](../../README.md)

@@ -17,7 +17,7 @@ This website is for educational purposes only and card payment details should be
     * Date : Any  future date
     * CVC :  Any 3 numbers
 
-## TOC
+## Table of Contents
 
 - [Shinju Select](#shinju-select)
   * [1. User experience (UX)](#1-user-experience--ux-)
@@ -150,15 +150,18 @@ Issue No. | Title | User story | Acceptance criteria | Implemented
 
 #### Business Model
 
-    This site followed principle of B2C E-Commerce business model.
-    Research on competitors in the market was carried out prior to designing process. 
-    SEO, SNS and Newsletter are included to improve the user experience and increase the opportunity to attract new customers.
-    Web site is carefully designed to give site visitors to easily navigate and find out information about the products and company.
-    GDPR link is present to comply the data protection act.
+
+  This site followed principle of B2C E-Commerce business model.
+  Research on competitors in the market was carried out prior to designing process. 
+  SEO, SNS and Newsletter are included to improve the user experience and increase the opportunity to attract new customers.
+  Web site is carefully designed to give site visitors to easily navigate and find out information about the products and company.
+  GDPR link is present to comply the data protection act.
 
   <details><summary>Facebook Page</summary>
         <img src="static/documentation/ss/fb_page_ss.png" width="500">
         </details>
+   Note: Creating a fake Facebook business page was included in the initial project requirements until the requirement change was announced 5 days before my project submission deadline.
+
 
   <details><summary>Privacy Policy Page</summary>
         <img src="static/documentation/ss/privacy_policy_ss.png" width="500">
@@ -512,7 +515,7 @@ Databases
 
 * There is E10,000 limit per transaction in stripe testing account. This issue was informed by my mentor.
 
-* Unselecting the save profile info checkbox in checkout page still saves the changes in preferred delivery info. This issue was also informed me by my mentor. I have attempted to solve this issue by replacing Boolean($('#id-save-info').attr('checked')); to Boolean($('#id-save-info').prop('checked')); but had no luck resolving the issue.
+* Unselecting the save profile info checkbox in checkout page still saves the changes in preferred delivery info. This issue was also informed me by my mentor. I have attempted to solve this issue by replacing `Boolean($('#id-save-info').attr('checked'));` to `saveInfo = $('#id-save-info').prop('checked');` to ensure the value returned false in the console window when unselected but had no luck resolving the issue in time for submission.
 
 ###  Validating code 
 
