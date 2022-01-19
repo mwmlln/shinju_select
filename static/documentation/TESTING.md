@@ -381,6 +381,10 @@ Testing to ensure navigation and footer function and display as intended.
 
   * Visual inspection to ensure that page contains and displays appropriate information. 
 
+#### FAQs page
+
+  * Visual inspection to ensure that page contains and displays appropriate information. 
+
 #### Contact us page
 
  * Ensure that forms are validated, email sent also saved in the database on form submission.
