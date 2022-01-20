@@ -82,23 +82,32 @@
           </div>
         </form>
       </div>
-      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0  d-flex justify-content-around">
+      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 d-flex justify-content-between">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link text-white" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="{% url 'products:products' %}">Shop</a>
+            <li class="dropdown-submenu text-white mx-1 mt-2">
+              <a href="#" class="dropdown-toggle text-white" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false"> <span class="nav-label">SHOP</span><span class="caret"></span></a>
+              <ul class="dropdown-menu ml-2">
+                <li class="ml-2"><a href="{% url 'products:products' %}">ALL PRODUTS</a></li>
+                <li class="ml-2"><a href="{% url 'products:category_list' pk=1 %}">NECKLACES</a></li>
+                <li class="ml-2"><a href="{% url 'products:category_list' pk=2 %}">EARRINGS</a></li>
+                <li class="ml-2"><a href="{% url 'products:category_list' pk=3 %}">RINGS</a></li>
+                <li class="ml-2"><a href="{% url 'products:category_list' pk=4 %}">SETS</a></li>
+                <li class="ml-2"><a href="{% url 'products:tag_list'  pk='new' %}">NEW ARRIVALS</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="{% url 'review:reviews' %}">Reviews</a>
             </li>
             <li class="nav-item list-inline-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="user-options" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 <div class="menu-icon"><i class="fas fa-user fa-lg"></i></div>
-                <span class="my-0 text text text-small text-white">Account</span>
+                <span class="my-0 text-small text-white">Account</span>
               </a>
               <div class="dropdown-menu border-0" aria-labelledby="user-options">
                 {% if request.user.is_authenticated %}
@@ -196,7 +205,7 @@
                   <div class="clear foot">
                     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
                     <p class="brandingLogo"><a href="http://eepurl.com/hRNyr5"
-                        title="Mailchimp - email marketing made easy and fun" target="_blank" rel="noopener" ><img
+                        title="Mailchimp - email marketing made easy and fun" target="_blank" rel="noopener"><img
                           src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
                           class="mail-chimp-img" alt="Mailchimp logo"></a></p>
                   </div>
@@ -215,15 +224,16 @@
             <li><a class="link-secondary text-white" href="{% url 'faqs' %}">FAQs</a></li>
             <li><a class="link-secondary text-white" href="{% url 'enquiry' %}">Contact Us</a></li>
           </ul>
-          <a href="https://www.privacypolicygenerator.info/live.php?token=7SpdnhA2ruO3pMb3qwR2nvD2Z4lKZzv8" class="link-secondary text-white"
-            target="_blank" rel="noopener" aria-label="Open Privacy Policy page in new tab">Privacy Policy</a>
-        
+          <a href="https://www.privacypolicygenerator.info/live.php?token=7SpdnhA2ruO3pMb3qwR2nvD2Z4lKZzv8"
+            class="link-secondary text-white" target="_blank" rel="noopener"
+            aria-label="Open Privacy Policy page in new tab">Privacy Policy</a>
+
           <br>
           <p class="mt-2">
-          <a href="https://www.facebook.com/profile.php?id=100077118873837" class="link-secondary text-white lead h4"
-                target="_blank" rel="noopener" aria-label="Open our facebook page in new tab"> 
-                <i class="fab fa-facebook-square"></i> Find us on Facebook </a>
-              </p>
+            <a href="https://www.facebook.com/profile.php?id=100077118873837" class="link-secondary text-white lead h4"
+              target="_blank" rel="noopener" aria-label="Open our facebook page in new tab">
+              <i class="fab fa-facebook-square"></i> Find us on Facebook </a>
+          </p>
         </div>
       </div>
     </div>

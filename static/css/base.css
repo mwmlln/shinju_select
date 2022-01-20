@@ -299,18 +299,22 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 .image-container {
   margin: 50px auto 0;
   max-width: 300px;
 }
+
 .main-img {
   max-height: 100%;
   width: 100%;
 }
+
 .main-img img {
   height: auto;
   width: 100%;
 }
+
 .sub-img {
   display: flex;
 }
@@ -318,12 +322,14 @@ ul {
   margin-right: 2%;
   width: calc(96% / 3);
 }
+
 .sub-img li:nth-child(3n) {
   margin-right: 0;
 }
 .sub-img {
   height: 107px;
 }
+
 .sub-img img {
   height: 107px;
   width: 100%;
@@ -333,6 +339,7 @@ ul {
   .main-img {
     max-height: 68.8vh;
   }
+  
   .sub-img img {
     height: 21.4vw;
   }
