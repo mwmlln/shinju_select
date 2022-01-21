@@ -5,6 +5,18 @@
 
 Throughout, the site is tested to ensure all pages are displayed appropriately in all screen sizes
 
+* Responsiveness of the pages are tested with [Chrome DevTools](https://developer.chrome.com/docs/devtools/) and [Responsive Design Checker](https://www.responsivedesignchecker.com/). Results of the tests:
+
+  <details><summary>Responsiveness Tests</summary>
+  <img src="ss/responsiveness.png" width="600">
+  </details>
+
+## Browser compatibility
+
+  Tested as follows:
+
+  <img src="ss/browser_compatibility.png" width="500">
+
 ## Automated Testing
 
 ### Testing using Django Unittest
