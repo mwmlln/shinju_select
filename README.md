@@ -551,6 +551,24 @@ Databases
 * AWS Amazon account
 * Gmail account
 
+### To Fork the project:
+
+1. Go to the Project Repository on GitHub [here](https://github.com/mwmlln/shinju_select).
+
+2. In the top-right corner of the page under the navigation bar, click Fork.
+
+### To clone the project
+
+Take the following procedures:
+
+1. Go to the Project Repository on GitHub [here](https://github.com/mwmlln/shinju_select).
+
+2. Select the green Code dropdown button and copy the url for the project.
+
+3. Open your GitPod terminal and type `git clone <repo url>` 
+
+   e.g. `git clone https://github.com/mwmlln/shinju_select.git`
+
 ### Deployment procedures
 
 1. Setting up Django environment in local workspace.
