@@ -26,6 +26,7 @@ class ProductListView(ListView):
                 )
         else:
             object_list = Product.objects.all()
+        return object_list
 
 
 class CategoryListView(ListView):
