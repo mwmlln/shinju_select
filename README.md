@@ -3,7 +3,7 @@
 
 Shinju Select is an online shop specialising in highest quality Akoya Pearl Jewellery sourced directly from Japan
 
-View the live project here. [Shinju Select](http://shinjuselect.herokuapp.com/)
+View the live project here. [Shinju Select](https://shinjuselect.herokuapp.com/)
 
 <img src="static/documentation/ss/mockup_ss.png" width="500">
 
